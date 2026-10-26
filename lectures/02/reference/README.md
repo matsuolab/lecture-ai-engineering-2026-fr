@@ -1,6 +1,6 @@
 # Lecture 02 : résultats de référence obtenus par l’enseignant sur T4
 
-Si aucun GPU n’est disponible ou si l’entraînement ne se termine pas à temps, suivez la section **4b** du notebook (`notebooks/lora_format_tuning.ipynb`) pour comparer et analyser les résultats présentés ici.
+Si aucun GPU n’est disponible ou si l’entraînement ne se termine pas à temps, suivez la section **4b** du notebook (`notebooks/lora_format_tuning.ipynb`) pour comparer et analyser les résultats présentés ici. Ces résultats proviennent de l’exercice original en japonais ; les résultats avec les données françaises peuvent différer.
 Pour rendre le travail, réglez `executed_training_myself` sur `False` en section 7 et indiquez dans `lectures/02/answer.md` les parties exécutées vous-même.
 
 | Fichier | Contenu |
