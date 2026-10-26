@@ -37,7 +37,7 @@ Les variables de Colab disparaissent lorsque la session est interrompue : le jou
 7. Choisissez **Runtime → Disconnect and delete runtime**
 
 > Le temps d’utilisation gratuit des GPU Colab est limité. Supprimez toujours l’environnement d’exécution à la fin.
-> Si aucun GPU n’est disponible ou si l’entraînement ne se termine pas à temps, suivez la section 4b du notebook pour comparer et analyser les résultats obtenus par l’enseignant sur T4. Pour la remise, réglez `executed_training_myself` sur `False` et indiquez dans answer.md les parties exécutées vous-même.
+> Si aucun GPU n’est disponible ou si l’entraînement ne se termine pas à temps, suivez la section 4b du notebook pour comparer et analyser les résultats obtenus par l’enseignant sur T4 avec l’exercice original en japonais. Pour la remise, réglez `executed_training_myself` sur `False` et indiquez dans answer.md les parties exécutées vous-même.
 
 Même avec une graine aléatoire (`seed`) fixe, l’entraînement sur GPU n’est pas parfaitement reproductible. Il est normal que les questions encore échouées diffèrent entre participants : comparez les types d’échecs.
 
@@ -47,7 +47,7 @@ Même avec une graine aléatoire (`seed`) fixe, l’entraînement sur GPU n’es
 |---|---|
 | Bases | Modifiez un seul paramètre de `CONFIG` parmi `lora_r`, `lr` et `num_train_epochs`, puis réentraînez. Comparez `format_rate`, `content_rate`, la valeur finale de la fonction de perte et la durée avec les réglages d’origine. Après modification, choisissez **Runtime → Restart session**, puis recommencez en haut (le modèle entraîné est encore en mémoire). Comparez deux fichiers `result.json` |
 | Mise en œuvre | Remplacez `FAQ`, `GROUNDED` et `UNGROUNDED` par votre propre sujet (environ 5 entrées), entraînez et comparez avant et après. Conservez le format JSON et la conception de `needs_review`. Expliquez aussi comment vous avez préparé les questions sans preuve |
-| Approfondissement | Avec `scripts/make_sft_dataset.py`, créez des paires Q&R à partir du glossaire (JSONL au format `messages`), puis entraînez le modèle sur ces données à la place de la FAQ. Préparez vos questions d’évaluation (termes présents, questions reformulées et termes absents) et les réponses attendues, puis comparez avant et après. Réfléchissez au choix entre cette approche et l’agent de recherche dans le glossaire qui sera créé dans Lecture 03 |
+| Approfondissement | Avec `scripts/make_sft_dataset.py`, créez des paires Q&R à partir du glossaire (JSONL au format `messages`), puis entraînez le modèle sur ces données à la place de la FAQ. Préparez vos questions d’évaluation (termes présents, questions reformulées et termes absents) et les réponses attendues, puis comparez avant et après. Comparez avec un mécanisme de recherche dans le glossaire et examinez les avantages et les inconvénients de l’entraînement du modèle |
 
 Création des données d’approfondissement (dans Codespaces, puis téléversement du fichier dans Colab) :
 
