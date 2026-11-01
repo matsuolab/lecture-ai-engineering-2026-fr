@@ -5,6 +5,7 @@ sans appeler de vrai LLM. Il vérifie l’enregistrement et l’appel des outils
 au modèle, sans clé API ni consommation de quota.
 """
 
+from pydantic_ai import DeferredToolRequests
 from pydantic_ai.messages import ToolCallPart, ToolReturnPart
 from pydantic_ai.models.test import TestModel
 
@@ -27,7 +28,9 @@ def test_base_tools_are_registered_and_called():
 
     called = {p.tool_name for p in _parts(result, ToolCallPart)}
     assert BASE_TOOLS <= called
-    assert len(_parts(result, ToolReturnPart)) == len(_parts(result, ToolCallPart))
+    # Les outils soumis à approbation (requires_approval=True) attendent sans être exécutés et ne renvoient donc pas de valeur
+    waiting = len(result.output.approvals) if isinstance(result.output, DeferredToolRequests) else 0
+    assert len(_parts(result, ToolReturnPart)) + waiting == len(_parts(result, ToolCallPart))
     assert result.output
 
 
