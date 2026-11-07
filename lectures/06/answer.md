@@ -1,4 +1,4 @@
-# Lecture 05 : réponses
+# Lecture 06 : réponses
 
 ## Exercice
 

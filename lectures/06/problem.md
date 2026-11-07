@@ -1,4 +1,4 @@
-# Lecture 05 : exercices et devoir — utiliser des outils via un serveur MCP
+# Lecture 06 : exercices et devoir — utiliser des outils via un serveur MCP
 
 ## Objectifs de la séance
 
@@ -8,21 +8,21 @@
 
 ## Préparation
 
-Si vous avez terminé le travail des séances précédentes, créez la branche `lec05` depuis `main`.
+Si vous avez terminé le travail des séances précédentes, créez la branche `lec06` depuis `main`.
 Cette séance ajoute des dépendances : exécutez une fois `uv sync --frozen`.
 
 ```bash
-git switch main && git switch -c lec05
+git switch main && git switch -c lec06
 uv sync --frozen
 ```
 
-Sinon, créez une branche depuis le code initial de l’exercice dans le dépôt du cours (tag `lec05-start`).
+Sinon, créez une branche depuis le code initial de l’exercice dans le dépôt du cours (tag `lec06-start`).
 
 ```bash
 git remote -v                     # Si upstream manque, l’ajouter avec la ligne suivante
 git remote add upstream https://github.com/matsuolab/lecture-ai-engineering-2026.git
 git fetch upstream --tags
-git switch -c lec05 lec05-start
+git switch -c lec06 lec06-start
 uv sync --frozen
 ```
 
@@ -32,7 +32,7 @@ uv sync --frozen
 
 ```bash
 uv run python -m app.agent --list-tools          # Lecture 03 : fonctions enregistrées directement
-uv run python -m app.agent --mcp --list-tools    # Lecture 05 : outils reçus du serveur MCP
+uv run python -m app.agent --mcp --list-tools    # Lecture 06 : outils reçus du serveur MCP
 ```
 
 Les deux commandes fonctionnent sans clé API, car elles n’appellent pas de LLM.
@@ -52,7 +52,7 @@ En interne, `build_mcp_agent()` dans `app/agent.py` lit la configuration, démar
 
 ### 3. Exposer un outil
 
-À l’emplacement `TODO(Lecture 05 exercice)` de `app/mcp_server.py`, exposez aussi `get_lecture_summary` via MCP (une ligne, comme pour `search_glossary`).
+À l’emplacement `TODO(Lecture 06 exercice)` de `app/mcp_server.py`, exposez aussi `get_lecture_summary` via MCP (une ligne, comme pour `search_glossary`).
 
 ```bash
 uv run python -m app.agent --mcp --list-tools
@@ -93,7 +93,7 @@ uv run python -m app.agent --mcp --trace "Résume le début de https://modelcont
 
 ### 5. Remise
 
-Remplissez `lectures/05/answer.md` et ouvrez une PR de `lec05` vers `main` dans votre fork.
+Remplissez `lectures/06/answer.md` et ouvrez une PR de `lec06` vers `main` dans votre fork.
 
 ## Devoir (un seul niveau suffit)
 

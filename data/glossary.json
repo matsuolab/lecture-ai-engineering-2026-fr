@@ -1,6 +1,6 @@
 {
   "version": "2026-draft-1",
-  "note": "Glossaire provisoire d’AIE2026 pour Lecture 01 à Lecture 03 et Lecture 05. Le contenu sera remplacé après finalisation des diapositives.",
+  "note": "Glossaire provisoire d’AIE2026 pour Lecture 01 à Lecture 04 et Lecture 06. Le contenu sera remplacé après finalisation des diapositives.",
   "terms": [
     {
       "id": "ai-engineering",
@@ -395,7 +395,7 @@
       "aliases": ["MCP", "Model Context Protocol"],
       "lecture": 3,
       "category": "Agents",
-      "definition": "Protocole standard ouvert pour relier des applications d’IA à des outils et à des sources de données externes. Les outils exposés par un serveur MCP s’utilisent de manière commune depuis différents agents et éditeurs compatibles, appelés clients MCP. Dans Lecture 05, vous l’expérimenterez en transformant la recherche dans le glossaire en serveur MCP.",
+      "definition": "Protocole standard ouvert pour relier des applications d’IA à des outils et à des sources de données externes. Les outils exposés par un serveur MCP s’utilisent de manière commune depuis différents agents et éditeurs compatibles, appelés clients MCP. Dans Lecture 06, vous l’expérimenterez en transformant la recherche dans le glossaire en serveur MCP.",
       "related": ["tool", "ai-agent", "mcp-server", "mcp-client"]
     },
     {
@@ -465,7 +465,7 @@
       "id": "external-tool",
       "term": "Outil externe",
       "aliases": ["external tool", "service externe"],
-      "lecture": 5,
+      "lecture": 6,
       "category": "MCP",
       "definition": "Utilisation comme outil d’une fonctionnalité extérieure au programme de l’agent : récupération de pages Web, manipulation de fichiers, bases de données ou API tierces. Les fonctions outils de Lecture 03 s’exécutent dans le même processus ; les outils externes s’appellent entre processus ou entre machines. MCP fournit une convention commune pour cela.",
       "related": ["tool", "mcp", "mcp-server"]
@@ -474,7 +474,7 @@
       "id": "mcp-server",
       "term": "Serveur MCP",
       "aliases": ["MCP server"],
-      "lecture": 5,
+      "lecture": 6,
       "category": "MCP",
       "definition": "Programme qui expose des outils, ressources ou prompts via MCP. Il publie le nom, la description et le schéma des arguments des outils, puis exécute les appels du client et renvoie leurs résultats. Dans ce cours, la recherche dans le glossaire devient un serveur MCP (app/mcp_server.py). De nombreux serveurs prêts à l’emploi sont aussi publiés : fetch, filesystem, GitHub, etc.",
       "related": ["mcp", "mcp-client", "mcp-transport", "fetch-server"]
@@ -483,7 +483,7 @@
       "id": "mcp-client",
       "term": "Client MCP",
       "aliases": ["MCP client", "hôte MCP"],
-      "lecture": 5,
+      "lecture": 6,
       "category": "MCP",
       "definition": "Composant qui se connecte à un serveur MCP, transmet les outils exposés au modèle et les appelle à sa demande. Un programme d’agent (MCPToolset de Pydantic AI), un éditeur ou une application comme Copilot Chat, Claude Desktop ou Cursor peut servir de client. Pouvoir utiliser le même serveur depuis différents clients est un avantage de MCP.",
       "related": ["mcp", "mcp-server", "mcp-config"]
@@ -492,7 +492,7 @@
       "id": "mcp-transport",
       "term": "Transport (stdio, Streamable HTTP)",
       "aliases": ["stdio", "Streamable HTTP", "transport", "transport MCP"],
-      "lecture": 5,
+      "lecture": 6,
       "category": "MCP",
       "definition": "Canal de communication entre client et serveur MCP. Avec stdio, le client démarre le serveur comme sous-processus et échange des messages par les entrées/sorties standard : une solution simple sur une même machine. Avec Streamable HTTP, le serveur écoute à une URL et accepte les connexions d’autres processus ou machines, ce qui exige de réfléchir au périmètre d’accès et à l’authentification.",
       "related": ["mcp-server", "mcp-client"]
@@ -501,7 +501,7 @@
       "id": "mcp-config",
       "term": "Configuration mcpServers",
       "aliases": ["mcpServers", "fichier de configuration MCP", "mcp_servers.json", "mcp.json"],
-      "lecture": 5,
+      "lecture": 6,
       "category": "MCP",
       "definition": "Fichier qui liste les serveurs MCP à utiliser. Pour chaque serveur, il définit un nom et une commande de démarrage (stdio) ou une URL de connexion (HTTP). Claude Desktop, Cursor et Pydantic AI lisent le format mcpServers ; VS Code et Copilot Chat utilisent servers. Ce cours utilise app/mcp_servers.json. L’ajout d’outils par quelques lignes de configuration constitue l’expérience centrale de MCP.",
       "related": ["mcp-client", "tool-namespace"]
@@ -510,7 +510,7 @@
       "id": "tool-namespace",
       "term": "Espace de noms des outils",
       "aliases": ["préfixe des noms d’outils", "prefix", "collision de noms"],
-      "lecture": 5,
+      "lecture": 6,
       "category": "MCP",
       "definition": "Ajout d’un préfixe comme « nom_du_serveur_nom_de_l’outil » pour distinguer les outils de même nom sur plusieurs serveurs MCP. app/agent.py ajoute automatiquement le nom du serveur défini dans la configuration, par exemple glossary_search_glossary, comme load_mcp_toolsets de Pydantic AI. Plus d’outils signifie aussi plus de descriptions, avec un impact sur la précision du choix d’outil et le nombre de tokens.",
       "related": ["mcp-config", "tool-description", "rate-limit"]
@@ -519,10 +519,73 @@
       "id": "fetch-server",
       "term": "Serveur fetch",
       "aliases": ["mcp-server-fetch", "fetch", "outil de récupération Web"],
-      "lecture": 5,
+      "lecture": 6,
       "category": "MCP",
       "definition": "Serveur MCP prêt à l’emploi qui récupère une page à l’URL indiquée et renvoie son contenu en Markdown. Écrit en Python, il se lance avec uvx mcp-server-fetch. Il illustre l’ajout d’un outil externe par simple configuration. Comme il accède réellement aux URL choisies par le modèle, l’utilisateur doit comprendre quelles données sont envoyées et vers quelle destination.",
       "related": ["mcp-server", "external-tool", "guardrail"]
+    },
+    {
+      "id": "evaluation-dataset",
+      "term": "Jeu d’évaluation",
+      "aliases": ["jeu de données d’évaluation", "eval set", "jeu de test"],
+      "lecture": 4,
+      "category": "Évaluation",
+      "definition": "Ensemble d’entrées accompagnées des sorties attendues ou des conditions de réussite, préparé pour l’évaluation. Il inclut volontairement des cas ordinaires et des entrées fragiles (cas limites) pour repérer les échecs. Dans Lecture 04, les participants annotent 10 cas préparés par l’enseignant.",
+      "related": ["edge-case", "rubric", "llm-as-a-judge"]
+    },
+    {
+      "id": "edge-case",
+      "term": "Cas limite",
+      "aliases": ["edge case", "cas frontière"],
+      "lecture": 4,
+      "category": "Évaluation",
+      "definition": "Entrée située à une limite ou présentée sous une forme inattendue : entrée vide ou extrêmement longue, variante orthographique, question hors sujet ou demande visant à remplacer les instructions. Ces cas sont inclus volontairement dans le jeu d’évaluation pour observer le comportement de l’évaluateur et de l’agent.",
+      "related": ["evaluation-dataset"]
+    },
+    {
+      "id": "rubric",
+      "term": "Grille d’évaluation",
+      "aliases": ["rubric", "critères d’évaluation", "critères de notation"],
+      "lecture": 4,
+      "category": "Évaluation",
+      "definition": "Ensemble de critères rédigés séparément pour décider de la réussite ou de l’échec. Les humains et le LLM évaluent avec la même grille. Si un point n’y est pas défini, ni les humains ni le LLM ne disposent d’une règle pour trancher : les désaccords conduisent donc à décider d’une règle et à l’ajouter à la grille. Dans ce cours, il s’agit de data/eval/rubric.md.",
+      "related": ["evaluation-dataset", "llm-as-a-judge", "needs-review"]
+    },
+    {
+      "id": "llm-as-a-judge",
+      "term": "LLM-as-a-Judge",
+      "aliases": ["évaluation par LLM", "LLM judge", "évaluation automatique"],
+      "lecture": 4,
+      "category": "Évaluation",
+      "definition": "Méthode qui fournit une grille d’évaluation à un LLM pour juger les sorties d’un autre modèle. Elle permet d’évaluer de nombreuses sorties rapidement et à faible coût, mais les biais de l’évaluateur influencent les résultats : préférence pour les réponses longues, sensibilité à l’ordre, etc. Vérifiez son accord avec les évaluations humaines avant de l’utiliser.",
+      "related": ["rubric", "agreement-rate", "position-bias", "structured-output"]
+    },
+    {
+      "id": "agreement-rate",
+      "term": "Taux d’accord",
+      "aliases": ["agreement rate", "accord avec les humains", "inter-rater agreement"],
+      "lecture": 4,
+      "category": "Évaluation",
+      "definition": "Proportion de cas où deux évaluations (humain et LLM, ou deux humains) donnent le même résultat. Elle permet d’apprécier la fiabilité de l’évaluateur. Les critères subjectifs divisent aussi les humains : le plafond du taux d’accord n’est donc pas de 100 %.",
+      "related": ["llm-as-a-judge", "rubric"]
+    },
+    {
+      "id": "needs-review",
+      "term": "À vérifier",
+      "aliases": ["unsure", "vérification humaine", "à examiner"],
+      "lecture": 4,
+      "category": "Évaluation",
+      "definition": "Orientation vers une vérification humaine des points impossibles à trancher automatiquement, pour lesquels le LLM répond unsure. Ils sont exclus du calcul du taux d’accord. Un point à vérifier signale une règle absente de la grille : il faut décider d’une règle et l’y ajouter.",
+      "related": ["rubric", "llm-as-a-judge"]
+    },
+    {
+      "id": "position-bias",
+      "term": "Biais de position",
+      "aliases": ["position bias", "biais d’ordre"],
+      "lecture": 4,
+      "category": "Évaluation",
+      "definition": "Tendance d’un évaluateur à privilégier l’ordre de présentation plutôt que le contenu lorsqu’il compare deux réponses. On la vérifie en inversant l’ordre pour voir si le résultat reste le même. C’est un biais courant, comme le biais de verbosité qui favorise les réponses longues.",
+      "related": ["llm-as-a-judge"]
     }
   ]
 }
