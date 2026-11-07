@@ -1,4 +1,4 @@
-"""Lecture 05 : tests de raccordement du serveur et du client MCP (sans LLM ni clé API).
+"""Lecture 06 : tests de raccordement du serveur et du client MCP (sans LLM ni clé API).
 
 Démarrer réellement le serveur glossary d’app/mcp_servers.json (stdio), puis vérifier avec TestModel
 que les outils sont exposés et appelés via MCP, et que leurs résultats sont renvoyés.

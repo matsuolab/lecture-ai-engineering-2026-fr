@@ -1,4 +1,4 @@
-"""Lecture 05 : exposer le glossaire et les résumés des séances avec un serveur MCP.
+"""Lecture 06 : exposer le glossaire et les résumés des séances avec un serveur MCP.
 
 Utilisation :
     uv run python -m app.agent --mcp --list-tools   # Lister les outils exposés (sans clé API)
@@ -28,7 +28,7 @@ server = MCPServer(
 # Exposer les mêmes fonctions que dans Lecture 03 comme outils MCP. Docstrings et annotations de types forment les descriptions
 server.tool()(tools.search_glossary)
 
-# TODO(Lecture 05 exercice) : exposer aussi tools.get_lecture_summary (même syntaxe que la ligne ci-dessus)
+# TODO(Lecture 06 exercice) : exposer aussi tools.get_lecture_summary (même syntaxe que la ligne ci-dessus)
 # Si vous avez créé make_quiz dans Lecture 03, vous pouvez aussi l’exposer
 
 
