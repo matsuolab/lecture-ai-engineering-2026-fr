@@ -32,6 +32,32 @@ uv run python -m app.ask "Qu’est-ce que LoRA ?"
 
 Consultez [les instructions détaillées : lectures/01/problem.md](lectures/01/problem.md).
 
+<a id="lecture-05-rag"></a>
+
+## Lecture 05 : rechercher dans les documents de cours
+
+Les consignes d’exercice et de devoir sont dans [lectures/05/problem.md](lectures/05/problem.md), et le modèle de réponses dans [lectures/05/answer.md](lectures/05/answer.md).
+
+**État de publication** : ces documents français sont prêts. Les documents de cours traduits, leur index de recherche et l’activation du code de Lecture 05 sur `main` restent à publier. Toutes les commandes de cette section et de l’exercice s’appliquent après cette publication.
+
+La base prévue à l’emplacement `data/rag_data/index.sqlite3` contiendra les embeddings des 214 pages des cours principaux de Lecture 01 à Lecture 03. Après publication des données et du code, définissez `GEMINI_API_KEY` et installez les dépendances à la racine du dépôt pour essayer la recherche et les réponses. L’embedding des questions et la génération des réponses utilisent l’API.
+
+```bash
+uv sync --frozen
+uv run python -m app.retrieval "LoRA QLoRA différence"
+uv run python -m app.agent --trace "Quelle différence entre LoRA et QLoRA ?"
+uv run python -m app.agent --graph --trace "Quelle différence entre LoRA et QLoRA ?"
+```
+
+Si vous modifiez les textes ou la configuration des embeddings, créez une base expérimentale. Dans le terminal où `AIE_RAG_DB` est défini, la création et la recherche utilisent toutes deux ce chemin.
+
+```bash
+export AIE_RAG_DB="$PWD/.cache/rag/custom.sqlite3"
+uv run python -m scripts.build_rag_index
+```
+
+Pour recréer cette base expérimentale, ajoutez `--rebuild` à la commande de création. Pour revenir à la base fournie, exécutez `unset AIE_RAG_DB`. Les modes Tree (`--tree`) et contexte complet (`--full-context`) n’ont pas besoin de base de recherche.
+
 ## Structure
 
 ```
@@ -56,7 +82,8 @@ lectures/NN/
   problem.md     Exercices et devoirs de la séance
   answer.md      Fichier à remplir et à rendre
 notebooks/       Lecture 02 : notebook LoRA à exécuter dans Google Colab (lora_format_tuning.ipynb)
-scripts/         Scripts auxiliaires
+scripts/
+  make_sft_dataset.py Lecture 02 : préparer les données d’entraînement
 tests/           Tests (sans clé API)
 pyproject.toml / uv.lock  Dépendances et versions verrouillées
 ```

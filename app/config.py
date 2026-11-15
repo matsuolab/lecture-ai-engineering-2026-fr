@@ -4,11 +4,29 @@ Lire la clé API et le nom du modèle dans les variables d’environnement, sans
 """
 
 import os
+from pathlib import Path
 
 # Modèle par défaut. Définir AIE_MODEL pour en choisir un autre.
 #   Exemple : export AIE_MODEL=gemini-3.5-flash
 DEFAULT_MODEL = "gemini-3.5-flash-lite"
 MODEL = os.getenv("AIE_MODEL", DEFAULT_MODEL)
+
+
+# Lecture 05 : une page par fragment de recherche. Créer l’index avec scripts/build_rag_index.py.
+ROOT = Path(__file__).resolve().parent.parent
+RAG_SOURCE = ROOT / "data/rag_data/lectures.json"
+RAG_TREE = ROOT / "data/rag_data/tree.json"
+RAG_GRAPH = ROOT / "data/rag_data/graph.json"
+RAG_DB = Path(os.getenv("AIE_RAG_DB", str(ROOT / "data/rag_data/index.sqlite3")))
+RAG_DOCUMENT_IDS = ("lec01-main", "lec02-main", "lec03-main")
+RAG_TOP_K = 5
+GRAPH_START_K = 3
+GRAPH_HOPS = 2
+GRAPH_MAX_RESULTS = 10
+EMBEDDING_MODEL = "gemini-embedding-001"
+EMBEDDING_DIMENSIONS = 768
+# Réserver une marge sous la limite de 2 048 tokens pour la tâche et autres éléments. En cas de dépassement, arrêter sans tronquer.
+EMBEDDING_MAX_TOKENS = 2000
 
 
 def api_error_message(status: int, detail: str = "") -> str:

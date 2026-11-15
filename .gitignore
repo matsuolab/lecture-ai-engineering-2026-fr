@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Ne pas commiter de secrets (transmettre les clés API via les secrets Codespaces)
+.env
+.env.*
+
+# Ne pas partager le journal d’apprentissage personnel (devoir de Lecture 03)
+learning_log/
+
+# macOS
+.DS_Store
+
+# Lecture 05 : base de recherche régénérée à partir des documents
+.cache/rag/
