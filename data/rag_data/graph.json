@@ -2989,6 +2989,352 @@
         "graphe de connaissances",
         "Graphe de connaissances"
       ]
+    },
+    {
+      "id": "lec01-exercise",
+      "kind": "document",
+      "title": "Cours 1 : exercices et devoirs — Configurer l’environnement de développement et utiliser un LLM"
+    },
+    {
+      "id": "lec01-exercise-p001",
+      "kind": "page",
+      "title": "Configurer l’environnement de développement et utiliser un LLM",
+      "page": 1
+    },
+    {
+      "id": "lec01-exercise-p002",
+      "kind": "page",
+      "title": "Objectifs de cette séance",
+      "page": 2
+    },
+    {
+      "id": "lec01-exercise-p003",
+      "kind": "page",
+      "title": "À préparer : 2 comptes personnels",
+      "page": 3
+    },
+    {
+      "id": "lec01-exercise-p004",
+      "kind": "page",
+      "title": "Déroulé de l'exercice (45 min)",
+      "page": 4
+    },
+    {
+      "id": "lec01-exercise-p005",
+      "kind": "page",
+      "title": "Étape 1 : Forker le dépôt du cours",
+      "page": 5
+    },
+    {
+      "id": "lec01-exercise-p006",
+      "kind": "page",
+      "title": "Étape 2 : Créer une clé Gemini API",
+      "page": 6
+    },
+    {
+      "id": "lec01-exercise-p007",
+      "kind": "page",
+      "title": "Étape 3 : Enregistrer comme Codespaces secret",
+      "page": 7
+    },
+    {
+      "id": "lec01-exercise-p008",
+      "kind": "page",
+      "title": "Étape 4 : Lancer Codespaces",
+      "page": 8
+    },
+    {
+      "id": "lec01-exercise-p009",
+      "kind": "page",
+      "title": "Étape 5 : Interroger le LLM",
+      "page": 9
+    },
+    {
+      "id": "lec01-exercise-p010",
+      "kind": "page",
+      "title": "Étape 5 : Points à observer",
+      "page": 10
+    },
+    {
+      "id": "lec01-exercise-p011",
+      "kind": "page",
+      "title": "Étape 6 : Afficher le nombre de tokens avec Copilot",
+      "page": 11
+    },
+    {
+      "id": "lec01-exercise-p012",
+      "kind": "page",
+      "title": "Étape 7 : Créer une branche et ouvrir une PR",
+      "page": 12
+    },
+    {
+      "id": "lec01-exercise-p013",
+      "kind": "page",
+      "title": "Étape 8 : Arrêter Codespaces",
+      "page": 13
+    },
+    {
+      "id": "lec01-exercise-p014",
+      "kind": "page",
+      "title": "Devoir : un seul niveau suffit",
+      "page": 14
+    },
+    {
+      "id": "lec01-exercise-p015",
+      "kind": "page",
+      "title": "Rendu du devoir et règles",
+      "page": 15
+    },
+    {
+      "id": "lec01-exercise-p016",
+      "kind": "page",
+      "title": "Changer de modèle : précautions",
+      "page": 16
+    },
+    {
+      "id": "lec01-exercise-p017",
+      "kind": "page",
+      "title": "Aperçu du cours 2 : Fondamentaux des modèles de fondation",
+      "page": 17
+    },
+    {
+      "id": "lec01-exercise-p018",
+      "kind": "page",
+      "title": "Récapitulatif : acquis du jour et prochain cours",
+      "page": 18
+    },
+    {
+      "id": "lec01-exercise-p019",
+      "kind": "page",
+      "title": "Annexe",
+      "page": 19
+    },
+    {
+      "id": "lec01-exercise-p020",
+      "kind": "page",
+      "title": "Pourquoi un fichier de contexte ?",
+      "page": 20
+    },
+    {
+      "id": "lec01-exercise-p021",
+      "kind": "page",
+      "title": "Principaux fichiers et mode de lecture",
+      "page": 21
+    },
+    {
+      "id": "lec01-exercise-p022",
+      "kind": "page",
+      "title": "Configuration minimale : à inclure, à exclure",
+      "page": 22
+    },
+    {
+      "id": "lec01-exercise-p023",
+      "kind": "page",
+      "title": "Consignes toujours lues et Skill lus selon la tâche",
+      "page": 23
+    },
+    {
+      "id": "lec01-exercise-p024",
+      "kind": "page",
+      "title": "Données sur l'efficacité : écrire n'améliore pas toujours",
+      "page": 24
+    },
+    {
+      "id": "lec01-exercise-p025",
+      "kind": "page",
+      "title": "Écrire ne suffit pas",
+      "page": 25
+    },
+    {
+      "id": "lec02-exercise",
+      "kind": "document",
+      "title": "Cours 2 : exercices et devoirs — Apprendre un format de réponse avec LoRA et comparer les résultats avant et après l’entraînement"
+    },
+    {
+      "id": "lec02-exercise-p001",
+      "kind": "page",
+      "title": "Apprendre un format de réponse avec LoRA et comparer les résultats avant et après l’entraînement",
+      "page": 1
+    },
+    {
+      "id": "lec02-exercise-p002",
+      "kind": "page",
+      "title": "Corrigé du devoir du cours 1",
+      "page": 2
+    },
+    {
+      "id": "lec02-exercise-p003",
+      "kind": "page",
+      "title": "Corrigé Base : même question, réponses différentes",
+      "page": 3
+    },
+    {
+      "id": "lec02-exercise-p004",
+      "kind": "page",
+      "title": "Corrigé Implémentation : conserver l'historique de conversation",
+      "page": 4
+    },
+    {
+      "id": "lec02-exercise-p005",
+      "kind": "page",
+      "title": "Corrigé Implémentation : app/ask.py avant modification",
+      "page": 5
+    },
+    {
+      "id": "lec02-exercise-p006",
+      "kind": "page",
+      "title": "Corrigé Implémentation : chat() après modification (exemple de solution)",
+      "page": 6
+    },
+    {
+      "id": "lec02-exercise-p007",
+      "kind": "page",
+      "title": "Corrigé Implémentation : ce qui est envoyé à chaque fois",
+      "page": 7
+    },
+    {
+      "id": "lec02-exercise-p008",
+      "kind": "page",
+      "title": "Corrigé Avancé : temps de réponse, tokens, limites de débit",
+      "page": 8
+    },
+    {
+      "id": "lec02-exercise-p009",
+      "kind": "page",
+      "title": "Pièges fréquents et précautions",
+      "page": 9
+    },
+    {
+      "id": "lec02-exercise-p010",
+      "kind": "page",
+      "title": "Lien avec l'exercice du jour",
+      "page": 10
+    },
+    {
+      "id": "lec02-exercise-p011",
+      "kind": "page",
+      "title": "Objectifs de cette séance",
+      "page": 11
+    },
+    {
+      "id": "lec02-exercise-p012",
+      "kind": "page",
+      "title": "Ce que nous vérifions",
+      "page": 12
+    },
+    {
+      "id": "lec02-exercise-p013",
+      "kind": "page",
+      "title": "Sujet : FAQ de cours fictive et sortie attendue",
+      "page": 13
+    },
+    {
+      "id": "lec02-exercise-p014",
+      "kind": "page",
+      "title": "Découpage des données : pas de phrase vue à l'entraînement dans l'évaluation",
+      "page": 14
+    },
+    {
+      "id": "lec02-exercise-p015",
+      "kind": "page",
+      "title": "Deux axes d'évaluation : format et contenu séparés",
+      "page": 15
+    },
+    {
+      "id": "lec02-exercise-p016",
+      "kind": "page",
+      "title": "Préparation (facultative, 5 min) et outils",
+      "page": 16
+    },
+    {
+      "id": "lec02-exercise-p017",
+      "kind": "page",
+      "title": "Déroulé des 45 min d'exercice (d'abord le corrigé du devoir du cours 1)",
+      "page": 17
+    },
+    {
+      "id": "lec02-exercise-p018",
+      "kind": "page",
+      "title": "Étapes 1–2 Faire votre copie et choisir le GPU T4",
+      "page": 18
+    },
+    {
+      "id": "lec02-exercise-p019",
+      "kind": "page",
+      "title": "Étape 3 Sections 0–3 : évaluer avant entraînement (env. 5 min)",
+      "page": 19
+    },
+    {
+      "id": "lec02-exercise-p020",
+      "kind": "page",
+      "title": "Étape 4 Section 4 : entraîner avec LoRA (4–5 min)",
+      "page": 20
+    },
+    {
+      "id": "lec02-exercise-p021",
+      "kind": "page",
+      "title": "LoRA vs QLoRA",
+      "page": 21
+    },
+    {
+      "id": "lec02-exercise-p022",
+      "kind": "page",
+      "title": "Étape 5 Section 5 : évaluer après entraînement et comparer",
+      "page": 22
+    },
+    {
+      "id": "lec02-exercise-p023",
+      "kind": "page",
+      "title": "Étape 5 Section 6 : questions de connaissances",
+      "page": 23
+    },
+    {
+      "id": "lec02-exercise-p024",
+      "kind": "page",
+      "title": "Étapes 6–7 Créer et rendre result.json, supprimer l'environnement d'exécution",
+      "page": 24
+    },
+    {
+      "id": "lec02-exercise-p025",
+      "kind": "page",
+      "title": "Si l'entraînement échoue (4b du notebook)",
+      "page": 25
+    },
+    {
+      "id": "lec02-exercise-p026",
+      "kind": "page",
+      "title": "Avancé : chargement quantifié en 4 bits (section 8, facultatif, env. 2 min)",
+      "page": 26
+    },
+    {
+      "id": "lec02-exercise-p027",
+      "kind": "page",
+      "title": "Devoir : un seul niveau suffit",
+      "page": 27
+    },
+    {
+      "id": "lec02-exercise-p028",
+      "kind": "page",
+      "title": "Démarche et précautions pour le devoir",
+      "page": 28
+    },
+    {
+      "id": "lec02-exercise-p029",
+      "kind": "page",
+      "title": "Rendu du devoir",
+      "page": 29
+    },
+    {
+      "id": "lec02-exercise-p030",
+      "kind": "page",
+      "title": "Aperçu du cours 3",
+      "page": 30
+    },
+    {
+      "id": "lec02-exercise-p031",
+      "kind": "page",
+      "title": "Récapitulatif : acquis du jour et suite",
+      "page": 31
     }
   ],
   "edges": [
@@ -11591,6 +11937,1431 @@
       "source": "term:tool-namespace",
       "target": "term:tool-description",
       "relation": "related_term"
+    },
+    {
+      "source": "aie2026-materials",
+      "target": "lec01-exercise",
+      "relation": "contains"
+    },
+    {
+      "source": "aie2026-materials",
+      "target": "lec02-exercise",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p001",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p002",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p003",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p004",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p005",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p006",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p007",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p008",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p009",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p010",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p011",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p012",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p013",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p014",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p015",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p016",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p017",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p018",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p019",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p020",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p021",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p022",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p023",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p024",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise",
+      "target": "lec01-exercise-p025",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p001",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p002",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p003",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p004",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p005",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p006",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p007",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p008",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p009",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p010",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p011",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p012",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p013",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p014",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p015",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p016",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p017",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p018",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p019",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p020",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p021",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p022",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p023",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p024",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p025",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p026",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p027",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p028",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p029",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p030",
+      "relation": "contains"
+    },
+    {
+      "source": "lec02-exercise",
+      "target": "lec02-exercise-p031",
+      "relation": "contains"
+    },
+    {
+      "source": "lec01-exercise-p001",
+      "target": "term:ai-engineering",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p001",
+      "target": "term:api",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p001",
+      "target": "term:codespaces",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p001",
+      "target": "term:fork",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p001",
+      "target": "term:github-copilot",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p001",
+      "target": "term:llm",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p001",
+      "target": "term:pull-request",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p002",
+      "target": "term:api",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p002",
+      "target": "term:branch",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p002",
+      "target": "term:codespaces",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p002",
+      "target": "term:fork",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p002",
+      "target": "term:github-copilot",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p002",
+      "target": "term:llm",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p002",
+      "target": "term:pull-request",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p002",
+      "target": "term:tool",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p003",
+      "target": "term:ai-agent",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p003",
+      "target": "term:api",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p003",
+      "target": "term:api-key",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p003",
+      "target": "term:codespaces",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p003",
+      "target": "term:fork",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p003",
+      "target": "term:github-copilot",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p003",
+      "target": "term:llm",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p003",
+      "target": "term:pull-request",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p004",
+      "target": "term:api",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p004",
+      "target": "term:api-key",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p004",
+      "target": "term:branch",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p004",
+      "target": "term:codespaces",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p004",
+      "target": "term:codespaces-secret",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p004",
+      "target": "term:fork",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p004",
+      "target": "term:github-copilot",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p004",
+      "target": "term:llm",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p004",
+      "target": "term:pull-request",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p004",
+      "target": "term:token",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p005",
+      "target": "term:codespaces",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p005",
+      "target": "term:fork",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p005",
+      "target": "term:pull-request",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p006",
+      "target": "term:api",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p006",
+      "target": "term:api-key",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p007",
+      "target": "term:api",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p007",
+      "target": "term:api-key",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p007",
+      "target": "term:codespaces",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p007",
+      "target": "term:codespaces-secret",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p007",
+      "target": "term:fork",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p008",
+      "target": "term:codespaces",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p008",
+      "target": "term:fork",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p009",
+      "target": "term:homework-levels",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p009",
+      "target": "term:llm",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p009",
+      "target": "term:lora",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p011",
+      "target": "term:ai-agent",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p011",
+      "target": "term:code-completion",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p011",
+      "target": "term:coding-agent",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p011",
+      "target": "term:github-copilot",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p011",
+      "target": "term:token",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p012",
+      "target": "term:answer-md",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p012",
+      "target": "term:branch",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p012",
+      "target": "term:fork",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p012",
+      "target": "term:pull-request",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p013",
+      "target": "term:codespaces",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p014",
+      "target": "term:answer-md",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p014",
+      "target": "term:environment-variable",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p014",
+      "target": "term:pull-request",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p014",
+      "target": "term:rate-limit",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p014",
+      "target": "term:temperature",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p014",
+      "target": "term:token",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p015",
+      "target": "term:answer-md",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p015",
+      "target": "term:api",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p015",
+      "target": "term:api-key",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p015",
+      "target": "term:branch",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p015",
+      "target": "term:fork",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p015",
+      "target": "term:pull-request",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p015",
+      "target": "term:tool",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p016",
+      "target": "term:api",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p016",
+      "target": "term:default-model",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p016",
+      "target": "term:environment-variable",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p016",
+      "target": "term:lora",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p016",
+      "target": "term:temperature",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p017",
+      "target": "term:lora",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p017",
+      "target": "term:qlora",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p018",
+      "target": "term:api",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p018",
+      "target": "term:codespaces",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p018",
+      "target": "term:fork",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p018",
+      "target": "term:github-copilot",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p018",
+      "target": "term:lora",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p018",
+      "target": "term:pull-request",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p018",
+      "target": "term:token",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p019",
+      "target": "term:ai-agent",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p020",
+      "target": "term:ai-agent",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p020",
+      "target": "term:tool",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p021",
+      "target": "term:ai-agent",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p021",
+      "target": "term:github-copilot",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p021",
+      "target": "term:system-prompt",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p021",
+      "target": "term:tool",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p022",
+      "target": "term:api",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p022",
+      "target": "term:api-key",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p022",
+      "target": "term:branch",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p022",
+      "target": "term:pull-request",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p023",
+      "target": "term:ai-agent",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p023",
+      "target": "term:api",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p023",
+      "target": "term:github-copilot",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p024",
+      "target": "term:ai-agent",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p024",
+      "target": "term:coding-agent",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p024",
+      "target": "term:llm",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p024",
+      "target": "term:pull-request",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p024",
+      "target": "term:token",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p025",
+      "target": "term:ai-agent",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p025",
+      "target": "term:pull-request",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p001",
+      "target": "term:ai-engineering",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p001",
+      "target": "term:lora",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p002",
+      "target": "term:llm",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p002",
+      "target": "term:rate-limit",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p002",
+      "target": "term:temperature",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p002",
+      "target": "term:token",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p003",
+      "target": "term:api",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p003",
+      "target": "term:default-model",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p003",
+      "target": "term:llm",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p003",
+      "target": "term:temperature",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p005",
+      "target": "term:github-copilot",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p005",
+      "target": "term:token",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p007",
+      "target": "term:lora",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p007",
+      "target": "term:token",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p008",
+      "target": "term:default-model",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p008",
+      "target": "term:rate-limit",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p008",
+      "target": "term:token",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p009",
+      "target": "term:answer-md",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p009",
+      "target": "term:api",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p009",
+      "target": "term:api-key",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p009",
+      "target": "term:codespaces",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p009",
+      "target": "term:fork",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p009",
+      "target": "term:pull-request",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p009",
+      "target": "term:rate-limit",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p010",
+      "target": "term:api",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p010",
+      "target": "term:lora",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p011",
+      "target": "term:fine-tuning",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p011",
+      "target": "term:lora",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p012",
+      "target": "term:lora",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p012",
+      "target": "term:prompt",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p012",
+      "target": "term:quantization",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p014",
+      "target": "term:epoch",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p017",
+      "target": "term:answer-md",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p017",
+      "target": "term:lora",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p017",
+      "target": "term:pull-request",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p017",
+      "target": "term:qlora",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p019",
+      "target": "term:huggingface-hub",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p019",
+      "target": "term:memory",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p019",
+      "target": "term:quantization",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p020",
+      "target": "term:epoch",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p020",
+      "target": "term:learning-rate",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p020",
+      "target": "term:lora",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p020",
+      "target": "term:qlora",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p021",
+      "target": "term:lora",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p021",
+      "target": "term:memory",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p021",
+      "target": "term:peft",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p021",
+      "target": "term:qlora",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p021",
+      "target": "term:quantization",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p023",
+      "target": "term:fine-tuning",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p024",
+      "target": "term:answer-md",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p024",
+      "target": "term:branch",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p024",
+      "target": "term:fork",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p024",
+      "target": "term:pull-request",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p025",
+      "target": "term:answer-md",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p026",
+      "target": "term:memory",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p026",
+      "target": "term:qlora",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p026",
+      "target": "term:quantization",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p027",
+      "target": "term:answer-md",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p027",
+      "target": "term:learning-rate",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p028",
+      "target": "term:codespaces",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p029",
+      "target": "term:answer-md",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p029",
+      "target": "term:fine-tuning",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p029",
+      "target": "term:tool",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p030",
+      "target": "term:ai-agent",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p031",
+      "target": "term:ai-agent",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p031",
+      "target": "term:fine-tuning",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec02-exercise-p031",
+      "target": "term:lora",
+      "relation": "mentions"
+    },
+    {
+      "source": "lec01-exercise-p001",
+      "target": "lec01-exercise-p002",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p002",
+      "target": "lec01-exercise-p003",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p003",
+      "target": "lec01-exercise-p004",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p004",
+      "target": "lec01-exercise-p005",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p005",
+      "target": "lec01-exercise-p006",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p006",
+      "target": "lec01-exercise-p007",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p007",
+      "target": "lec01-exercise-p008",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p008",
+      "target": "lec01-exercise-p009",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p009",
+      "target": "lec01-exercise-p010",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p010",
+      "target": "lec01-exercise-p011",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p011",
+      "target": "lec01-exercise-p012",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p012",
+      "target": "lec01-exercise-p013",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p013",
+      "target": "lec01-exercise-p014",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p014",
+      "target": "lec01-exercise-p015",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p015",
+      "target": "lec01-exercise-p016",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p016",
+      "target": "lec01-exercise-p017",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p017",
+      "target": "lec01-exercise-p018",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p018",
+      "target": "lec01-exercise-p019",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p019",
+      "target": "lec01-exercise-p020",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p020",
+      "target": "lec01-exercise-p021",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p021",
+      "target": "lec01-exercise-p022",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p022",
+      "target": "lec01-exercise-p023",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p023",
+      "target": "lec01-exercise-p024",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec01-exercise-p024",
+      "target": "lec01-exercise-p025",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p001",
+      "target": "lec02-exercise-p002",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p002",
+      "target": "lec02-exercise-p003",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p003",
+      "target": "lec02-exercise-p004",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p004",
+      "target": "lec02-exercise-p005",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p005",
+      "target": "lec02-exercise-p006",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p006",
+      "target": "lec02-exercise-p007",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p007",
+      "target": "lec02-exercise-p008",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p008",
+      "target": "lec02-exercise-p009",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p009",
+      "target": "lec02-exercise-p010",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p010",
+      "target": "lec02-exercise-p011",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p011",
+      "target": "lec02-exercise-p012",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p012",
+      "target": "lec02-exercise-p013",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p013",
+      "target": "lec02-exercise-p014",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p014",
+      "target": "lec02-exercise-p015",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p015",
+      "target": "lec02-exercise-p016",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p016",
+      "target": "lec02-exercise-p017",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p017",
+      "target": "lec02-exercise-p018",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p018",
+      "target": "lec02-exercise-p019",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p019",
+      "target": "lec02-exercise-p020",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p020",
+      "target": "lec02-exercise-p021",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p021",
+      "target": "lec02-exercise-p022",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p022",
+      "target": "lec02-exercise-p023",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p023",
+      "target": "lec02-exercise-p024",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p024",
+      "target": "lec02-exercise-p025",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p025",
+      "target": "lec02-exercise-p026",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p026",
+      "target": "lec02-exercise-p027",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p027",
+      "target": "lec02-exercise-p028",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p028",
+      "target": "lec02-exercise-p029",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p029",
+      "target": "lec02-exercise-p030",
+      "relation": "next_page"
+    },
+    {
+      "source": "lec02-exercise-p030",
+      "target": "lec02-exercise-p031",
+      "relation": "next_page"
     }
   ]
 }

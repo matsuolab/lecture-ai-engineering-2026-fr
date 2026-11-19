@@ -1,6 +1,6 @@
 # Lecture 05 : exercices et devoir — répondre en recherchant dans les documents de cours
 
-La base de recherche fournie couvre 214 pages des cours principaux de Lecture 01 à Lecture 03. Elle reprend les vecteurs de la source japonaise et renvoie le texte traduit. Le contexte complet contient actuellement 6 documents et 342 pages. La présentation d’accueil et les exercices de Lecture 01 et 02 restent à intégrer.
+La base de recherche fournie couvre 214 pages des cours principaux de Lecture 01 à Lecture 03. Elle reprend les vecteurs de la source japonaise et renvoie le texte traduit. Le contexte complet contient 8 documents et 398 pages, dont les exercices des cours 01 et 02.
 
 ## Objectifs de la séance
 
@@ -24,7 +24,7 @@ Nous reprenons la structure « modèle + boucle + outils » de Lecture 03 en cha
 | [app/agent.py](../../app/agent.py) | Instructions, enregistrement des outils et choix du mode d’exécution |
 | [app/config.py](../../app/config.py) | Documents concernés, nombre de résultats, étendue du parcours Graph et autres réglages |
 
-**Périmètre actuel** : la recherche vectorielle, Tree et Graph utilisent les 214 pages des cours principaux de Lecture 01 à Lecture 03. Le mode de contexte complet fournit les 6 documents et les 342 pages figurant dans le JSON de cette version. Cet exercice observe les différentes voies de récupération. Pour comparer équitablement les méthodes, commencez par leur donner le même ensemble de documents.
+**Périmètre actuel** : la recherche vectorielle, Tree et Graph utilisent les 214 pages des cours principaux de Lecture 01 à Lecture 03. Le mode de contexte complet fournit les 8 documents et les 398 pages figurant dans le JSON de cette version. Cet exercice observe les différentes voies de récupération. Pour comparer équitablement les méthodes, commencez par leur donner le même ensemble de documents.
 
 ## Préparation
 

@@ -1965,6 +1965,356 @@
       ]
     },
     {
+      "id": "lec01-exercise",
+      "kind": "document",
+      "title": "Cours 1 : exercices et devoirs — Configurer l’environnement de développement et utiliser un LLM",
+      "children": [
+        {
+          "id": "lec01-exercise-p001",
+          "kind": "page",
+          "title": "Configurer l’environnement de développement et utiliser un LLM",
+          "page": 1
+        },
+        {
+          "id": "lec01-exercise-p002",
+          "kind": "page",
+          "title": "Objectifs de cette séance",
+          "page": 2
+        },
+        {
+          "id": "lec01-exercise-p003",
+          "kind": "page",
+          "title": "À préparer : 2 comptes personnels",
+          "page": 3
+        },
+        {
+          "id": "lec01-exercise-p004",
+          "kind": "page",
+          "title": "Déroulé de l'exercice (45 min)",
+          "page": 4
+        },
+        {
+          "id": "lec01-exercise-p005",
+          "kind": "page",
+          "title": "Étape 1 : Forker le dépôt du cours",
+          "page": 5
+        },
+        {
+          "id": "lec01-exercise-p006",
+          "kind": "page",
+          "title": "Étape 2 : Créer une clé Gemini API",
+          "page": 6
+        },
+        {
+          "id": "lec01-exercise-p007",
+          "kind": "page",
+          "title": "Étape 3 : Enregistrer comme Codespaces secret",
+          "page": 7
+        },
+        {
+          "id": "lec01-exercise-p008",
+          "kind": "page",
+          "title": "Étape 4 : Lancer Codespaces",
+          "page": 8
+        },
+        {
+          "id": "lec01-exercise-p009",
+          "kind": "page",
+          "title": "Étape 5 : Interroger le LLM",
+          "page": 9
+        },
+        {
+          "id": "lec01-exercise-p010",
+          "kind": "page",
+          "title": "Étape 5 : Points à observer",
+          "page": 10
+        },
+        {
+          "id": "lec01-exercise-p011",
+          "kind": "page",
+          "title": "Étape 6 : Afficher le nombre de tokens avec Copilot",
+          "page": 11
+        },
+        {
+          "id": "lec01-exercise-p012",
+          "kind": "page",
+          "title": "Étape 7 : Créer une branche et ouvrir une PR",
+          "page": 12
+        },
+        {
+          "id": "lec01-exercise-p013",
+          "kind": "page",
+          "title": "Étape 8 : Arrêter Codespaces",
+          "page": 13
+        },
+        {
+          "id": "lec01-exercise-p014",
+          "kind": "page",
+          "title": "Devoir : un seul niveau suffit",
+          "page": 14
+        },
+        {
+          "id": "lec01-exercise-p015",
+          "kind": "page",
+          "title": "Rendu du devoir et règles",
+          "page": 15
+        },
+        {
+          "id": "lec01-exercise-p016",
+          "kind": "page",
+          "title": "Changer de modèle : précautions",
+          "page": 16
+        },
+        {
+          "id": "lec01-exercise-p017",
+          "kind": "page",
+          "title": "Aperçu du cours 2 : Fondamentaux des modèles de fondation",
+          "page": 17
+        },
+        {
+          "id": "lec01-exercise-p018",
+          "kind": "page",
+          "title": "Récapitulatif : acquis du jour et prochain cours",
+          "page": 18
+        },
+        {
+          "id": "lec01-exercise-p019",
+          "kind": "page",
+          "title": "Annexe",
+          "page": 19
+        },
+        {
+          "id": "lec01-exercise-p020",
+          "kind": "page",
+          "title": "Pourquoi un fichier de contexte ?",
+          "page": 20
+        },
+        {
+          "id": "lec01-exercise-p021",
+          "kind": "page",
+          "title": "Principaux fichiers et mode de lecture",
+          "page": 21
+        },
+        {
+          "id": "lec01-exercise-p022",
+          "kind": "page",
+          "title": "Configuration minimale : à inclure, à exclure",
+          "page": 22
+        },
+        {
+          "id": "lec01-exercise-p023",
+          "kind": "page",
+          "title": "Consignes toujours lues et Skill lus selon la tâche",
+          "page": 23
+        },
+        {
+          "id": "lec01-exercise-p024",
+          "kind": "page",
+          "title": "Données sur l'efficacité : écrire n'améliore pas toujours",
+          "page": 24
+        },
+        {
+          "id": "lec01-exercise-p025",
+          "kind": "page",
+          "title": "Écrire ne suffit pas",
+          "page": 25
+        }
+      ]
+    },
+    {
+      "id": "lec02-exercise",
+      "kind": "document",
+      "title": "Cours 2 : exercices et devoirs — Apprendre un format de réponse avec LoRA et comparer les résultats avant et après l’entraînement",
+      "children": [
+        {
+          "id": "lec02-exercise-p001",
+          "kind": "page",
+          "title": "Apprendre un format de réponse avec LoRA et comparer les résultats avant et après l’entraînement",
+          "page": 1
+        },
+        {
+          "id": "lec02-exercise-p002",
+          "kind": "page",
+          "title": "Corrigé du devoir du cours 1",
+          "page": 2
+        },
+        {
+          "id": "lec02-exercise-p003",
+          "kind": "page",
+          "title": "Corrigé Base : même question, réponses différentes",
+          "page": 3
+        },
+        {
+          "id": "lec02-exercise-p004",
+          "kind": "page",
+          "title": "Corrigé Implémentation : conserver l'historique de conversation",
+          "page": 4
+        },
+        {
+          "id": "lec02-exercise-p005",
+          "kind": "page",
+          "title": "Corrigé Implémentation : app/ask.py avant modification",
+          "page": 5
+        },
+        {
+          "id": "lec02-exercise-p006",
+          "kind": "page",
+          "title": "Corrigé Implémentation : chat() après modification (exemple de solution)",
+          "page": 6
+        },
+        {
+          "id": "lec02-exercise-p007",
+          "kind": "page",
+          "title": "Corrigé Implémentation : ce qui est envoyé à chaque fois",
+          "page": 7
+        },
+        {
+          "id": "lec02-exercise-p008",
+          "kind": "page",
+          "title": "Corrigé Avancé : temps de réponse, tokens, limites de débit",
+          "page": 8
+        },
+        {
+          "id": "lec02-exercise-p009",
+          "kind": "page",
+          "title": "Pièges fréquents et précautions",
+          "page": 9
+        },
+        {
+          "id": "lec02-exercise-p010",
+          "kind": "page",
+          "title": "Lien avec l'exercice du jour",
+          "page": 10
+        },
+        {
+          "id": "lec02-exercise-p011",
+          "kind": "page",
+          "title": "Objectifs de cette séance",
+          "page": 11
+        },
+        {
+          "id": "lec02-exercise-p012",
+          "kind": "page",
+          "title": "Ce que nous vérifions",
+          "page": 12
+        },
+        {
+          "id": "lec02-exercise-p013",
+          "kind": "page",
+          "title": "Sujet : FAQ de cours fictive et sortie attendue",
+          "page": 13
+        },
+        {
+          "id": "lec02-exercise-p014",
+          "kind": "page",
+          "title": "Découpage des données : pas de phrase vue à l'entraînement dans l'évaluation",
+          "page": 14
+        },
+        {
+          "id": "lec02-exercise-p015",
+          "kind": "page",
+          "title": "Deux axes d'évaluation : format et contenu séparés",
+          "page": 15
+        },
+        {
+          "id": "lec02-exercise-p016",
+          "kind": "page",
+          "title": "Préparation (facultative, 5 min) et outils",
+          "page": 16
+        },
+        {
+          "id": "lec02-exercise-p017",
+          "kind": "page",
+          "title": "Déroulé des 45 min d'exercice (d'abord le corrigé du devoir du cours 1)",
+          "page": 17
+        },
+        {
+          "id": "lec02-exercise-p018",
+          "kind": "page",
+          "title": "Étapes 1–2 Faire votre copie et choisir le GPU T4",
+          "page": 18
+        },
+        {
+          "id": "lec02-exercise-p019",
+          "kind": "page",
+          "title": "Étape 3 Sections 0–3 : évaluer avant entraînement (env. 5 min)",
+          "page": 19
+        },
+        {
+          "id": "lec02-exercise-p020",
+          "kind": "page",
+          "title": "Étape 4 Section 4 : entraîner avec LoRA (4–5 min)",
+          "page": 20
+        },
+        {
+          "id": "lec02-exercise-p021",
+          "kind": "page",
+          "title": "LoRA vs QLoRA",
+          "page": 21
+        },
+        {
+          "id": "lec02-exercise-p022",
+          "kind": "page",
+          "title": "Étape 5 Section 5 : évaluer après entraînement et comparer",
+          "page": 22
+        },
+        {
+          "id": "lec02-exercise-p023",
+          "kind": "page",
+          "title": "Étape 5 Section 6 : questions de connaissances",
+          "page": 23
+        },
+        {
+          "id": "lec02-exercise-p024",
+          "kind": "page",
+          "title": "Étapes 6–7 Créer et rendre result.json, supprimer l'environnement d'exécution",
+          "page": 24
+        },
+        {
+          "id": "lec02-exercise-p025",
+          "kind": "page",
+          "title": "Si l'entraînement échoue (4b du notebook)",
+          "page": 25
+        },
+        {
+          "id": "lec02-exercise-p026",
+          "kind": "page",
+          "title": "Avancé : chargement quantifié en 4 bits (section 8, facultatif, env. 2 min)",
+          "page": 26
+        },
+        {
+          "id": "lec02-exercise-p027",
+          "kind": "page",
+          "title": "Devoir : un seul niveau suffit",
+          "page": 27
+        },
+        {
+          "id": "lec02-exercise-p028",
+          "kind": "page",
+          "title": "Démarche et précautions pour le devoir",
+          "page": 28
+        },
+        {
+          "id": "lec02-exercise-p029",
+          "kind": "page",
+          "title": "Rendu du devoir",
+          "page": 29
+        },
+        {
+          "id": "lec02-exercise-p030",
+          "kind": "page",
+          "title": "Aperçu du cours 3",
+          "page": 30
+        },
+        {
+          "id": "lec02-exercise-p031",
+          "kind": "page",
+          "title": "Récapitulatif : acquis du jour et suite",
+          "page": 31
+        }
+      ]
+    },
+    {
       "id": "lec03-exercise",
       "kind": "document",
       "title": "Créer un agent d’aide à l’apprentissage",

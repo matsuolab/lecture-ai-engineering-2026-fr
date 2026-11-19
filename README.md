@@ -36,7 +36,7 @@ Consultez [les instructions détaillées : lectures/01/problem.md](lectures/01/p
 
 ## Lecture 05 : rechercher dans les documents de cours
 
-La base de recherche fournie couvre 214 pages des cours principaux de Lecture 01 à Lecture 03. Elle reprend les vecteurs de la source japonaise et renvoie le texte traduit. Le contexte complet contient actuellement 6 documents et 342 pages. La présentation d’accueil et les exercices de Lecture 01 et 02 restent à intégrer.
+La base de recherche fournie couvre 214 pages des cours principaux de Lecture 01 à Lecture 03. Elle reprend les vecteurs de la source japonaise et renvoie le texte traduit. Le contexte complet contient 8 documents et 398 pages, dont les exercices des cours 01 et 02.
 
 Les consignes d’exercice et de devoir sont dans [lectures/05/problem.md](lectures/05/problem.md). Notez vos résultats dans [lectures/05/answer.md](lectures/05/answer.md).
 

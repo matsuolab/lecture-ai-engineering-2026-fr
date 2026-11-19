@@ -4244,5 +4244,679 @@
     },
     "content_sha256": "7d38cb9811487ba81723794462ac84dee1d5ab209a8a3cff3ce3c03827efb1dd",
     "origin": "new_translation_from_japanese"
+  },
+  "lec01-exercise-p001": {
+    "canonical_japanese_page": 1,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 1,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 1"
+    },
+    "content_sha256": "1fd5085e41bb461800337ce709b657db7a872a502f4c63595cf792b6b1500353",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p002": {
+    "canonical_japanese_page": 2,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 2,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 2"
+    },
+    "content_sha256": "a9d6a5427be087de5bb55fe82df5139a98cebbbb0cd0d3511be0b3cdabd9ad49",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p003": {
+    "canonical_japanese_page": 3,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 3,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 3"
+    },
+    "content_sha256": "a54fdf48a4470155dc34d54fb0820b8c13fc5e7f7995059658f5c11df8d9d7a5",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p004": {
+    "canonical_japanese_page": 4,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 4,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 4"
+    },
+    "content_sha256": "f74af2d2462ad0150e3a8ff96fc988e6051def34b3e487935030cc89c4f26a2c",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p005": {
+    "canonical_japanese_page": 5,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 5,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 5"
+    },
+    "content_sha256": "f0261bc7366a1cdaeb1c14cc0bede14a3337ce3189dc48598ea45d0674fd0a1e",
+    "origin": "supplied_localized_exercise_pdf",
+    "source_correction": "Course links follow the localized repository and exercise guide."
+  },
+  "lec01-exercise-p006": {
+    "canonical_japanese_page": 6,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 6,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 6"
+    },
+    "content_sha256": "f4350d86fc5ad55a7eb238e7ab582543601e8423497f64af6246f5a2ca980eb0",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p007": {
+    "canonical_japanese_page": 7,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 7,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 7"
+    },
+    "content_sha256": "9a44948c41775441695f782c2d3d6b609cb56c0c7503b9a3269031d13944fe43",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p008": {
+    "canonical_japanese_page": 8,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 8,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 8"
+    },
+    "content_sha256": "638499b07587a66dc3c197d35ef3e3b3547c99bc688acac23d65b849c526cbae",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p009": {
+    "canonical_japanese_page": 9,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 9,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 9"
+    },
+    "content_sha256": "98d3cf0ffc15f59dee51fa46a9605a672be9a0312c1c742d0c76a03982f0d551",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p010": {
+    "canonical_japanese_page": 10,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 10,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 10"
+    },
+    "content_sha256": "65dd72f327f346574c0c6c3e23e371fbd8882b833811ca26b6dd5cd959b2792c",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p011": {
+    "canonical_japanese_page": 11,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 11,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 11"
+    },
+    "content_sha256": "ecea0a9260154f10e03e78f8ac78a498e741132105f331de89ba7eb7a00853e2",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p012": {
+    "canonical_japanese_page": 12,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 12,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 12"
+    },
+    "content_sha256": "f1e5120ad721056b5e24707b343c865cc6593ff363ea9b9baffff2f65b8f4950",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p013": {
+    "canonical_japanese_page": 13,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 13,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 13"
+    },
+    "content_sha256": "21a5e79c11a54b72f514658bac06ad96fa0558c5c15a52fb49e18785152bdba0",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p014": {
+    "canonical_japanese_page": 14,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 14,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 14"
+    },
+    "content_sha256": "9a9df46d7832b8c5450e07dda21fa0e04ebb428fb0c3ce13ae498bef268070a6",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p015": {
+    "canonical_japanese_page": 15,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 15,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 15"
+    },
+    "content_sha256": "1dbc740a6c4c459412417fc22ac6fb28ac05adb743b358076a92fe38430a8b58",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p016": {
+    "canonical_japanese_page": 16,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 16,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 16"
+    },
+    "content_sha256": "9405dc9f47ac479e301980db0ede6319f3070ef0663ed18be4e38a39808de2c2",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p017": {
+    "canonical_japanese_page": 17,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 17,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 17"
+    },
+    "content_sha256": "34036f67ecddc04eff375f8552e2f174ce4203b40a38086db77044c92d0d3cc9",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p018": {
+    "canonical_japanese_page": 18,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 18,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 18"
+    },
+    "content_sha256": "5972e07d577125b71f07e98d917070479aab4ac21b631fc303b9a10b560435d9",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p019": {
+    "canonical_japanese_page": 19,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 19,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 19"
+    },
+    "content_sha256": "5bc5a428fd07763c9ee6f4b08167661ba459a65628ba973dea73e6f1301adae2",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p020": {
+    "canonical_japanese_page": 20,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 20,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 20"
+    },
+    "content_sha256": "ba80a9f6c48fcf3112349ac8f5dd18b6cf72f56e31caa3498dd9cfc3b90650a3",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p021": {
+    "canonical_japanese_page": 21,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 21,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 21"
+    },
+    "content_sha256": "8b777518aabd4bad60fcdaa0884a2e009c8daf3d5ff0f4c37dd640311b28451d",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p022": {
+    "canonical_japanese_page": 22,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 22,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 22"
+    },
+    "content_sha256": "777187871db01fafaedf997ac568a664ab63793c0818a498af560468f49f0061",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p023": {
+    "canonical_japanese_page": 23,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 23,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 23"
+    },
+    "content_sha256": "5ae4f8d9b15829cdd9a234c74fe04d59e94bcaf178c74d7c73ba63f3266ab787",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p024": {
+    "canonical_japanese_page": 24,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 24,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 24"
+    },
+    "content_sha256": "79cd587efbefe923f0c61a4d2bb974d2c4cee91b5c976be33548a7fc75f5cb5b",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec01-exercise-p025": {
+    "canonical_japanese_page": 25,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 25,
+      "file": "Exercise Materials (8).pdf",
+      "file_sha256": "3cbe95be702afcb6f9421db1f41c26cda066016553d37bb2b0317a163249c902",
+      "label": "Cours 1 : exercices et devoirs · PDF traduit, p. 25"
+    },
+    "content_sha256": "9f9682bd7cdf0d487ee0a8197824d3b83bb6bf685fb5148f7ed68dd37daad15e",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p001": {
+    "canonical_japanese_page": 1,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 1,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 1"
+    },
+    "content_sha256": "c4108608664efaaa699d5529d8cb5a41781549d509a5da1c082dc1de75236c89",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p002": {
+    "canonical_japanese_page": 2,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 2,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 2"
+    },
+    "content_sha256": "c875b18ce8dd0ed39aeab2cb73a229e8778d8d0de9ff2abe0d772ed398ada5a7",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p003": {
+    "canonical_japanese_page": 3,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 3,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 3"
+    },
+    "content_sha256": "21c947f5c5a3ee4228a45a4b1ff9cff57cd319203d2a800c3983e99943dbda0f",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p004": {
+    "canonical_japanese_page": 4,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 4,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 4"
+    },
+    "content_sha256": "75b4fd1d1f658ec9c09c6ca765f8535604298c600a86652d1ff15f5bb498211e",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p005": {
+    "canonical_japanese_page": 5,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 5,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 5"
+    },
+    "content_sha256": "e37921290d0d8745ef920b4794e492c335e40204a02947ff3a380845957198b1",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p006": {
+    "canonical_japanese_page": 6,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 6,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 6"
+    },
+    "content_sha256": "4a44fb01af0d3f7675cc8d22be45bc559c7e4a32b00f4680ba8dead68ebd7beb",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p007": {
+    "canonical_japanese_page": 7,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 7,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 7"
+    },
+    "content_sha256": "1beca4590131af196fafb993bfe57fec02d52dc6d4a99e48f7425b6cd407fe3f",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p008": {
+    "canonical_japanese_page": 8,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 8,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 8"
+    },
+    "content_sha256": "8150984bc65650f0e687cae49aa2e8f319ae91605b9b06096565ffbed08e3bfd",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p009": {
+    "canonical_japanese_page": 9,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 9,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 9"
+    },
+    "content_sha256": "0b8d7a0f02e328f521b4b7f9bf20753ab4f86fd7d480f8d585384e2bf74d9b73",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p010": {
+    "canonical_japanese_page": 10,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 10,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 10"
+    },
+    "content_sha256": "8de806a17bee3a632fc046285995e00e6a8472da219d5fd0c87d5783188824d1",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p011": {
+    "canonical_japanese_page": 11,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 11,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 11"
+    },
+    "content_sha256": "8f8fbe51210cf3417e9fcab348027701b813f2d58cccacc1df9c977a07b2cbe6",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p012": {
+    "canonical_japanese_page": 12,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 12,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 12"
+    },
+    "content_sha256": "44438c6ae10e328a27c7c7421529afdca75921a3398c68379d0c15fc6f3e8286",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p013": {
+    "canonical_japanese_page": 13,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 13,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 13"
+    },
+    "content_sha256": "62aaa926aeee52ffbe62e97f8e1f462c59dc5f3fa3b255e3c37b17fd73788100",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p014": {
+    "canonical_japanese_page": 14,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 14,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 14"
+    },
+    "content_sha256": "2d954a4058c4b496266fe897db52fed381bba5f61352aa984b4e1f6e23d41226",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p015": {
+    "canonical_japanese_page": 15,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 15,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 15"
+    },
+    "content_sha256": "084377d013c476b7b86e142ddd07444a2ca05100601a07ec71694e779cfe7227",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p016": {
+    "canonical_japanese_page": 16,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 16,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 16"
+    },
+    "content_sha256": "06be8df7620a838058461ec639dc4be9879ae78109c21c25556e184d29932a7e",
+    "origin": "supplied_localized_exercise_pdf",
+    "source_correction": "Course links follow the localized repository and exercise guide."
+  },
+  "lec02-exercise-p017": {
+    "canonical_japanese_page": 17,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 17,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 17"
+    },
+    "content_sha256": "da21cf4a3031dbf2251acf79b4e5351c6d0bc36d8ad0c7edb54ed092db5659bb",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p018": {
+    "canonical_japanese_page": 18,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 18,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 18"
+    },
+    "content_sha256": "9121d9cd1d924ab4ee85954e55668f18ca287f96204154e23838e3fa2e6e22fb",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p019": {
+    "canonical_japanese_page": 19,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 19,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 19"
+    },
+    "content_sha256": "1a7bb8dcf29c04db76cef05a7548de6efe2c2f733a06b8c33c634ba8a6a45668",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p020": {
+    "canonical_japanese_page": 20,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 20,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 20"
+    },
+    "content_sha256": "b145f7bdfe0f2f6cfcb899b24a97d2fa09c9433b91fd1337a60ae4f4af2b3b52",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p021": {
+    "canonical_japanese_page": 21,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 21,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 21"
+    },
+    "content_sha256": "00a15ea16f5658078d99342c5c6986f19c755c637492c90083740e1f26f2fe95",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p022": {
+    "canonical_japanese_page": 22,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 22,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 22"
+    },
+    "content_sha256": "fe368aacf50e0cd1fe744ac0e7601e888cd69eb34fb0c77db34f291c37e0e90a",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p023": {
+    "canonical_japanese_page": 23,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 23,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 23"
+    },
+    "content_sha256": "66bd9a2bdf6ff6284d597e40a62fcf2f20fb4f8d76cf5c35f378865e9e482694",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p024": {
+    "canonical_japanese_page": 24,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 24,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 24"
+    },
+    "content_sha256": "ae8f26f62b27c6fc37816ab10dc43e3be0b167c6c93742e51d3839a42fffdf6e",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p025": {
+    "canonical_japanese_page": 25,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 25,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 25"
+    },
+    "content_sha256": "12341cde17dcf02a44664d1d2c9f8c29d7709dd18620bbf264886a9df4f605c5",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p026": {
+    "canonical_japanese_page": 26,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 26,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 26"
+    },
+    "content_sha256": "0d2a30cfdc22618e5d9863bf1072f6d51e91db9f75fca5f21cd6a8b06362a7a3",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p027": {
+    "canonical_japanese_page": 27,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 27,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 27"
+    },
+    "content_sha256": "ea51f3f5548a81235b61991fa930ee03027ed7e1d8d96c6f90a21fe05d3bc650",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p028": {
+    "canonical_japanese_page": 28,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 28,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 28"
+    },
+    "content_sha256": "89918d6f6e9ac58ab1afe4476778abd726e99cc5f4ed297db1cea533fc9530a8",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p029": {
+    "canonical_japanese_page": 29,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 29,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 29"
+    },
+    "content_sha256": "94bd51ad72257484ebb43ae3608a7177ae811b86e20060b6b5b00c82273ac242",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p030": {
+    "canonical_japanese_page": 30,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 30,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 30"
+    },
+    "content_sha256": "cf9670ba24c7d7f8f35d5b1444e3cd585232839e9c51b3101029ca0ae52c37f2",
+    "origin": "supplied_localized_exercise_pdf"
+  },
+  "lec02-exercise-p031": {
+    "canonical_japanese_page": 31,
+    "reference": {
+      "kind": "translated_pdf",
+      "page": 31,
+      "file": "Exercise Materials (3).pdf",
+      "file_sha256": "e90dddedc57ca304f1f80f9131775cf9cdd0542f0ad220e8dcf95f0e3a8a3ea1",
+      "label": "Cours 2 : exercices et devoirs · PDF traduit, p. 31"
+    },
+    "content_sha256": "9920a883158e6cbcd2266329b28c2f7a636308e6b79798aedf658baf44aaee89",
+    "origin": "supplied_localized_exercise_pdf"
   }
 }
