@@ -1,7 +1,5 @@
 # Lecture 05 : réponses
 
-**En attente des données et du code** : ce modèle est prêt. Remplissez les résultats après publication des documents de cours traduits, de leur index et activation de Lecture 05 sur `main`.
-
 ## Exercice
 
 - Modèle de réponse (`[model]` lors de l’exécution) :

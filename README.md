@@ -36,11 +36,11 @@ Consultez [les instructions détaillées : lectures/01/problem.md](lectures/01/p
 
 ## Lecture 05 : rechercher dans les documents de cours
 
-Les consignes d’exercice et de devoir sont dans [lectures/05/problem.md](lectures/05/problem.md), et le modèle de réponses dans [lectures/05/answer.md](lectures/05/answer.md).
+Cette version de test contient la base de recherche de 214 pages des cours principaux de Lecture 01 à Lecture 03. Elle reprend les vecteurs de la source japonaise et renvoie le texte traduit. Le contexte complet contient actuellement 6 documents et 342 pages. La présentation d’accueil et les exercices de Lecture 01 et 02 restent à intégrer.
 
-**État de publication** : ces documents français sont prêts. Les documents de cours traduits, leur index de recherche et l’activation du code de Lecture 05 sur `main` restent à publier. Toutes les commandes de cette section et de l’exercice s’appliquent après cette publication.
+Les consignes d’exercice et de devoir sont dans [lectures/05/problem.md](lectures/05/problem.md). Notez vos résultats dans [lectures/05/answer.md](lectures/05/answer.md).
 
-La base prévue à l’emplacement `data/rag_data/index.sqlite3` contiendra les embeddings des 214 pages des cours principaux de Lecture 01 à Lecture 03. Après publication des données et du code, définissez `GEMINI_API_KEY` et installez les dépendances à la racine du dépôt pour essayer la recherche et les réponses. L’embedding des questions et la génération des réponses utilisent l’API.
+La base de recherche `data/rag_data/index.sqlite3` est fournie avec les embeddings des 214 pages des cours principaux de Lecture 01 à Lecture 03. Définissez `GEMINI_API_KEY` et installez les dépendances à la racine du dépôt pour essayer la recherche et les réponses. L’embedding des questions et la génération des réponses utilisent l’API.
 
 ```bash
 uv sync --frozen
@@ -69,12 +69,14 @@ app/
   tools.py       Lecture 03 : outils de l’agent (recherche dans le glossaire, etc.)
   agent.py       Lecture 03 : agent d’aide à l’apprentissage avec Pydantic AI (Lecture 06 : via MCP avec --mcp)
   judge.py       Lecture 04 : faire évaluer un jeu de cas par un LLM et mesurer l’accord avec les annotations humaines
+  retrieval.py   Lecture 05 : recherche dans les documents, parcours Tree et Graph, contexte complet
   mcp_server.py  Lecture 06 : serveur MCP qui expose le glossaire
   mcp_servers.json Lecture 06 : configuration des serveurs MCP à utiliser (format mcpServers)
 data/
   glossary.json  Glossaire du cours
   lectures/      Points essentiels de chaque séance
   eval/          Lecture 04 : jeu d’évaluation (lec04_cases.jsonl) et grille d’évaluation (rubric.md)
+  rag_data/      Lecture 05 : textes (lectures.json), table des matières (tree.json), relations entre pages et termes (graph.json), base de recherche (index.sqlite3)
 tools/
   annotate.py    Lecture 04 : interface d’annotation (Streamlit, ajouté temporairement avec uv run --with)
 .streamlit/      Configuration Streamlit (accès par le transfert de ports Codespaces)
@@ -83,6 +85,7 @@ lectures/NN/
   answer.md      Fichier à remplir et à rendre
 notebooks/       Lecture 02 : notebook LoRA à exécuter dans Google Colab (lora_format_tuning.ipynb)
 scripts/
+  build_rag_index.py Lecture 05 : créer les embeddings des documents et la base de recherche
   make_sft_dataset.py Lecture 02 : préparer les données d’entraînement
 tests/           Tests (sans clé API)
 pyproject.toml / uv.lock  Dépendances et versions verrouillées
