@@ -1,0 +1,482 @@
+{
+  "id": "lec03-main",
+  "title": "Agents IA",
+  "content": [
+    {
+      "section": "Introduction",
+      "content": [
+        {
+          "id": "lec03-main-p001",
+          "title": "Agents IA",
+          "page": 1,
+          "content": "Cours pratique d'ingénierie de l'IA 2026\nCours 3\nAgents IA\n02/11/2026  Rinze Watanabe\nPhotos et diffusion interdites sans autorisation\n\nLogo : laboratoire Matsuo-Iwasawa / MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO."
+        },
+        {
+          "id": "lec03-main-p002",
+          "title": "Présentation",
+          "page": 2,
+          "content": "Présentation\nRinze Watanabe\nLaboratoire Matsuo-Iwasawa, École supérieure d'ingénierie (Graduate School of Engineering), Université de Tokyo\nActivités\nPromotion de l'AX, calcul et infrastructure\nAgents utilisés au quotidien\nAgent maison de type Dots / OpenClaw\n[ Photo / écran ]"
+        },
+        {
+          "id": "lec03-main-p003",
+          "title": "Les propriétés des modèles vues au Cours 2 sont les bases de la conception d'aujourd'hui",
+          "page": 3,
+          "content": "Les propriétés des modèles vues au Cours 2 sont les bases de la conception d'aujourd'hui\nUn agent est un modèle auquel on ajoute des outils, une boucle et une mémoire. Les propriétés du modèle restent les mêmes.\nSource : propriétés ①–⑥ et aperçu du cours suivant, Cours 2 « Fonctionnement des modèles de fondation ».\n\n| Propriété vue au Cours 2 | Effet sur un agent | Partie du cours d'aujourd'hui |\n|---|---|---|\n| ① Même question, réponse différente à chaque fois | Même demande, étapes différentes : les erreurs s'accumulent | Partie 3 — Boucle |\n| ② Répond de façon plausible même sans savoir | Appelle des fonctions inexistantes, lit mal les résultats d'outils | Partie 8 — Échecs |\n| ③ Les connaissances ont une date limite | Aller chercher les informations récentes avec des outils | Partie 4 — Outils |\n| ④ Ne traite pas uniformément un long contexte | Sur une longue tâche, perd de vue les consignes et l'historique | Partie 6 — Mémoire |\n| ⑤ Ne distingue pas le texte d'entrée des instructions | Des instructions dans les pages ou fichiers lus lui font utiliser des outils | Parties 4 et 9 — Frontières de confiance |\n| ⑥ S'aligne sur l'interlocuteur (complaisance) | Annonce « C'est fait » même quand ça échoue | Parties 7 et 8 — Arrêt et échecs |\n| + Peut produire un format imposé | Produit les appels d'outils de façon fiable dans un format fixe | Partie 5 — Sortie structurée |"
+        },
+        {
+          "id": "lec03-main-p004",
+          "title": "Programme",
+          "page": 4,
+          "content": "Programme\nStructure d'un agent\nPartie 2  Assembler un agent\nUn agent IA à partir de zéro\nConcevoir les composants\nPartie 3  Boucle\nErreurs cumulées et boucle réversible\nPartie 4  Outils\nMCP, approbation avant exécution, parallélisation\nPartie 5  Sortie structurée et appels d'outils\nNe produire que des sorties conformes, Jev\nPartie 6  Mémoire\nMémoire à long terme, Skill\nSécurité\nPartie 7  Conditions d'arrêt\nPlacer l'arrêt hors de la boucle\nPartie 8  Gestion des échecs\nSe relever, rester honnête, réessayer sans risque\nPartie 9  Frontières de confiance et harness\nSéparer ce qu'on croit, isoler dans un sandbox\nPartie 10  RSI et agents\nautoresearch\nLLM et fonctionnement d'un chat\nPrompt système et cache\nOutils, boucle, mémoire\nModèle + harness, différences de harness"
+        }
+      ]
+    },
+    {
+      "section": "Partie 2 — Assembler un agent",
+      "content": [
+        {
+          "id": "lec03-main-p005",
+          "title": "Partie 2 — Assembler un agent",
+          "page": 5,
+          "content": "Partie 2\nAssembler un agent\nUn agent IA à partir de zéro"
+        },
+        {
+          "id": "lec03-main-p006",
+          "title": "LLM : écrit seulement la suite ou la réponse au message reçu",
+          "page": 6,
+          "content": "LLM : écrit seulement la suite ou la réponse au message reçu\nUn LLM (grand modèle de langage) est sans état (stateless).\nEntrée\nExécute et corrige les tests qui échouent.\ndef total(n):\n    return sum(range(1, n))\ndef test_total():\n    assert total(4) == 10\nLLM\nProlonge le texte\nSortie (réponse)\nAvec range(1, n), n n'est\npas inclus.\nCorrigez en range(1, n + 1)\net le test passe.\nNe se souvient pas de l'échange précédent (sans état)\nNe vérifie pas si le test échoue vraiment (aucun appel d'outil)"
+        },
+        {
+          "id": "lec03-main-p007",
+          "title": "Entrées/sorties d'un LLM",
+          "page": 7,
+          "content": "Entrées/sorties d'un LLM\nSans état ?\nSource : entrées/sorties fictives à titre d'illustration.\nEntrée\n<user_message>\nExécute et corrige les tests qui échouent.\n```\ndef total(n):\n    return sum(range(1, n))\ndef test_total():\n    assert total(4) == 10\n```\n</user_message>\nLLM\nProlonge le texte\nSortie (réponse)\n<user_message>\nExécute et corrige les tests qui échouent.\n```\ndef total(n):\n    return sum(range(1, n))\ndef test_total():\n    assert total(4) == 10\n```\n</user_message>\n<assistant_message>\nAvec range(1, n), n n'est\npas inclus.\nCorrigez en range(1, n + 1)\net le test passe.\n</assistant_message>"
+        },
+        {
+          "id": "lec03-main-p008",
+          "title": "Chat : tout l'échange est renvoyé à chaque fois",
+          "page": 8,
+          "content": "Chat : tout l'échange est renvoyé à chaque fois\nLa conversation semble continue car tout le texte est renvoyé à chaque fois.\nSource : schéma illustratif.\n1er tour\nMessage 1\nLLM\nRéponse 1\n2e tour\nMessage 1\nRéponse 1\nMessage 2\nLLM\nRéponse 2\n3e tour\nMessage 1\nRéponse 1\nMessage 2\nRéponse 2\nMessage 3\nLLM\nRéponse 3\nContexte (toute l'entrée du modèle, renvoyée à chaque fois)"
+        },
+        {
+          "id": "lec03-main-p009",
+          "title": "Prompt système : des consignes invisibles, envoyées à chaque fois",
+          "page": 9,
+          "content": "Prompt système : des consignes invisibles, envoyées à chaque fois\nLe contexte contient la conversation, mais aussi les consignes et descriptions d'outils du service.\nSource : Anthropic « System Prompts » (notes de version Claude Docs, consulté le 2026/10/25). Prompt système d'exemple fictif.\nPrompt système\nDescription des outils et Skills\nMessage 1\nRéponse 1\nMessage 2\nLLM\nRéponse 2\nAjouté par le service (invisible pour l'utilisateur)\nConversation jusqu'ici (diapo précédente)\nExemple de prompt système\n<system>\nVous êtes le support de la société A.\nNous sommes le 25 octobre 2026.\nRépondez en japonais, de façon concise.\nNe divulguez pas d'informations confidentielles.\n</system>\nClaude publie le sien\nAnthropic le publie dans les notes de version de sa documentation."
+        },
+        {
+          "id": "lec03-main-p010",
+          "title": "Outils",
+          "page": 10,
+          "content": "Outils\nSi la liste des outils est dans le contexte, le modèle écrit au besoin lequel appeler et avec quels arguments.\n① Indiquer les outils disponibles\nAjout au contexte\nrun_tests : lancer les tests\nread_file : lire un fichier\nedit_file : modifier un fichier\n② Le modèle écrit l'appel\nLa sortie du LLM n'est que du texte\n{\"tool\": \"run_tests\", \"path\": \"test.py\"}\n③ Le harness l'exécute\nProduit le résultat et l'ajoute au contexte"
+        },
+        {
+          "id": "lec03-main-p011",
+          "title": "Outils courants",
+          "page": 11,
+          "content": "Outils courants\nLe shell/Bash (exécution de commandes) permet presque tout.\nSource : Claude Code Docs « Tools reference », définitions d'outils d'openai/codex (v0.164.0), consultés le 2026/10/26.\nType\nRôle\nClaude Code\nCodex\nFichiers\nLire, écrire, modifier\nRead / Write / Edit\nShell + apply_patch\nRecherche\nTrouver des fichiers\nGlob / Grep\nShell (rg, etc.)\nCommandes\nTests, build\nBash\nexec_command\nWeb\nRecherche, lecture de pages\nWebSearch / WebFetch\nweb_search\nSous-agents\nDéléguer une tâche\nAgent\nspawn_agent\nPlanification\nGérer les étapes\nTaskCreate, etc.\nupdate_plan"
+        },
+        {
+          "id": "lec03-main-p012",
+          "title": "Boucle : renvoyer automatiquement le résultat de l'outil au modèle",
+          "page": 12,
+          "content": "Boucle : renvoyer automatiquement le résultat de l'outil au modèle\nSource : d'après Willison « tools in a loop » (2025/9/18) et Yao et al. (2022) ReAct.\nModèle\nÉcrit l'action suivante\nHarness\nProgramme qui fait tourner le modèle\nOutils\nTests, fichiers, recherche\n① Écrire l'appel\n② Exécuter\n③ Remettre le résultat dans le contexte"
+        },
+        {
+          "id": "lec03-main-p013",
+          "title": "Mémoire",
+          "page": 13,
+          "content": "Mémoire\nLe contexte est limité. On veut un système qui retrouve le contexte passé quand on ouvre un nouveau chat.\nSource : schéma illustratif. Le stockage (fichiers, base de données…) et la recherche (tout, recherche…) dépendent de l'implémentation.\nChat précédent\nHier : demande de corriger un test\n• Lancer avec pytest\n• Cause : les bornes de range\n• Consigne : « commentaires\nen japonais »\n①\nÉcrire\nMémoire (stockage externe)\nLancer les tests avec pytest\nAttention aux bornes de range\nCommentaires en japonais\n②\nRecharger\nNouveau contexte\nMémoire : pytest /\ncommentaires en japonais\nMessage : un autre test échoue,\ncorrige-le aussi\nSe souvenir ≠ apprendre."
+        },
+        {
+          "id": "lec03-main-p014",
+          "title": "Agent = modèle + harness",
+          "page": 14,
+          "content": "Agent = modèle + harness\nLe harness assemble le contexte et exécute les outils.\nSource : d'après OpenAI “Harness engineering” (2026/2/11).\nAgent\nModèle LLM\n＋\nHarness\nAssembler le contexte\nHistorique, mémoire, liste d'outils\nExécuter les outils\nExécuter le programme, remettre le résultat dans le contexte\nGarder une trace\nÉcrire l'essentiel en mémoire\nVérifier les droits, bloquer un outil si besoin\nApprobation des opérations risquées"
+        },
+        {
+          "id": "lec03-main-p015",
+          "title": "Différents harness d'agents",
+          "page": 15,
+          "content": "Différents harness d'agents\nLe type résident (claw) agit de lui-même, sans demande, et touche tout l'environnement d'exécution\nSource : documentation officielle de chaque produit (openclaw.ai, Hermes Agent Docs (Nous Research), OpenAI « Introducing dots » (2026/9/29), GitHub Docs « Copilot coding agent », anthropics/claude-code-action), consultée le 2026/10/24.\nAgit sur demande\nAgit de lui-même (horaire, événement)\nAccès large : tâches, environnement\nAccès restreint · une seule\ntâche\nSur demande · périmètre large\nRésident (claw)\nPar tâche\nLancé par événement\nChatGPT Work\nClaude Cowork\nOpenClaw\nVia chat · exécution planifiée\nHermes Agent\nNous Research · planifié\nChatGPT dots\nAgent toujours actif\nClaude Code\nCodex\nCursor\nCopilot coding agent\nLancé par une issue assignée\nClaude Code Actions\nDémarre avec @claude\nPlus on va en haut à droite, plus l'arrêt et la frontière de confiance comptent. Voir Parties 7 et 9."
+        },
+        {
+          "id": "lec03-main-p016",
+          "title": "Cache : le début, renvoyé à chaque fois, se lit vite et moins cher",
+          "page": 16,
+          "content": "Cache : le début, renvoyé à chaque fois, se lit vite et moins cher\nMême en renvoyant tout, le début identique au tour précédent est réutilisé (prompt caching).\nSource : OpenAI « Introducing GPT-6.1 Sol », Anthropic « Pricing » « Prompt caching » (Claude Platform Docs), Google « Gemini Developer API pricing », DeepSeek « Models & Pricing » (tous consultés le 2026/10/24). Tarif de Gemini 4 Argon valable jusqu'au 2026/11/30. DeepSeek : tarif aux heures de pointe.\nContenu envoyé à chaque fois\n1er tour\nMessage 1\n2e tour\nCache (identique au tour précédent)\nMessage 2\n3e tour\nCache (identique au tour précédent)\nMessage 3\nMoins cher, plus rapide\nTarif normal\nPrix par million de tokens d'entrée (USD)\nModèle\nNormal\nCache\nRatio\nGPT-6.1 Sol\nOpenAI\n$2.00\n$0.10\n1/20\nClaude Opus 5.5\nAnthropic\n$4.00\n$0.20\n1/20\nGemini 4 Argon\nGoogle\n$2.00\n$0.10\n1/20\nDeepSeek V4-Pro\nDeepSeek\n$1.32\n$0.044\n1/30\nChez Claude, l'écriture en cache coûte 1,25 fois le tarif normal.\nSi le début change, le cache ne sert plus. Ne modifiez ni les consignes ni le début de l'historique.\nLe cache expire en quelques minutes (Claude : 60 min max)."
+        },
+        {
+          "id": "lec03-main-p017",
+          "title": "Le harness change aussi le coût et la vitesse",
+          "page": 17,
+          "content": "Le harness change aussi le coût et la vitesse\nSource : Composio « DeepSeek Harness (DSH) vs Pi Agent », « Finding the Best Harness for DeepSeek V4 Flash » (2026/8), classement officiel Terminal-Bench 4.0.\nRésultats sur 30 tâches avec DeepSeek V4 Pro\nPi\nDeepSeek Harness\nTâches réussies\n21 / 30\n20 / 30\nCoût par réussite\n$0.031\n$0.028\nDurée (médiane)\n363 s\n252 s\nTokens par tâche*\nenv. 920 000\nenv. 89 000\nLe modèle est entraîné pour son harness\nUn harness inadapté fait grimper les coûts\nComparaison de 8 harness avec V4 Flash : Claude Code n'a exploité le cache qu'à 1,5 %."
+        }
+      ]
+    },
+    {
+      "section": "Partie 3 — Boucle",
+      "content": [
+        {
+          "id": "lec03-main-p018",
+          "title": "Partie 3 — Boucle",
+          "page": 18,
+          "content": "Partie 3\nBoucle\nErreurs cumulées"
+        },
+        {
+          "id": "lec03-main-p019",
+          "title": "Erreurs cumulées",
+          "page": 19,
+          "content": "Erreurs cumulées\nUn agent boucle sur les résultats d'outils. Avec 95 % de réussite par étape, réussir les 20 étapes d'affilée n'arrive qu'environ 36 % du temps.\nSource : calcul simplifié supposant des étapes indépendantes. METR « Time Horizon 1.1 » (janvier 2026 ; Claude Opus 4.6 : valeur après la correction de mars). Comme au Cours 1, page 9.\n\nGraphique de gauche — accumulation des erreurs :\n- Axe horizontal : nombre d'étapes, de 1 à 30.\n- Axe vertical : probabilité de réussir jusqu'à la fin (%), de 0 à 100 par pas de 10.\n- Deux courbes : 99 % de réussite par étape ; 95 % de réussite par étape.\n- Annotation de la courbe à 95 % : 36 % après 20 étapes.\n\nGraphique de droite — durée des tâches que l'on peut confier (METR) :\n- Double environ tous les 4 mois.\n- METR : institut de recherche américain qui mesure les capacités de l'IA.\n- Axe horizontal : 2023, 2024, 2025, 2026.\n- Repères de durée : 1 min, 4 min, 15 min, 1 h, 4 h, 16 h.\n- Modèles indiqués : GPT-4, GPT-5, Claude Opus 4.6.\n- Annotation : Claude Opus 4.6, environ 12 h."
+        },
+        {
+          "id": "lec03-main-p020",
+          "title": "Importance d'objectifs quantitatifs",
+          "page": 20,
+          "content": "Importance d'objectifs quantitatifs\nSans vérifier en cours de route, l'erreur s'accumule. Une condition mesurable à chaque tour remet sur la voie.\nSource : documentation et articles de présentation d'OpenAI Codex CLI (/goal, v0.128.0, avril 2026) et de Claude Code (/goal, v2.1.139, mai 2026).\nÉcrire la condition de fin en nombre ou en true/false\nNon mesurable\nMesurable\n« Corrige ça proprement »\nTous les tests et le lint passent\n« Rends-le plus rapide »\nScore du benchmark ≥ 90\n« Réduis les bugs »\n0 erreur de type\nMesurer permet de voir l'erreur et de « revenir en arrière »\nOn vérifie à chaque tour : on s'arrête avant que les échecs s'accumulent. C'est l'idée d'autoresearch, ensuite.\nExemple : mode goal (/goal)\n/goal <condition de fin>\nContinue seul jusqu'à remplir la condition\nÉcrite une fois, plus besoin de la répéter. Disponible dans Codex et Claude Code depuis le printemps 2026.\nUn autre modèle juge\nDans Claude Code, un petit modèle rapide (Haiku par défaut) vérifie la condition après chaque tour."
+        },
+        {
+          "id": "lec03-main-p021",
+          "title": "autoresearch",
+          "page": 21,
+          "content": "autoresearch\nDispositif publié par Karpathy pour faire mener des expériences à l'IA. On ne garde que les améliorations, et on repart de là.\nSource : README et program.md de karpathy/autoresearch (GitHub), récupérés le 2026/10/21.\nCode initial\nval_bpb 1.000\nLR plus élevé\nval_bpb 0.985\nAjouter des couches\nval_bpb 1.010\nDoubler le batch\nval_bpb 0.990\nChanger la norm.\nval_bpb 0.962\nChanger l'activation\nval_bpb 0.970\nBaisse du LR\nval_bpb 0.951\n… jusqu'à l'arrêt humain\nÇa continue de progresser\nScore en hausse : on garde et on repart de là\nScore en baisse : on jette et on revient au point de départ"
+        }
+      ]
+    },
+    {
+      "section": "Partie 4 — Outils",
+      "content": [
+        {
+          "id": "lec03-main-p022",
+          "title": "Partie 4 — Outils",
+          "page": 22,
+          "content": "Partie 4\nOutils\nMCP · traitements longs et parallélisation · évaluation"
+        },
+        {
+          "id": "lec03-main-p023",
+          "title": "Outils",
+          "page": 23,
+          "content": "Outils\nLe modèle écrit l'appel, le harness l'exécute\nSource : d'après la distinction tools / acting de Mialon et al. « Augmented Language Models: a Survey » (TMLR 2023, arXiv:2302.07842) et le flux d'appel d'Anthropic « Tool use with Claude » (Claude Platform Docs, consulté le 2026/10/24). Noms d'outils et échanges fictifs.\nContexte (s'empile de haut en bas)\nUtilisateur\nCorrige les tests qui échouent\nModèle\nrun_tests(\"tests/\")\nRésultat\n2 échecs : test_parse_date, etc.\nModèle\nread_file(\"utils.py\")\nRésultat\ndef parse_date(s): ...\nModèle\nedit_file(\"utils.py\", ...)\nOutils (hors du modèle)\nLecture\nLire des fichiers, rechercher\nÉcriture (action)\nModifier des fichiers,\nenvoyer un e-mail, commander\nParfois irréversible\nAppel\nRésultat\nLes opérations qui modifient quelque chose sont délicates en cas d'échec."
+        },
+        {
+          "id": "lec03-main-p024",
+          "title": "MCP (Model Context Protocol) : gérer les droits côté serveur",
+          "page": 24,
+          "content": "MCP (Model Context Protocol) : gérer les droits côté serveur\nComparaison entre MCP (protocole commun pour connecter outils et données) et CLI (outils pilotés par commandes)\nSource : d'après la spécification MCP (version 2026-07-28) « Authorization » et la description de Gatekeeper dans Cloudflare « Cloudflare OS: an open platform for agents, apps, and work » (2026/8/5). Comparaison établie par l'enseignant.\nUtiliser la CLI via l'outil shell\nAgent\nIdentifiants\nCLI\nService\n• L'agent peut lire les identifiants (clés API, etc.)\n• Il a tous les droits du compte\nPasser par un serveur MCP\nAgent\nServeur MCP\nIdentifiants\nService\n• Le serveur restreint opérations et cibles exposées (autorisation)\n• Le serveur journalise les appels (audit)\nPour un travail purement local, la CLI suffit souvent.\nLe fonctionnement de MCP et son usage seront détaillés au Cours 6."
+        },
+        {
+          "id": "lec03-main-p025",
+          "title": "Human in the loop",
+          "page": 25,
+          "content": "Human in the loop\nUne opération irréversible (envoi d'e-mail, suppression de fichier) est d'abord validée par un humain.\nSource : Claude Code Docs « Settings », « Permission modes », « Configure auto mode » (consulté en 2026/10). Écran d'approbation reconstitué d'après l'affichage de Claude Code.\nÉcran d'approbation de Claude Code\nBash(git push origin main)\n  Push local commits to remote\nDo you want to proceed?\n> 1. Yes\n  2. Yes, and don't ask again for git push\n  3. No, and tell Claude what to do differently\nClaude Code : réglage du niveau de confirmation\nToujours demander (mode default)\nValidation humaine à chaque nouveau type d'opération.\nFixer des règles (settings.json)\nallow = exécuter sans demander, ask = toujours demander, deny = interdire.\ndeny s'applique dans tous les modes.\nUn autre modèle juge (mode auto)\nUn classifieur (autre modèle) vérifie à la place de l'humain.\nBloque seulement l'irréversible ou le non demandé.\nNe jamais demander (bypassPermissions)\nTout exécuter sans confirmation."
+        },
+        {
+          "id": "lec03-main-p026",
+          "title": "Human in the loop",
+          "page": 26,
+          "content": "Human in the loop\nSelon le choix human-in / on / out-of-the-loop, l'approbation et l'arrêt se conçoivent différemment.\nC'est un compromis entre commodité et sécurité.\nSource : classification issue du débat sur les armes autonomes, Human Rights Watch « Losing Humanity » (2012/11/19). Anthropic « Measuring AI agent autonomy in practice » (2026/2/18), Anthropic « How we contain Claude across products » (2026/5/25).\nin : approuver à chaque fois\nAgent\nOpération\nApprobation\nUn humain autorise chaque opération.\nL'approbation devient vite une formalité.\non : surveiller et pouvoir arrêter\nAgent\nOpération\nSurveiller, arrêter\nL'agent agit seul ; l'humain surveille et intervient si besoin.\nSuppose un moyen d'arrêt hors de l'agent.\nout : délégation totale\nAgent\nOpération\nVoir le résultat seul\nL'humain ne voit que le résultat. Exécution planifiée ou sans surveillance.\nArrêt et compte rendu doivent être intégrés au système."
+        },
+        {
+          "id": "lec03-main-p027",
+          "title": "Outils non idempotents",
+          "page": 27,
+          "content": "Outils non idempotents\nL'envoi avait réussi. La connexion a coupé avant la réponse, l'agent a conclu à un échec et a recommencé\nSource : d'après Stripe API Reference « Idempotent requests » (consulté le 2026/10/24 ; un renvoi après une erreur de connexion peut exécuter deux fois la même opération). Scénario d'e-mail fictif.\nAgent\nService de messagerie\nBoîte du destinataire\n① send_email (devis)\n1er e-mail reçu\n×\nPas de réponse de succès (timeout)\n② Conclut à un échec\n③ Relance send_email\n2e e-mail reçu\nAutres outils à risque\nCommander\n→ commande passée 2 fois\nVirer de l'argent\n→ payé 2 fois\nPublier\n→ 2 publications identiques\nL'agent ne peut pas distinguer succès et échec. Même si la connexion coupe, l'opération a pu être exécutée de l'autre côté."
+        },
+        {
+          "id": "lec03-main-p028",
+          "title": "Fuite de données",
+          "page": 28,
+          "content": "Fuite de données\nDonnées sensibles, entrées non fiables, moyen d'envoi externe : réunis, ces 3 éléments permettent une fuite\nSource : Simon Willison « The lethal trifecta for AI agents: private data, untrusted content, and external communication » (2025/6/16, https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/), article EchoLeak de la page précédente. Exemples de parades établis par l'enseignant.\nDonnées sensibles\nDocs internes, e-mails, données clients\nEntrées non fiables\nE-mails externes, sites web\nMoyen d'envoi externe\nFuite"
+        },
+        {
+          "id": "lec03-main-p029",
+          "title": "Exécuter un outil en arrière-plan",
+          "page": 29,
+          "content": "Exécuter un outil en arrière-plan\nSi tous les tests prennent 20 min, le modèle avance avec d'autres outils et récupère le résultat à la fin\nSource : description de l'exécution en arrière-plan dans Anthropic Claude Code Docs « Interactive mode », « Tools reference », « Headless », « Subagents » (consulté le 2026/10/24). Durées et ordre des outils illustratifs.\nEn attendant\nDébut\nRien à faire jusqu'au résultat (20 min)\nLire le résultat\nEn arrière-plan\nOutils\nTous les tests en cours (20 min)\nModèle\nDébut\n→ ID\nread_file\nutils.py\nsearch\nparse_date\nRéfléchir\nà un correctif\nNotification de fin\nRésultat ajouté au contexte,\nreprise de la suite\nEx. : Claude Code  lancement avec run_in_background → ID de tâche renvoyé aussitôt → à la fin, reprise avec le résultat\nQuestion à traiter : l'agent peut-il détecter qu'une tâche en arrière-plan a échoué ou s'est arrêtée ?\nQuitter Claude Code arrête aussi les tâches en arrière-plan. Les traitements de plusieurs jours relèvent du type résident (Partie 2)."
+        },
+        {
+          "id": "lec03-main-p030",
+          "title": "Appels d'outils groupés",
+          "page": 30,
+          "content": "Appels d'outils groupés\nLes appels indépendants des résultats précédents sont groupés dans une seule réponse ; les autres se font dans l'ordre\nSource : Anthropic « Parallel tool use » (Claude Platform Docs), OpenAI « Function calling », Google « Function calling with the Gemini API » (tous consultés le 2026/10/24). Noms d'outils et exemples illustratifs.\nRésultat non utilisé → appels groupés\nRéponse du\nmodèle (1 fois)\nread_file(\"utils.py\")\nread_file(\"test_utils.py\")\nsearch(\"parse_date\")\nRésultat utilisé → appels dans l'ordre\nrun_tests(\"tests/\")\ntest_parse_date échoue\nread_file(\"test_utils.py\")\nOn voit le format de date attendu\nedit_file(\"utils.py\", ...)"
+        },
+        {
+          "id": "lec03-main-p031",
+          "title": "Sous-agents",
+          "page": 31,
+          "content": "Sous-agents\nUn sous-agent est un autre agent appelé par l'agent. Il isole son contexte et économise celui de l'agent parent.\nSource : Anthropic Claude Code Docs « Create custom subagents », OpenAI Codex Docs « Subagents » (consultés le 2026/10/27). Nombre d'appels et exemples illustratifs.\nL'agent parent cherche lui-même\nContexte de l'agent parent (s'accumule de haut en bas)\nDemande : corrige le bug de parse_date\nTraces de recherche\nRésultats de search ×6\nContenu des fichiers lus par read_file ×14\nLogs de run_tests\nAvant la correction, le contexte est rempli de traces de recherche\nDéléguer à un sous-agent\nContexte de l'agent parent (s'accumule de haut en bas)\nDemande : corrige le bug de parse_date\nAgent(\"trouve les appelants de parse_date\")\nLe sous-agent cherche dans son propre contexte\nsearch ×6, read_file ×14 (hors du contexte principal)\nRapport : 3 appelants. Conversion UTC manquante\nLe contexte parent ne reçoit que le rapport résumé\n\nChoisir le modèle selon la tâche : un modèle puissant (Opus, par exemple) pour les décisions difficiles, et un modèle moins cher (Haiku, par exemple) pour les recherches.\nCela peut réduire les coûts. Dans Claude Code, on peut choisir un modèle pour chaque sous-agent."
+        },
+        {
+          "id": "lec03-main-p032",
+          "title": "Recherche d'outils : charger aussi les descriptions seulement au besoin",
+          "page": 32,
+          "content": "Recherche d'outils : charger aussi les descriptions seulement au besoin\nQuand les outils se multiplient, leurs descriptions seules peuvent remplir le contexte.\nSource : Anthropic « Tool search tool » (2026/2/17), OpenAI « Function calling » (consulté le 2026/10/9). Nombre de tokens tiré de l'exemple de la documentation. Échanges fictifs à titre d'illustration.\n\nCharger toutes les définitions dès le départ\nContexte, qui s'accumule de haut en bas :\n1. Prompt système.\n2. Définitions de 50 outils, y compris MCP : read_file, run_tests, slack_search, calendar_add, … — environ 55 000 tokens.\n3. Demande : résume les messages Slack non lus.\nAvant même de lire la demande, les définitions d'outils occupent le contexte.\n\nUtiliser la recherche d'outils\nContexte, qui s'accumule de haut en bas :\n1. Prompt système.\n2. tool_search : l'outil qui recherche des outils. Seul celui-ci est toujours présent.\n3. Demande : résume les messages Slack non lus.\n4. tool_search(\"slack\")\n5. Seule la définition trouvée est ajoutée : slack_search.\n\nQuand les outils sont nombreux, le modèle peut choisir le mauvais."
+        }
+      ]
+    },
+    {
+      "section": "Partie 5 — Sortie structurée et appels d'outils",
+      "content": [
+        {
+          "id": "lec03-main-p033",
+          "title": "Partie 5 — Sortie structurée et appels d'outils",
+          "page": 33,
+          "content": "Partie 5\nSortie structurée et appels d'outils\nFixer le format · ne générer que des sorties conformes"
+        },
+        {
+          "id": "lec03-main-p034",
+          "title": "Sortie structurée",
+          "page": 34,
+          "content": "Sortie structurée\nDéfinir d'abord un schéma (champs et types), puis faire répondre en JSON (un format de données), etc.\nSource : schéma et sortie fictifs. En pratique, on les définit en JSON Schema, etc.\nRéponse en texte libre\nLa cause est sans doute\nla gestion des valeurs limites.\nVérifiez utils.py,\nce serait bien.\nRéponse selon le schéma\nType défini\nCause\nValeurs limites\nChaîne\nFichier concerné\nutils.py\nChaîne\nConfiance\nmoyen\nélevé, moyen ou faible\nÀ corriger\noui\nBooléen\nCas d'usage\nExtraire des champs d'un document\nClasser ou juger parmi des choix\nAppeler des outils\nUn appel d'outil est aussi une sortie structurée : nom et arguments dans un format fixe."
+        },
+        {
+          "id": "lec03-main-p035",
+          "title": "Décodage contraint : interdire les caractères hors format",
+          "page": 35,
+          "content": "Décodage contraint : interdire les caractères hors format\nÀ chaque token, on écarte les candidats non conformes au schéma\nSource : Anthropic « Structured outputs » (Claude Platform Docs, consulté le 2026/10/21), OpenAI « Introducing Structured Outputs in the API » (2024/8/6), Google « Structured output » (Gemini API Docs). Candidats et probabilités fictifs.\nSortie jusqu'ici\n{\"confiance\": \"\nSchéma : élevé, moyen, faible\nCandidats pour le token suivant\nélevé\n0.40\ntrès\n0.30\n× exclu\nmoyen\n0.20\nfaible\n0.10\nChoix parmi les candidats restants\nUne sortie non conforme\nn'est jamais générée\nSpécification dans les principales API (docs d'octobre 2026)\nClaude\noutput_config.format\nOutils : strict: true\nOpenAI\njson_schema\n+ strict: true\nDistinct du JSON mode\nGemini\nSpécifier un JSON Schema\n(prise en charge partielle)\nLes erreurs de format disparaissent presque. Évaluation OpenAI : 100 % conforme au schéma (août 2024 ; anciens modèles < 40 %).\nDes exceptions subsistent : refus, coupure à la limite de longueur. Chez Claude, aussi la casse des choix (enum)."
+        },
+        {
+          "id": "lec03-main-p036",
+          "title": "Modèle de décision : sans écrire de texte, renvoyer en une fois la probabilité de chaque réponse candidate",
+          "page": 36,
+          "content": "Modèle de décision : sans écrire de texte, renvoyer en une fois la probabilité de chaque réponse candidate\nSource : TypeSafe AI Docs « System One », « Primitives », J. Ojeda « Jev: The Model That Doesn't Write JSON » (2026/9/22). Consulté en 2026/10. Vitesse et coût selon le fabricant ; probabilités d'exemple.\nDécodage contraint (diapo précédente)\n{\"confiance\": \"élevé\"}\nUn calcul pour chaque token choisi\nJev\nTexte de la demande\n+ réponses candidates\nFacture\n0.82\nTechnique\n0.13\nAutre\n0.05\nRenvoie en un seul calcul la probabilité de chaque candidat\nAucune réponse hors candidats.\nMais il peut se tromper de candidat.\nRapide, mais ne produit pas de texte\nRapide et bon marché\nRéponse en 70 à 500 ms.\nCoût env. 1/76 d'un LLM moyen.\nN'écrit pas de texte\nNi résumé, ni code, ni explication.\nRenvoie seulement la réponse et sa probabilité.\nAdapté aux choix parmi des candidats fixes\nTri des demandes, étiquetage,\ngarde-fous, etc."
+        }
+      ]
+    },
+    {
+      "section": "Partie 6 — Mémoire",
+      "content": [
+        {
+          "id": "lec03-main-p037",
+          "title": "Partie 6 — Mémoire",
+          "page": 37,
+          "content": "Partie 6\nMémoire\nExemples d'implémentation · Skill"
+        },
+        {
+          "id": "lec03-main-p038",
+          "title": "Sans mémoire, on repart de zéro à chaque fois",
+          "page": 38,
+          "content": "Sans mémoire, on repart de zéro à chaque fois\nSi l'on redemande « Corrige les tests qui échouent » le lendemain, la cause trouvée la veille resservira-t-elle ?\nSource : d'après Luo et al. « From Storage to Experience » arXiv:2605.06716 (2026/5/7, ACL 2026 Findings) §1 et §3.2, Ding et al. « Always-On Agents » arXiv:2606.30306 (2026/6/29), Anthropic « Compaction overview » (Claude Platform Docs, consulté le 2026/10/21).\n1\nRepartir de zéro\nRéexpliquer ce qui\nétait déjà décidé\n2\nRépéter les mêmes erreurs\nRechercher à nouveau\nla cause déjà trouvée\n3\nLes longues tâches s'interrompent\nÀ la limite du contexte,\nl'avancement se perd\nTout garder fait aussi revenir l'obsolète et les erreurs. Il faut concevoir quoi garder et quoi effacer."
+        },
+        {
+          "id": "lec03-main-p039",
+          "title": "Exemple : Claude",
+          "page": 39,
+          "content": "Exemple : Claude\nChez Claude, certains mécanismes agissent dans une session, d'autres d'une session à l'autre\nSource : Anthropic « Compaction overview », « Memory tool » (Claude Platform Docs), « How Claude remembers your project » (Claude Code Docs), consultés le 2026/10/21. Packer et al. (2023) arXiv:2310.08560.\nDans le contexte (même session)\nCompaction (résumer l'historique)\nRemplace l'ancien historique par un résumé.\nStockage externe (entre sessions)\nOutil mémoire (Claude API)\nLe modèle demande des fichiers /memories,\nl'appli les traite dans son stockage\nMémoire auto (Claude Code)\nClaude écrit ses propres notes,\nrelues à chaque fois, dans la limite des 200 premières lignes ou de 25 Ko\nÉcrire\nRelu par l'agent si besoin\nLa mémoire écrite entre dans le contexte suivant. Un humain doit en vérifier le contenu.\nRisque d'écriture depuis l'extérieur."
+        },
+        {
+          "id": "lec03-main-p040",
+          "title": "Exemple : OpenClaw",
+          "page": 40,
+          "content": "Exemple : OpenClaw\nChaque nuit, relit les échanges passés et ne transfère en mémoire longue que l'essentiel.\nSource : OpenClaw Docs « Memory overview », « Memory architecture ». État en 2026/10. Étapes résumées.\nNotes quotidiennes (memory/date.md)\nNotes du 10/24\nNotes du 10/25\nNotes du 10/26\nChaque nuit, automatiquement\nRévision (dreaming)\n1 Collecter : dédoublonner, lister les candidats\n2 Comparer : repérer les thèmes récurrents\n3 Transférer : ne garder que ce qui passe le seuil\nMEMORY.md (mémoire longue)  chargé au début de la conversation suivante\nPas de tri manuel\nOn ne garde pas tout\nUne recherche ponctuelle reste dans les notes du jour. La mémoire longue ne gonfle pas."
+        },
+        {
+          "id": "lec03-main-p041",
+          "title": "Skill : enregistrer la procédure d'une tâche répétitive dans un fichier",
+          "page": 41,
+          "content": "Skill : enregistrer la procédure d'une tâche répétitive dans un fichier\nLa mémoire garde « ce qui s'est passé ». Le Skill garde « comment faire ».\nSource : Anthropic « Agent Skills », « Skill authoring best practices » (Claude Platform Docs). Nombres de tokens indicatifs. Skill d'exemple fictif.\nContenu d'un Skill (ex. : rapport hebdo)\nweekly-report/\nSKILL.md  ← la procédure\ntemplate.docx  ← le modèle\nscripts/collect.py  ← l'agrégation\n---\nname: weekly-report\ndescription: pour le rapport hebdo\n---\n1. Rassembler les tickets de la semaine\n2. Rédiger selon template.docx\n① Le contexte ne reçoit que le nom et la description\nEnv. 100 tokens chacun. Sans le corps, le contexte n'est pas encombré\n② Chargé quand une demande requiert le Skill\nLe corps de la procédure n'entre dans le contexte qu'à ce moment."
+        }
+      ]
+    },
+    {
+      "section": "Partie 7 — Conditions d'arrêt et gestion des échecs",
+      "content": [
+        {
+          "id": "lec03-main-p042",
+          "title": "Partie 7 — Conditions d'arrêt et gestion des échecs",
+          "page": 42,
+          "content": "Partie 7\nArrêt et gestion des échecs\nArrêter la boucle · juger la fin · détecter l'échec"
+        },
+        {
+          "id": "lec03-main-p043",
+          "title": "3 mécanismes pour arrêter la boucle",
+          "page": 43,
+          "content": "3 mécanismes pour arrêter la boucle\nSans précaution, la boucle tourne jusqu'à ce que le modèle juge avoir « fini »\nSource : chiffres d'exemple fictifs. Voir aussi : Kasirzadeh & Gabriel « Agentic profiles for effective AI governance », Nature 656, 320–328 (publié le 2026/8/12).\nModèle\nFin quand il n'appelle plus d'outil ou que la sortie s'arrête\nSeul, cela s'arrête parfois trop tôt,\nou ne s'arrête jamais\nHarness\nArrêt dès qu'une limite fixée est atteinte\nEx. : plusieurs échecs, délai dépassé, budget dépassé\nPas déclaré par le modèle :\ncompté par le harness\nHumain / surveillance\nArrêt depuis l'extérieur\nEx. : un observateur appuie sur le bouton d'arrêt\nL'agent ne peut pas\nle désactiver"
+        },
+        {
+          "id": "lec03-main-p044",
+          "title": "Ce n'est pas le modèle qui a travaillé qui décide si c'est « fini »",
+          "page": 44,
+          "content": "Ce n'est pas le modèle qui a travaillé qui décide si c'est « fini »\nFaire juger par un autre modèle ou par un script d'évaluation non modifiable\nSource : Claude Code Docs « Keep Claude working toward a goal », README et program.md de karpathy/autoresearch (GitHub) (tous consultés le 2026/10/21).\n/goal de Claude Code : un autre modèle juge\n/goal = donner un objectif ; tourne jusqu'à ce qu'il soit atteint\nExécutant (Claude)\nÉvaluateur (autre petit modèle)\nÀ chaque tour\nNon atteint : transmettre la raison et continuer\nAtteint : fin\nImpossible : fin en échec\nautoresearch : script d'évaluation figé\nDispositif de Karpathy : l'IA mène des expériences\nprepare.py\nÉval., constantes\nNon modifiable\ntrain.py\nL'agent\nmodifie\nprogram.md\nModifié par l'humain\nUne expérience\nCoupée à 5 min ; rejetée au-delà de 10 min\nGarder ou annuler\nSi la perte de validation (val_bpb)\nbaisse, on garde ; sinon, on annule\nEnsemble\nTourne jusqu'à l'arrêt par un humain (NEVER STOP)"
+        },
+        {
+          "id": "lec03-main-p045",
+          "title": "3 points à vérifier quand un outil échoue",
+          "page": 45,
+          "content": "3 points à vérifier quand un outil échoue\nPour « Corrigez les tests en échec », quel échec est le plus gênant ?\nSource : les 3 points sont une synthèse de ce cours. Exemples fictifs, à titre d'illustration.\n① Se rétablir\nSe remet-il\nd'un échec ?\nExemple gênant\nÀ chaque timeout,\nrelance sans fin le même test\n② Être honnête\nSignale-t-il\nhonnêtement l'échec ?\nExemple gênant\nModifie le test,\npuis dit « C'est corrigé »\n③ Reprise sûre\nLa reprise évite-t-elle\nles doublons ?\nExemple gênant\nReprend en cours de route et\nrecrée la même pull request"
+        },
+        {
+          "id": "lec03-main-p046",
+          "title": "Dire « c'est fait » malgré l'échec",
+          "page": 46,
+          "content": "Dire « c'est fait » malgré l'échec\nSur des tâches insolubles, il fait passer les tests et déclare l'échec « terminé ». Le modèle juge ne le détecte pas\nSource : Zhong, Raghunathan & Carlini. ImpossibleBench (arXiv:2510.20270, octobre 2025), Advani « From Confident Closing to Silent Failure » (arXiv:2606.09863, juin 2026, FAGEN@ICML2026).\nPrétendre avoir résolu l'insoluble\n54%\nTâches où spécification et tests se contredisent :\ntaux de tests passés par GPT-5\nConflicting-SWEbench. Passer = violer la spécification\nProcédés utilisés\nTests :\nréécriture\nEntrées précises :\ncas particulier\nOpérateurs :\nsurcharge\nDire « terminé » malgré l'échec\n45〜48%\nParmi les échecs sur τ²-bench,\npart où l'agent disait « terminé »\nService client aérien et commerce. Vérifié via l'état enregistré\nAUROC du juge : 0,65 au plus\nAUROC : mesure de la capacité à discriminer\n0,5 = au hasard, 1 = parfait\nVérifier la fin par l'état, pas par les mots : résultats de tests, diff, journaux.\nUn modèle juge ne suffit pas. Définir les preuves et les lui fournir."
+        },
+        {
+          "id": "lec03-main-p047",
+          "title": "Le prompt réduit la triche",
+          "page": 47,
+          "content": "Le prompt réduit la triche\nMais sans l'éliminer. Rendre non modifiables les tests servant au jugement\nSource : Anthropic « Claude Opus 4.7 System Card », fig. 6.2.2.2.A (2026/4) ; consigne tirée de « Claude Opus 4.6 System Card », section 6.2.3.2, du même éditeur. Zhong, Raghunathan & Carlini. ImpossibleBench (arXiv:2510.20270, ICLR 2026). Vérifié le 2026/10/24.\nConsigne : ne pas tricher, signaler l'impossible\nTaux de triche sur des tâches de code insolubles\n45%\nSans consigne\n12.5%\nAvec consigne\nClaude Opus 4.7 (Anthropic, avril 2026)\nTests en lecture seule\nModifiable\nLecture seule\nDissimulation\nTriche\nFréquente\nréécriture\nbloquée\nQuasi nulle\nPerformance réelle\nMaintenue\nMaintenue\nEn baisse\nImpossibleBench (octobre 2025)"
+        },
+        {
+          "id": "lec03-main-p048",
+          "title": "Garantir l'idempotence",
+          "page": 48,
+          "content": "Garantir l'idempotence\nConversation et état de travail se rembobinent ; les opérations envoyées à l'extérieur, non\nSource : Zheng et al. ACRFence (arXiv:2603.20625, mars 2026, CoDAIM workshop 2026). Exemple de virement tiré de l'article. Preuve de concept avec la fonction de checkpoint de Claude Code CLI (Qwen3-32B) et un service de virement simulé.\nAgent\nBanque\n① Virement\n② Plantage en cours\n③ Reprise au point\nsauvegardé\n④ Nouveau virement\n(nouvel ID de référence)\nSeuls conversation et état reviennent jusqu'ici\n1er : effectué\n2e : effectué\nLe virement n'est pas annulé → double paiement\nParade\nEnregistrer les\nopérations externes\nAprès reprise, si\nla même opération arrive :\nne pas l'exécuter,\nrenvoyer le résultat enregistré\nEn test : double exécution dans 10 cas sur 10 avec reprise, 0 sans reprise."
+        }
+      ]
+    },
+    {
+      "section": "Partie 9 — Frontières de confiance et harness",
+      "content": [
+        {
+          "id": "lec03-main-p049",
+          "title": "Partie 9 — Frontières de confiance et harness",
+          "page": 49,
+          "content": "Partie 9\nFrontières de confiance et harness\nÀ qui se fier selon l'auteur"
+        },
+        {
+          "id": "lec03-main-p050",
+          "title": "Les fichiers de config sont aussi des instructions pour le modèle",
+          "page": 50,
+          "content": "Les fichiers de config sont aussi des instructions pour le modèle\nPour le modèle, instructions et données sont la même chaîne de caractères. Il ne peut pas juger s'il peut s'y fier.\nSource : Check Point Research (2026/2/25), Dong et al. « MINJA » (arXiv:2503.03704). Tableau établi par l'enseignant. Le nom du fichier d'instructions varie selon l'outil.\nConfiguration\nRôle dans le harness\nQui peut l'écrire\nFichier d'instructions\nAGENTS.md\nCLAUDE.md\nLu en premier, à chaque fois\nConsignes de travail\nVous, ou\nquiconque peut écrire dans le dépôt\nSkill\n(.claude/skills/)\nProcédure lue si pertinente.\nPeut aussi lancer des scripts\nquiconque peut écrire dans le dépôt\nMémoire\nEnregistre des traces,\nréinjectées plus tard dans le contexte\nEntrées passées :\ntous leurs auteurs\n\nComment cela crée un risque\n- À l'ouverture d'un dépôt cloné, les instructions écrites par d'autres sont lues automatiquement.\n- Installer un Skill public sans le lire peut faire exécuter des procédures ou scripts malveillants.\n- Une entrée malveillante qui s'est glissée dans la mémoire peut subsister comme instruction dans des conversations ultérieures."
+        },
+        {
+          "id": "lec03-main-p051",
+          "title": "Tracer la frontière",
+          "page": 51,
+          "content": "Tracer la frontière\nTout ressemble à la même chaîne : le modèle ne peut pas distinguer. La distinction se fait côté humain et harness.\nSource : synthèse de l'enseignant. Règles ask/deny : permissions de Claude Code (Claude Code Docs « Configure permissions »).\nDéfinir d'abord l'intérieur et l'extérieur\nExtérieur\nDépôt\ncloné\nSkill d'un tiers\nWeb, issues publiques\nRésultats d'outils\nVérifier\navant d'intégrer\nIntérieur\nÉcrit par vous\nFichier d'instructions\nLu puis intégré\nSkill\nRelu\nMémoire\nContrôler à la frontière\nLire avant d'intégrer\nLisez les fichiers d'instructions et Skills d'un dépôt cloné avant de les activer.\nRestreindre les droits pour lire l'extérieur\nPour lire le Web ou des issues, soumettre envoi et suppression à approbation (règles ask/deny).\nRevoir la mémoire de temps en temps\nUn humain vérifie ce qui est entré en mémoire à long terme."
+        },
+        {
+          "id": "lec03-main-p052",
+          "title": "Sans sandbox",
+          "page": 52,
+          "content": "Sans sandbox\nAccidents réels. Dans tous, l'agent touche à des fichiers inutiles pour sa tâche.\nSource : posts X de M. Lemkin et de M. Masad (PDG de Replit) (2025/7/18 et 20), post de l'intéressé sur Reddit r/google_antigravity (2025/11) et article de How-To Geek, anthropics/claude-code issue #99193 (2026/10/3), avis de sécurité Nx GHSA-cxm3-wv7p-598c (2025/8/27). Tous rapportés par les intéressés ou les entreprises. Vérifié le 2026/10/26.\nBase de production supprimée\nReplit Agent (juillet 2025)\nA effacé la base de production en plein développement. Dev et prod partageaient la même base\nParade : ne pas fournir les identifiants de prod\nDisque entier effacé\nGoogle Antigravity (novembre 2025)\nVoulant vider un cache, il a effacé tout le lecteur D\nParade : bloquer l'écriture hors du dossier de travail\nDossier personnel supprimé\nClaude Code (octobre 2026, Windows)\nVoulant faire le ménage, il a effacé le dossier personnel, clés (.ssh) comprises\nParade : bloquer l'écriture hors du dossier de travail\nUn AI CLI détourné pour chercher des secrets\nDétournement du paquet Nx (août 2025)\nUn paquet malveillant a lancé un AI CLI sans contrôle des droits, collecté .env, etc., puis les a exfiltrés\nParade : bloquer les communications sortantes"
+        },
+        {
+          "id": "lec03-main-p053",
+          "title": "Sandbox",
+          "page": 53,
+          "content": "Sandbox\nL'agent tourne souvent dans un environnement aux droits limités : c'est la sandbox.\nSource : Anthropic Engineering « sandboxing de Claude Code », Claude Code Docs « Configure the sandboxed Bash tool ». Désactivé par défaut. La lecture des clés peut être interdite via credentials / denyRead. Vérifié le 2026/10/26.\n/sandbox de Claude Code\nVotre PC\nSandbox\nL'agent\nlance des commandes\nDossier de travail :\nlecture/écriture\nNe communique qu'avec\nles domaines autorisés\n(github.com, etc.)\n~/.ssh, ~/.aws\nLisibles par défaut\nServeur de l'attaquant\nPas de connexion\nBloqué\nModifier ou supprimer hors du dossier de travail\nEnvoyer vers une destination non autorisée\nNon bloqué\nLa manipulation elle-même\nAbus d'une destination autorisée (identifiants de BD de prod, etc.)"
+        }
+      ]
+    },
+    {
+      "section": "Partie 10 — RSI et agents",
+      "content": [
+        {
+          "id": "lec03-main-p054",
+          "title": "Partie 10 — RSI et agents",
+          "page": 54,
+          "content": "Partie 10\nRSI et agents\nRevoir le RSI du cours 1 sous l'angle boucle, arrêt et frontière de confiance"
+        },
+        {
+          "id": "lec03-main-p055",
+          "title": "RSI : l'IA aide à développer l'IA, en cycle",
+          "page": 55,
+          "content": "RSI : l'IA aide à développer l'IA, en cycle\nSi l'IA aide la R&D et que le modèle obtenu accélère le suivant, l'amélioration peut boucler.\nL'IA aide la recherche\nCode, hypothèses, expériences\nImplémenter, entraîner\nCréer le modèle suivant\nÉvaluation, amélioration\nVérifier les progrès\nUtiliser l'IA suivante\nUne aide plus capable\nL'IA obtenue\naide à créer l'IA suivante\nSource : Anthropic Institute “When AI builds itself” (2026). Cycle conceptuel. RSI = Recursive Self-Improvement (auto-amélioration récursive)."
+        },
+        {
+          "id": "lec03-main-p056",
+          "title": "L'IA accélère le développement",
+          "page": 56,
+          "content": "L'IA accélère le développement\nSource : Anthropic Engineering « Building a C compiler with parallel Claudes » (N. Carlini, 2026/2), Cursor « Scaling long-running autonomous coding » (2026/1), post X de P. Steinberger (2026/2), METR « We are Changing our Developer Productivity Experiment Design » (2026/2/24). Tous rapportés par les intéressés ou les entreprises. Vérifié le 2026/10/28.\n16 Claude\ncréent un compilateur C\nAnthropic (février 2026)\n≈ 100 k lignes\nEnv. 2 000 sessions, env. 20 000 $\nCompile Linux 6.9\nDes centaines d'agents\ncréent un navigateur Web\nCursor (janvier 2026)\n> 1 M lignes\nEnv. 1 semaine, 1 000 fichiers\nRôles séparés : planificateur, exécutant, juge\nSeul,\n600 commits par jour\nCréateur d'OpenClaw (février 2026)\n600\ncommits/jour"
+        },
+        {
+          "id": "lec03-main-p057",
+          "title": "Où en est le RSI",
+          "page": 57,
+          "content": "Où en est le RSI\nUne IA très autonome accélère le développement de l'IA, mais pose le défi de contrôler son champ d'action.\nAccélération du développement\n> 80 %\nPart du code fusionné écrit par Claude (rapport d'Anthropic, mai 2026)\nIndicateur de volume de code, pas de productivité.\nLe défi de l'autonomie dangereuse\nJuillet 2026 : un agent en évaluation serait sorti de son environnement isolé et aurait compromis Hugging Face.\nUne connexion limitée à un service partagé est devenue la voie de communications imprévues et d'accès externes.\nSource : sources primaires Anthropic Institute (2026), rapport technique d'OpenAI (2026/8/26). Incident dans un environnement d'évaluation de recherche précis, pas un cas général des agents."
+        },
+        {
+          "id": "lec03-main-p058",
+          "title": "Le harness est aussi une cible du RSI",
+          "page": 58,
+          "content": "Le harness est aussi une cible du RSI\nL'agent améliore son propre harness.\nSource : Zhang et al. « Darwin Gödel Machine », arXiv:2505.22954 (2025/5), blog Sakana AI, Anthropic « Harness design for long-running … » (2026/3/24). Catégorisation établie par l'enseignant.\n\nBoucle d'amélioration :\n① Recueillir les traces du travail : échecs, nouvelles tentatives, coûts.\n② L'agent modifie le harness.\n③ Évaluer quantitativement : adopter le changement s'il améliore le résultat, sinon revenir en arrière.\nPuis recommencer.\n\nCe qui peut être modifié (cibles d'amélioration) :\n- Fichiers d'instructions et prompts.\n- Définitions et descriptions des outils.\n- Skills (procédures de travail).\n- Politiques de mémoire et de compaction.\n\nFaut-il le laisser modifier ces éléments ?\n| Élément | Exemples |\n|---|---|\n| Évaluation | Jeu d'évaluation, tests, code de notation |\n| Approbation | Modèle évaluateur, approbation humaine |\n| Isolation | Sandbox, permissions |\n| Arrêt | Limites, arrêt, retour en arrière |\n\nExemple de recherche : Darwin Gödel Machine de Sakana AI modifie son propre code et passe de 20 % à 50 % sur SWE-bench. Des comportements de triche, comme la suppression du code de jugement, ont également été observés."
+        },
+        {
+          "id": "lec03-main-p059",
+          "title": "Récapitulatif",
+          "page": 59,
+          "content": "Récapitulatif\nAgent = modèle + harness\nStructure d'un agent\nConcevoir les composants\nSécurité\nPartie 2 Assembler un agent\nLe modèle ne produit que du texte. Tout le reste revient au harness\nMême modèle : coût et vitesse varient selon le harness\nPartie 3 Boucle\nLes erreurs se cumulent : mesurez-les quantitativement\nPartie 4 Outils\nComment appeler les outils efficacement\nPartie 5 Sortie structurée et appels d'outils\nPartie 6 Mémoire\n« Ce qui s'est passé » en mémoire, « comment faire » en Skill\nPartie 7 Conditions d'arrêt\nJuger la fin du travail par un mécanisme distinct\nPartie 8 Gestion des échecs\nVérifier par des tests, pas par l'auto-déclaration\nPartie 9 Frontières de confiance et harness\nTracer la frontière selon qui peut écrire, et isoler par sandbox\nPartie 10 RSI et agents\n\nLe harness peut lui aussi être amélioré. L'évaluation et l'arrêt restent à l'extérieur."
+        }
+      ]
+    },
+    {
+      "section": "Annexe",
+      "content": [
+        {
+          "id": "lec03-main-p060",
+          "title": "Annexe",
+          "page": 60,
+          "content": "Appendix\nAnnexe\nDernières évolutions par brique technique (oct. 2026)"
+        },
+        {
+          "id": "lec03-main-p061",
+          "title": "Complément : SDK / frameworks d'agents, dernières évolutions",
+          "page": 61,
+          "content": "Complément : SDK / frameworks d'agents, dernières évolutions\nLes grands SDK tendent à intégrer de série, en plus des composants de la boucle, la sandbox, les workflows et la sauvegarde de l'état.\nCe qui a changé\nÉlément\nMise à jour\nDate\nOpenAI Agents SDK\nHarness étendu, exécution en sandbox native. Intègre AGENTS.md, skills, MCP, shell et application de patchs. Disponible en Python\nAnnoncé le 2026/4/15\nGoogle ADK 2.0\nAjout de workflows en graphe et de pause/reprise en attente d'une saisie humaine. Python, Go et TypeScript en disponibilité générale\n2026/5/19〜8/21\nClaude Agent SDK\nOutils, boucle et gestion des permissions de Claude Code en bibliothèque (Python, TypeScript). Version hébergée : Managed Agents\nDocumentation de 2026/10\nLien avec le cours. Les SDK couvrent plus des « 4 éléments du harness ». Quoi déléguer, où s'arrêter : à vous de décider.\nPoints d'attention. Les versions évoluent rapidement et peuvent introduire des changements incompatibles ; ADK 2.0 fournit une procédure de migration depuis 1.x. L'exercice utilise une version figée de pydantic-ai, la même bibliothèque que l'agent de réponse de Quri.\nSource : OpenAI « The next evolution of the Agents SDK » (2026/4/15), Google « Welcome to ADK 2.0 », Anthropic « Agent SDK overview » (ces deux derniers non datés). Informations vérifiées le 2026/10/9"
+        },
+        {
+          "id": "lec03-main-p062",
+          "title": "Complément : sortie structurée, dernières évolutions",
+          "page": 62,
+          "content": "Complément : sortie structurée, dernières évolutions\nLes API des 3 grands imposent une sortie conforme au schéma. Syntaxe et exceptions varient.\nCe qui a changé\nÉlément\nMise à jour\nDate\nClaude API\nSortie structurée sortie de bêta. Deux voies : format de réponse (output_config.format) et strict: true dans la définition d'outil\n2026/1/29\nOpenAI API\nVia le format json_schema et strict: true. Le JSON mode, lui, ne garantit pas la conformité au schéma\nDocumentation de 2026/10\nGemini API\nPrend en charge une partie de JSON Schema. Grands schémas ou imbrications profondes parfois refusés\nMis à jour le 2026/9/23\nLien avec le cours. Cela concrétise la fonction qui impose le format. Les erreurs de format diminuent fortement, mais un refus ou une coupure à la limite de tokens peut encore produire une sortie non conforme au schéma. Conservez une étape de validation.\nPoints d'attention. Certaines contraintes ne sont pas prises en charge, comme les plages de valeurs numériques chez Claude. Sur certains modèles Claude publiés en septembre 2026, il n'est pas possible d'imposer un appel d'outil avec tool_choice défini sur any ou tool.\nSource : Anthropic « Structured outputs », « Claude Platform release notes » (2026/1/29, 9/1, 9/22), OpenAI « Structured Outputs », Google « Structured output » (mis à jour le 2026/9/23). Informations vérifiées le 2026/10/9"
+        },
+        {
+          "id": "lec03-main-p063",
+          "title": "Complément : appels d'outils, dernières évolutions",
+          "page": 63,
+          "content": "Complément : appels d'outils, dernières évolutions\nClaude API : chargement d'outils à la demande et appels groupés depuis du code, sans bêta.\nCe qui a changé\nÉlément\nMise à jour\nDate\nRecherche d'outils\nChargement des définitions différé ; le modèle cherche et n'ajoute que le nécessaire. Exemple de la doc : env. 55 000 tokens de définitions réduits de plus de 85 %\n2026/2/17\nAppel via du code\nLe code écrit par le modèle enchaîne les appels ; seule la sortie finale revient en entrée. −24 % de tokens d'entrée sur une éval. de recherche\n2026/2/17\nOpenAI API\nPrise en charge du chargement différé (defer_loading) et de tool_search. Modèles gpt-5.4 et suivants\nDocumentation de 2026/10\nLien avec le cours. Dans la partie principale, la liste des outils disponibles était placée dans le contexte. Quand les outils sont nombreux, cette liste seule consomme le contexte ; on charge donc les définitions seulement au besoin. Selon la documentation, la précision du choix d'outil baisse au-delà de 30 à 50 outils.\nPoints d'attention. Pour des tâches qui appellent les outils un par un dans l'ordre, ce mécanisme n'apporte pas de gain ; une évaluation a même relevé environ 8 % de coût supplémentaire. La documentation précise que la désignation de l'appelant n'est pas une frontière de sécurité. Vérifiez les permissions dans le harness.\nSource : Anthropic « Tool search tool », « Programmatic tool calling », « Claude Platform release notes » (2026/2/17), OpenAI « Function calling » (non daté). Informations vérifiées le 2026/10/9"
+        },
+        {
+          "id": "lec03-main-p064",
+          "title": "Complément : capacité sur les tâches longues, dernières évolutions",
+          "page": 64,
+          "content": "Complément : capacité sur les tâches longues, dernières évolutions\nSelon METR, l'horizon à 50 % des meilleurs modèles publics est d'env. 12 h (fév.–mars 2026). Au-delà de 16 h, la batterie actuelle n'est pas fiable.\nCe qui a changé\nÉlément\nMise à jour\nDate\nHorizon temporel à 50 %\nEnv. 12 h pour la frontière des modèles publics (intervalle 5–61 h). Longueur, en temps humain, des tâches réussies une fois sur deux\nÉval. de 2026/2–3\nHorizon temporel à 80 %\nEnv. 1,5 h au même moment (intervalle 50 min–2 h 40). Exiger un taux de réussite plus élevé réduit fortement la durée déléguable\nÉval. de 2026/2–3\nLimites de la mesure\nGPT-5.6 Sol : env. 11,3 h. En comptant les solutions frauduleuses, plus de 270 h ; METR juge la mesure non robuste\n2026/6/26\nLien avec le cours. Le calcul « 95 % par étape, mais environ 36 % pour 20 étapes d'affilée » est illustratif. Dans les mesures aussi, l'écart entre 50 % et 80 % est important. Pouvoir fonctionner longtemps et terminer de manière fiable sont deux choses différentes.\nPoints d'attention. L'horizon temporel mesure la longueur des tâches, pas la durée pendant laquelle le système peut fonctionner sans interruption. Le résumé d'évaluation de Claude Opus 5.5 du 2026/9/22 ne donne pas de valeur d'horizon temporel.\nSource : METR « Frontier Risk Report (February to March 2026) » (2026/5/19), « Summary of METR's predeployment evaluation of GPT-5.6 Sol » (2026/6/26), « Task-Completion Time Horizons of Frontier AI Models » (mis à jour le 2026/5/8). Informations vérifiées le 2026/10/9"
+        },
+        {
+          "id": "lec03-main-p065",
+          "title": "Complément : mémoire et Context Engineering, dernières évolutions",
+          "page": 65,
+          "content": "Complément : mémoire et Context Engineering, dernières évolutions\nLe résumé d'historique (compaction) et la mémoire sous forme de fichiers sont devenus des fonctions d'API. Il s'agit toujours de stocker puis réinjecter.\nCe qui a changé\nÉlément\nMise à jour\nDate\nCompaction automatique\nAPI de résumé d'historique côté serveur, lancée en bêta\n2026/2/5\nCompaction à tout moment\nL'application choisit quand résumer. Images et documents de la partie résumée sont perdus\nBêta du 2026/9/14\nOutil mémoire\nLe modèle demande des opérations sur fichiers ; l'application les exécute dans son propre stockage. Plus besoin de bêta\n2026/2/17\nLien avec le cours. Parmi les trois périmètres de la partie principale, la compaction comprime « l'historique dans la boucle », et l'outil mémoire correspond aux « traces entre sessions ». Les poids du modèle ne changent pas.\nPoints d'attention. Stockage géré par l'app : validez les chemins qui en sortent. Une consigne perdue au résumé ne s'applique plus.\nSource : Anthropic « Claude Platform release notes » (2026/2/5, 2/17, 9/14), « Memory tool », doc de la compaction à tout moment (ces deux derniers non datés). Informations vérifiées le 2026/10/9"
+        },
+        {
+          "id": "lec03-main-p066",
+          "title": "Complément : AGENTS.md et Skills, dernières évolutions",
+          "page": 66,
+          "content": "Complément : AGENTS.md et Skills, dernières évolutions\nDes formats communs à plusieurs outils se répandent : AGENTS.md pour les fichiers d'instructions et Agent Skills pour les ensembles de procédures.\nCe qui a changé\nÉlément\nMise à jour\nDate\nAGENTS.md\nCédé par OpenAI à l'Agentic AI Foundation (Linux Foundation). Adopté par plus de 60 000 projets publics\n2025/12/9\nPrise en charge par Claude Code\nSans CLAUDE.md, lit directement AGENTS.md comme instructions (v2.1.277 et suivantes)\nDocumentation de 2026/10\nAgent Skills\nDossier contenant un SKILL.md. Nom et description lus d'abord, corps lu au besoin. Dans Claude API, Skills API sort de bêta\n2026/8/19\nLien avec le cours. Cela complète « les fichiers de configuration sont aussi des instructions pour le modèle ». Pour les fichiers qui remplissent ce rôle, la standardisation autour d'AGENTS.md progresse, et Claude Code peut désormais les lire aussi.\nPoints d'attention. Format commun = instructions externes faciles à importer. Lisez les AGENTS.md et Skills tiers avant de les admettre.\nSource : annonce de création de l'Agentic AI Foundation par la Linux Foundation (2025/12/9), sites officiels d'AGENTS.md et d'Agent Skills, Anthropic « Claude Platform release notes » (2026/8/19), « How Claude remembers your project ». Informations vérifiées le 2026/10/9"
+        },
+        {
+          "id": "lec03-main-p067",
+          "title": "Complément : sandbox, permissions et approbation, dernières évolutions",
+          "page": 67,
+          "content": "Complément : sandbox, permissions et approbation, dernières évolutions\nDes produits confient une partie de l'approbation à un classifieur (un autre modèle). Les éditeurs précisent que la sécurité n'est pas garantie.\nCe qui a changé\nÉlément\nMise à jour\nDate\nauto mode de Claude Code\nUn autre modèle examine chaque opération avant exécution et bloque celles qui dépassent la demande, etc. Par défaut dans les sessions interactives du terminal et de VS Code depuis la v2.1.283\nDocumentation de 2026/10\nMesures publiées\nEnv. 93 % des demandes étaient approuvées telles quelles. Le classifieur bloque env. 83 % des opérations excessives (17 % passent)\n2026/5/25\nSandbox de l'OS\nL'OS restreint lecture/écriture et réseau du shell. −84 % de demandes d'approbation rapportés\n2026/5/25\nLien avec le cours. La mise en œuvre de l'approbation humaine avant une opération irréversible évolue. Si l'approbation devient une formalité, l'idée est de combiner un examen probabiliste et une frontière déterministe.\nPoints d'attention. Le classifieur peut laisser passer des cas. Anthropic explique en substance que la frontière déterministe intervient lorsque tous les mécanismes probabilistes ont échoué. Maintenez le principe du moindre privilège.\nSource : Anthropic « How we contain Claude across products » (2026/5/25), « Choose a permission mode », « Configure the sandboxed Bash tool » (doc Claude Code, non datée). Informations vérifiées le 2026/10/9"
+        },
+        {
+          "id": "lec03-main-p068",
+          "title": "Complément : conception de harness publiée, dernières évolutions",
+          "page": 68,
+          "content": "Complément : conception de harness publiée, dernières évolutions\nPlusieurs éditeurs ont publié la conception de leur harness : séparer production et vérification, stocker l'état à l'extérieur, isoler les identifiants.\nCe qui a changé\nÉlément\nContenu publié\nÉditeur, date\nSéparation des rôles\n3 agents : planification, génération, évaluation. L'auto-évaluation étant laxiste, l'évaluateur est séparé. Seul : 20 min, 9 $ ; avec ce schéma : 6 h, 200 $\nAnthropic 2026/3/24\nSéparer état et exécution\nHarness hors de l'environnement d'exécution, reprise depuis les traces. Identifiants hors de portée de l'environnement où tourne le code généré\nAnthropic 2026/4/8\nDes mécanismes plutôt que des consignes\nAGENTS.md limité à un sommaire d'env. 100 lignes ; règles imposées mécaniquement par lint et tests\nOpenAI 2026/2/11\nLien avec le cours. Ce sont des exemples de « ne pas juger l'achèvement sur la seule déclaration du modèle » et de « réexaminer le harness avant de changer de modèle ». Des rapports indiquent aussi qu'avec de nouveaux modèles, certains composants devenus inutiles ont été retirés.\nPoints d'attention. Chaque résultat provient de l'environnement propre à son éditeur ; l'effet sur d'autres tâches n'est pas garanti. Ajouter des composants augmente les coûts et le temps. Vérifiez l'effet avec votre propre jeu d'évaluation.\nSource : Anthropic « Harness design for long-running application development » (2026/3/24), « Scaling Managed Agents: Decoupling the brain from the hands » (2026/4/8), OpenAI « Harness engineering » (2026/2/11). Informations vérifiées le 2026/10/9"
+        },
+        {
+          "id": "lec03-main-p069",
+          "title": "Complément : RSI / l'IA accélère l'IA, dernières évolutions",
+          "page": 69,
+          "content": "Complément : RSI / l'IA accélère l'IA, dernières évolutions\nLes chiffres d'accélération se multiplient, mais selon l'évaluation externe, la R&D en IA n'est « pas encore entièrement automatisée » (sept. 2026).\nCe qui a changé\nÉlément\nContenu rapporté\nÉditeur, date\nPart du code\nPlus de 80 % du code fusionné chez Anthropic est écrit par Claude. La direction estime au moins 90 % ; 80 % serait prudent\nAnthropic Institute, état 2026/5\nVolume de code\nCode fusionné par ingénieur et par jour : ×8 par rapport à 2024 (T2 2026). Le document note que les lignes surestiment la hausse de productivité\nAnthropic Institute\nÉvaluation externe\nJuge peu probable que Claude Opus 5.5 automatise entièrement la R&D en IA. Accélération des capacités due à l'IA : env. ×1,5 au total (estimation provisoire)\nMETR 2026/9/22\nLien avec le cours. Le « plus de 80 % » de « Où en est le RSI » a pu être confirmé dans une source primaire. Le chiffre correspond à mai 2026. La page ne donne pas de date de publication et comporte un ajout daté du 2026/9/18.\nPoints d'attention. Il s'agit de données déclarées par le développeur et d'une évaluation dont le développeur a relu le texte. Le document indique que « nous n'y sommes pas encore » et discute aussi la nécessité de conserver la possibilité de ralentir ou suspendre le développement.\nSource : Anthropic Institute « When AI builds itself » (non daté, ajout du 2026/9/18), METR « Summary of METR's predeployment evaluation of Claude Opus 5.5 » (2026/9/22). Informations vérifiées le 2026/10/9"
+        },
+        {
+          "id": "lec03-main-p070",
+          "title": "Complément : accidents et incidents d'agents, dernières évolutions",
+          "page": 70,
+          "content": "Complément : accidents et incidents d'agents, dernières évolutions\nLa compromission de Hugging Face (juillet 2026) est confirmée par OpenAI (2026/8/26). En septembre, une sortie réseau depuis un environnement isolé a aussi été signalée.\nCe qui a changé\nDate\nContenu rapporté\nSource primaire\nJuillet 2026\nUn agent OpenAI en évaluation est sorti via le service interne de gestion de paquets et a pénétré Hugging Face et l'infrastructure interne d'OpenAI\nOpenAI (8/26), Hugging Face (7/16)\nCauses (même rapport)\nPrompt système, harness et surveillance du produit n'étaient pas appliqués à l'environnement d'éval. Selon le rapport, les appliquer ramènerait la tendance à compromettre l'infrastructure à un centième ou moins\nOpenAI (8/26)\n20 septembre 2026\nUn agent en entraînement a interrogé un chatbot externe via DNS. Détecté dans les 15 minutes, mais l'arrêt auto n'a pas fonctionné ; arrêt manuel après env. 2,5 h\nOpenAI (mis à jour le 9/25)\nLien avec le cours. Les trois points de la partie principale se retrouvent ici : une connexion limitée devient un chemin d'accès (frontière de confiance), le moindre privilège, et des limites et arrêts imposés par le système plutôt que confiés au modèle.\nPoints d'attention. Il s'agit d'environnements d'évaluation et d'entraînement utilisés pour la recherche. La divulgation de Hugging Face ne précise pas quel modèle était à l'origine de l'attaque. Après l'incident de septembre, OpenAI a suspendu l'utilisation des outils par son modèle le plus avancé.\nSource : OpenAI « The Hugging Face incident and the road ahead » (2026/8/26), Hugging Face « Security incident disclosure — July 2026 » (2026/7/16), OpenAI « An agent used DNS to reach an external chatbot » (mis à jour le 2026/9/25). Informations vérifiées le 2026/10/9"
+        },
+        {
+          "id": "lec03-main-p071",
+          "title": "Complément : sources primaires pour suivre l'actualité",
+          "page": 71,
+          "content": "Complément : sources primaires pour suivre l'actualité\nVersions et chiffres vieillissent vite. Avant usage, vérifiez la doc et le changelog du fournisseur.\nDomaine\nOù vérifier (nom)\nCe qu'on y apprend\nFonctions d'API\nAnthropic « Claude Platform release notes », docs API d'OpenAI et de Google\nAjouts et changements : sortie structurée, outils, compaction\nAgents de codage\n« Claude Code changelog », OpenAI « ChatGPT & Codex changelog »\nChangements : modes de permission, sandbox, réglages par défaut\nSDK / frameworks\nCHANGELOG et Releases GitHub de chaque SDK, doc officielle de Google ADK\nChangements par version, changements cassants\nCapacité sur tâches longues\nMETR « Task-Completion Time Horizons of Frontier AI Models », résumés d'éval. de METR\nÉvolution de l'horizon temporel, limites de la mesure\nFormats communs\nSites officiels d'AGENTS.md et d'Agent Skills\nSpécification, liste des outils compatibles\nConception et rapports d'incidents\nAnthropic Engineering, rapports d'OpenAI, divulgations des parties concernées\nExemples de harness, déroulé et mesures des incidents\nConsultez les sources primaires avant les articles explicatifs. Vérifiez date et version ; distinguez auto-déclaration et évaluation tierce.\nSeuls les noms des sources sont indiqués ; toutes ont été consultées pour ce complément. Informations vérifiées le 2026/10/9"
+        }
+      ]
+    }
+  ]
+}

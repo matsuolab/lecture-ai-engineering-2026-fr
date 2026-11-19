@@ -1,0 +1,780 @@
+[
+  {
+    "id": "term:ai-engineering",
+    "kind": "term",
+    "title": "Ingénierie de l'IA",
+    "aliases": [
+      "AI Engineering",
+      "ingénierie de l'IA",
+      "Ingénierie de l'IA"
+    ]
+  },
+  {
+    "id": "term:evaluation-loop",
+    "kind": "term",
+    "title": "Cycle d'évaluation et d'amélioration",
+    "aliases": [
+      "cycle d'amélioration",
+      "cycle d'évaluation et d'amélioration",
+      "Cycle d'évaluation et d'amélioration"
+    ]
+  },
+  {
+    "id": "term:llm",
+    "kind": "term",
+    "title": "LLM (grand modèle de langage)",
+    "aliases": [
+      "LLM",
+      "Large Language Model",
+      "LLM (grand modèle de langage)",
+      "grand modèle de langage"
+    ]
+  },
+  {
+    "id": "term:token",
+    "kind": "term",
+    "title": "Token",
+    "aliases": [
+      "token",
+      "Token"
+    ]
+  },
+  {
+    "id": "term:context-window",
+    "kind": "term",
+    "title": "Fenêtre de contexte",
+    "aliases": [
+      "context window",
+      "fenêtre de contexte",
+      "longueur du contexte",
+      "Fenêtre de contexte"
+    ]
+  },
+  {
+    "id": "term:prompt",
+    "kind": "term",
+    "title": "Prompt",
+    "aliases": [
+      "prompt",
+      "Prompt"
+    ]
+  },
+  {
+    "id": "term:system-prompt",
+    "kind": "term",
+    "title": "Prompt système",
+    "aliases": [
+      "instructions",
+      "system instruction",
+      "prompt système",
+      "consignes",
+      "instructions système",
+      "Prompt système"
+    ]
+  },
+  {
+    "id": "term:temperature",
+    "kind": "term",
+    "title": "Température",
+    "aliases": [
+      "temperature",
+      "paramètre de température",
+      "température",
+      "Température"
+    ]
+  },
+  {
+    "id": "term:hallucination",
+    "kind": "term",
+    "title": "Hallucination",
+    "aliases": [
+      "hallucination",
+      "Hallucination"
+    ]
+  },
+  {
+    "id": "term:api",
+    "kind": "term",
+    "title": "API",
+    "aliases": [
+      "API",
+      "Application Programming Interface",
+      "Web API",
+      "interface de programmation d'application"
+    ]
+  },
+  {
+    "id": "term:api-key",
+    "kind": "term",
+    "title": "Clé API",
+    "aliases": [
+      "API key",
+      "clé API",
+      "Clé API"
+    ]
+  },
+  {
+    "id": "term:environment-variable",
+    "kind": "term",
+    "title": "Variable d'environnement",
+    "aliases": [
+      "env",
+      "environment variable",
+      "variable d'environnement",
+      "Variable d'environnement"
+    ]
+  },
+  {
+    "id": "term:rate-limit",
+    "kind": "term",
+    "title": "Limitation du débit",
+    "aliases": [
+      "rate limit",
+      "erreur 429",
+      "limitation du débit",
+      "limite de débit",
+      "Limitation du débit"
+    ]
+  },
+  {
+    "id": "term:codespaces",
+    "kind": "term",
+    "title": "GitHub Codespaces",
+    "aliases": [
+      "Codespaces",
+      "GitHub Codespaces",
+      "espace de code"
+    ]
+  },
+  {
+    "id": "term:devcontainer",
+    "kind": "term",
+    "title": "devcontainer",
+    "aliases": [
+      "Dev Container",
+      "devcontainer",
+      "devcontainer.json",
+      "conteneur de développement"
+    ]
+  },
+  {
+    "id": "term:codespaces-secret",
+    "kind": "term",
+    "title": "Secret Codespaces",
+    "aliases": [
+      "Codespaces secret",
+      "secret Codespaces",
+      "Secret Codespaces"
+    ]
+  },
+  {
+    "id": "term:fork",
+    "kind": "term",
+    "title": "Fork",
+    "aliases": [
+      "fork",
+      "Fork"
+    ]
+  },
+  {
+    "id": "term:branch",
+    "kind": "term",
+    "title": "Branche",
+    "aliases": [
+      "branch",
+      "branche",
+      "Branche"
+    ]
+  },
+  {
+    "id": "term:pull-request",
+    "kind": "term",
+    "title": "Pull request (PR)",
+    "aliases": [
+      "PR",
+      "Pull Request",
+      "pull request (PR)",
+      "demande de fusion",
+      "Pull request (PR)"
+    ]
+  },
+  {
+    "id": "term:github-copilot",
+    "kind": "term",
+    "title": "GitHub Copilot",
+    "aliases": [
+      "Copilot",
+      "GitHub Copilot"
+    ]
+  },
+  {
+    "id": "term:code-completion",
+    "kind": "term",
+    "title": "Complétion de code",
+    "aliases": [
+      "inline suggestion",
+      "complétion en ligne",
+      "complétion de code",
+      "Complétion de code"
+    ]
+  },
+  {
+    "id": "term:coding-agent",
+    "kind": "term",
+    "title": "Agent de codage",
+    "aliases": [
+      "Coding Agent",
+      "agent de codage IA",
+      "agent de codage",
+      "Agent de codage"
+    ]
+  },
+  {
+    "id": "term:pretraining",
+    "kind": "term",
+    "title": "Préentraînement",
+    "aliases": [
+      "pre-training",
+      "préentraînement",
+      "pré-entraînement",
+      "Préentraînement"
+    ]
+  },
+  {
+    "id": "term:fine-tuning",
+    "kind": "term",
+    "title": "Ajustement fin",
+    "aliases": [
+      "FT",
+      "fine-tuning",
+      "ajustement fin",
+      "entraînement supplémentaire",
+      "Ajustement fin"
+    ]
+  },
+  {
+    "id": "term:sft",
+    "kind": "term",
+    "title": "Ajustement fin supervisé (SFT)",
+    "aliases": [
+      "SFT",
+      "Supervised Fine-Tuning",
+      "ajustement sur instructions",
+      "ajustement fin supervisé (SFT)",
+      "Ajustement fin supervisé (SFT)"
+    ]
+  },
+  {
+    "id": "term:peft",
+    "kind": "term",
+    "title": "PEFT",
+    "aliases": [
+      "PEFT",
+      "Parameter-Efficient Fine-Tuning",
+      "ajustement fin économe en paramètres"
+    ]
+  },
+  {
+    "id": "term:lora",
+    "kind": "term",
+    "title": "LoRA",
+    "aliases": [
+      "LoRA",
+      "Low-Rank Adaptation"
+    ]
+  },
+  {
+    "id": "term:lora-rank",
+    "kind": "term",
+    "title": "Rang (r de LoRA)",
+    "aliases": [
+      "rank",
+      "rang (r de LoRA)",
+      "rang",
+      "Rang (r de LoRA)"
+    ]
+  },
+  {
+    "id": "term:qlora",
+    "kind": "term",
+    "title": "QLoRA",
+    "aliases": [
+      "QLoRA",
+      "Quantized LoRA"
+    ]
+  },
+  {
+    "id": "term:quantization",
+    "kind": "term",
+    "title": "Quantification",
+    "aliases": [
+      "quantization",
+      "quantification",
+      "Quantification"
+    ]
+  },
+  {
+    "id": "term:learning-rate",
+    "kind": "term",
+    "title": "Taux d'apprentissage",
+    "aliases": [
+      "learning rate",
+      "lr",
+      "taux d'apprentissage",
+      "Taux d'apprentissage"
+    ]
+  },
+  {
+    "id": "term:epoch",
+    "kind": "term",
+    "title": "Époque",
+    "aliases": [
+      "epoch",
+      "époque",
+      "Époque"
+    ]
+  },
+  {
+    "id": "term:overfitting",
+    "kind": "term",
+    "title": "Surapprentissage",
+    "aliases": [
+      "overfitting",
+      "surapprentissage",
+      "sur-ajustement",
+      "Surapprentissage"
+    ]
+  },
+  {
+    "id": "term:huggingface-hub",
+    "kind": "term",
+    "title": "Hugging Face Hub",
+    "aliases": [
+      "HF Hub",
+      "Hugging Face",
+      "Hugging Face Hub"
+    ]
+  },
+  {
+    "id": "term:ai-agent",
+    "kind": "term",
+    "title": "Agent IA",
+    "aliases": [
+      "agent",
+      "agent IA",
+      "Agent IA"
+    ]
+  },
+  {
+    "id": "term:agent-loop",
+    "kind": "term",
+    "title": "Boucle de l'agent",
+    "aliases": [
+      "agent loop",
+      "boucle de l'agent",
+      "boucle d'appels d'outils",
+      "Boucle de l'agent"
+    ]
+  },
+  {
+    "id": "term:tool",
+    "kind": "term",
+    "title": "Outil (Tool use / Function calling)",
+    "aliases": [
+      "Function calling",
+      "Tool use",
+      "outil",
+      "appel d'outil",
+      "outil (Tool use / Function calling)",
+      "Outil (Tool use / Function calling)"
+    ]
+  },
+  {
+    "id": "term:tool-description",
+    "kind": "term",
+    "title": "Description d'outil",
+    "aliases": [
+      "docstring",
+      "tool schema",
+      "description d'outil",
+      "schéma d'outil",
+      "Description d'outil"
+    ]
+  },
+  {
+    "id": "term:structured-output",
+    "kind": "term",
+    "title": "Sortie structurée",
+    "aliases": [
+      "structured output",
+      "sortie JSON",
+      "sortie structurée",
+      "Sortie structurée"
+    ]
+  },
+  {
+    "id": "term:harness",
+    "kind": "term",
+    "title": "Harness",
+    "aliases": [
+      "agent harness",
+      "harness d'agent",
+      "harness",
+      "Harness"
+    ]
+  },
+  {
+    "id": "term:pi",
+    "kind": "term",
+    "title": "Pi",
+    "aliases": [
+      "Pi",
+      "Pi coding agent",
+      "pi agent"
+    ]
+  },
+  {
+    "id": "term:pydantic-ai",
+    "kind": "term",
+    "title": "Pydantic AI",
+    "aliases": [
+      "Pydantic AI",
+      "PydanticAI",
+      "pydantic-ai"
+    ]
+  },
+  {
+    "id": "term:adk",
+    "kind": "term",
+    "title": "ADK (Agent Development Kit)",
+    "aliases": [
+      "ADK",
+      "ADK（Agent Development Kit）",
+      "Agent Development Kit",
+      "google-adk",
+      "ADK (Agent Development Kit)"
+    ]
+  },
+  {
+    "id": "term:mcp",
+    "kind": "term",
+    "title": "MCP (Model Context Protocol)",
+    "aliases": [
+      "MCP",
+      "MCP（Model Context Protocol）",
+      "Model Context Protocol",
+      "MCP (Model Context Protocol)"
+    ]
+  },
+  {
+    "id": "term:guardrail",
+    "kind": "term",
+    "title": "Garde-fou",
+    "aliases": [
+      "guardrail",
+      "garde-fou",
+      "Garde-fou"
+    ]
+  },
+  {
+    "id": "term:human-in-the-loop",
+    "kind": "term",
+    "title": "Human-in-the-loop",
+    "aliases": [
+      "HITL",
+      "Human-in-the-loop",
+      "approbation humaine",
+      "étape de confirmation"
+    ]
+  },
+  {
+    "id": "term:test-model",
+    "kind": "term",
+    "title": "TestModel",
+    "aliases": [
+      "TestModel",
+      "modèle de test"
+    ]
+  },
+  {
+    "id": "term:homework-levels",
+    "kind": "term",
+    "title": "Les trois niveaux du devoir",
+    "aliases": [
+      "trois niveaux",
+      "les trois niveaux du devoir",
+      "niveau du devoir",
+      "Les trois niveaux du devoir"
+    ]
+  },
+  {
+    "id": "term:answer-md",
+    "kind": "term",
+    "title": "answer.md",
+    "aliases": [
+      "answer.md",
+      "fichier de réponses"
+    ]
+  },
+  {
+    "id": "term:lec-start-tag",
+    "kind": "term",
+    "title": "Tag lecNN-start",
+    "aliases": [
+      "lec03-start",
+      "tag lecNN-start",
+      "tag de début",
+      "Tag lecNN-start"
+    ]
+  },
+  {
+    "id": "term:default-model",
+    "kind": "term",
+    "title": "Modèle par défaut",
+    "aliases": [
+      "gemini-3.5-flash-lite",
+      "modèle par défaut",
+      "Modèle par défaut"
+    ]
+  },
+  {
+    "id": "term:external-tool",
+    "kind": "term",
+    "title": "Outil externe",
+    "aliases": [
+      "external tool",
+      "service externe",
+      "outil externe",
+      "Outil externe"
+    ]
+  },
+  {
+    "id": "term:mcp-server",
+    "kind": "term",
+    "title": "Serveur MCP",
+    "aliases": [
+      "MCP server",
+      "serveur MCP",
+      "Serveur MCP"
+    ]
+  },
+  {
+    "id": "term:mcp-client",
+    "kind": "term",
+    "title": "Client MCP",
+    "aliases": [
+      "MCP client",
+      "client MCP",
+      "hôte MCP",
+      "Client MCP"
+    ]
+  },
+  {
+    "id": "term:mcp-transport",
+    "kind": "term",
+    "title": "Transport (stdio / Streamable HTTP)",
+    "aliases": [
+      "Streamable HTTP",
+      "stdio",
+      "transport",
+      "transport MCP",
+      "transport (stdio / Streamable HTTP)",
+      "Transport (stdio / Streamable HTTP)"
+    ]
+  },
+  {
+    "id": "term:mcp-config",
+    "kind": "term",
+    "title": "Configuration mcpServers",
+    "aliases": [
+      "mcp.json",
+      "mcpServers",
+      "mcp_servers.json",
+      "fichier de configuration MCP",
+      "configuration mcpServers",
+      "Configuration mcpServers"
+    ]
+  },
+  {
+    "id": "term:tool-namespace",
+    "kind": "term",
+    "title": "Espace de noms des outils",
+    "aliases": [
+      "prefix",
+      "espace de noms des outils",
+      "préfixe du nom d'outil",
+      "collision de noms",
+      "Espace de noms des outils"
+    ]
+  },
+  {
+    "id": "term:fetch-server",
+    "kind": "term",
+    "title": "Serveur fetch",
+    "aliases": [
+      "fetch",
+      "mcp-server-fetch",
+      "outil de récupération Web",
+      "serveur fetch",
+      "Serveur fetch"
+    ]
+  },
+  {
+    "id": "term:evaluation-dataset",
+    "kind": "term",
+    "title": "Jeu d'évaluation",
+    "aliases": [
+      "eval set",
+      "jeu de test",
+      "jeu d'évaluation",
+      "jeu de données d'évaluation",
+      "Jeu d'évaluation"
+    ]
+  },
+  {
+    "id": "term:edge-case",
+    "kind": "term",
+    "title": "Cas limite",
+    "aliases": [
+      "edge case",
+      "cas limite",
+      "cas aux frontières",
+      "Cas limite"
+    ]
+  },
+  {
+    "id": "term:rubric",
+    "kind": "term",
+    "title": "Grille d'évaluation",
+    "aliases": [
+      "rubric",
+      "grille d'évaluation",
+      "critères de notation",
+      "critères d'évaluation",
+      "Grille d'évaluation"
+    ]
+  },
+  {
+    "id": "term:llm-as-a-judge",
+    "kind": "term",
+    "title": "LLM-as-a-Judge",
+    "aliases": [
+      "LLM judge",
+      "LLM-as-a-Judge",
+      "notation par LLM",
+      "notation automatique"
+    ]
+  },
+  {
+    "id": "term:agreement-rate",
+    "kind": "term",
+    "title": "Taux d'accord",
+    "aliases": [
+      "agreement rate",
+      "inter-rater agreement",
+      "taux d'accord",
+      "accord avec l'humain",
+      "Taux d'accord"
+    ]
+  },
+  {
+    "id": "term:needs-review",
+    "kind": "term",
+    "title": "À vérifier",
+    "aliases": [
+      "unsure",
+      "vérification humaine",
+      "à revoir",
+      "à vérifier",
+      "À vérifier"
+    ]
+  },
+  {
+    "id": "term:position-bias",
+    "kind": "term",
+    "title": "Biais de position",
+    "aliases": [
+      "position bias",
+      "biais de position",
+      "biais d'ordre",
+      "Biais de position"
+    ]
+  },
+  {
+    "id": "term:rag",
+    "kind": "term",
+    "title": "RAG",
+    "aliases": [
+      "RAG",
+      "Retrieval Augmented Generation",
+      "Retrieval-Augmented Generation",
+      "génération augmentée par recherche"
+    ]
+  },
+  {
+    "id": "term:in-context-learning",
+    "kind": "term",
+    "title": "Apprentissage en contexte",
+    "aliases": [
+      "ICL",
+      "In-Context Learning",
+      "apprentissage en contexte",
+      "Apprentissage en contexte"
+    ]
+  },
+  {
+    "id": "term:chunking",
+    "kind": "term",
+    "title": "Découpage en fragments",
+    "aliases": [
+      "chunk",
+      "chunking",
+      "découpage en fragments",
+      "fragment",
+      "Découpage en fragments"
+    ]
+  },
+  {
+    "id": "term:embedding",
+    "kind": "term",
+    "title": "Embedding",
+    "aliases": [
+      "embedding",
+      "embeddings",
+      "vecteur d'embedding",
+      "représentation vectorielle",
+      "Embedding"
+    ]
+  },
+  {
+    "id": "term:memory",
+    "kind": "term",
+    "title": "Mémoire",
+    "aliases": [
+      "MEMORY.md",
+      "memory",
+      "mémoire",
+      "Mémoire"
+    ]
+  },
+  {
+    "id": "term:tree-structure",
+    "kind": "term",
+    "title": "Structure arborescente",
+    "aliases": [
+      "tree structure",
+      "structure arborescente",
+      "Structure arborescente"
+    ]
+  },
+  {
+    "id": "term:knowledge-graph",
+    "kind": "term",
+    "title": "Graphe de connaissances",
+    "aliases": [
+      "knowledge graph",
+      "graphe de connaissances",
+      "Graphe de connaissances"
+    ]
+  }
+]

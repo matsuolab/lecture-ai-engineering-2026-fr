@@ -1,0 +1,1351 @@
+{
+  "lec03-main-p001": {
+    "canonical_japanese_page": 1,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 1,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Translated the explicit logo transcription present in the Japanese canonical corpus."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "da705b8a606314f0dc19449312b02210826cff0e8f9b5776c63dd3d00269a795"
+  },
+  "lec03-main-p002": {
+    "canonical_japanese_page": 2,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 2,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Independent review: restored the graduate-school level of the lecturer's affiliation."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "93bebb9bb8a77c8c369cc0dc0e13ab9e16d50f2824826d7fe6556c5f5405a7a7"
+  },
+  "lec03-main-p003": {
+    "canonical_japanese_page": 3,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 4,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Updated the former French slide 4 to final Japanese page 3: new title, introductory statement, and explicit tool-use effect of untrusted instructions; restored table row associations."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [],
+    "content_sha256": "f73373bac67b6597ef4111a7741e07633840ac1f32de2af3c7b1f1c441154475"
+  },
+  "lec03-main-p004": {
+    "canonical_japanese_page": 4,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 3,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Restored the tool-calling portion of the source agenda heading.",
+      "Restored harness in the source agenda heading."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "4ae2b6d87094ef5ab06657d244ac5bf42e1b53ed3354ca8cc30d0149a8e0a84f"
+  },
+  "lec03-main-p005": {
+    "canonical_japanese_page": 5,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 5,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "8bba43936983a64c179ca8e481466e991ecd3ad165b6509ee590cd72df7cf188"
+  },
+  "lec03-main-p006": {
+    "canonical_japanese_page": 6,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 6,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Repaired a missing word boundary in extracted French text."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "1b708e33c6c08fa2f0c6a33c985713492b149fe54e43e599855e625b0f833076"
+  },
+  "lec03-main-p007": {
+    "canonical_japanese_page": 7,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 7,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "f3d5e68acaab30263ed333e159955a5363b6c73eb8a2c04fb84757ead267492c"
+  },
+  "lec03-main-p008": {
+    "canonical_japanese_page": 8,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 8,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "c0ab4dd9641aa8ce11d5a632f7ae8cb912050fa974ebbaf50c10c4f5be5c1a58"
+  },
+  "lec03-main-p009": {
+    "canonical_japanese_page": 9,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 9,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "8f46463decce858c142f6cb04fdca8a8a033cd7bc2d5985a591515b4f8808b12"
+  },
+  "lec03-main-p010": {
+    "canonical_japanese_page": 10,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 10,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "829edc123a4a962b2ff4999aba6ba8fc1359bbbf2d9b079ce283d2827cf0d128"
+  },
+  "lec03-main-p011": {
+    "canonical_japanese_page": 11,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 11,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "e82d3fa0146734af0f7e0a3021ebf85e8b0c51599ba059330ede48b28468fa7c"
+  },
+  "lec03-main-p012": {
+    "canonical_japanese_page": 12,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 12,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "4927d49e45e58f76955dafbd27f4b74e9e20a535099e7df8df64550997ee310f"
+  },
+  "lec03-main-p013": {
+    "canonical_japanese_page": 13,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 13,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "b8ebd8fe3e2e7b590248dbff2ef12a7111863cfee3dd1009b76b6b00e17aefe3"
+  },
+  "lec03-main-p014": {
+    "canonical_japanese_page": 14,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 14,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "8380c8672e14d4fc0dbf7b6ecc0c9e0974d2c6e6ac65de758d044545d6371091"
+  },
+  "lec03-main-p015": {
+    "canonical_japanese_page": 15,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 15,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "350615284dc11c07a8b700ec02b396e5a605d3af7ada5211430b3e7548dde797"
+  },
+  "lec03-main-p016": {
+    "canonical_japanese_page": 16,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 16,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "e3d52d91d696843c6c98f185c93a470f95ab41f0be15be11690b6431130926a9"
+  },
+  "lec03-main-p017": {
+    "canonical_japanese_page": 17,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 17,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "e7842f9065a9e97eb38c97a3d93bd14ec26fc697aac021f8145b00ae847e3acc"
+  },
+  "lec03-main-p018": {
+    "canonical_japanese_page": 18,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 18,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "712a2a3222ae77eb61e14810a50b45a14dce1ee5ec22f234698ff5b1cefcb260"
+  },
+  "lec03-main-p019": {
+    "canonical_japanese_page": 19,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 19,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Restored chart axes, legends, model labels, and the 99% series from the Japanese source; these are absent from PPTX text extraction. No curve values were inferred."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [],
+    "content_sha256": "6c06e82c4ef08a6ed2e34899d67686de2a6aa7151b8327abaf649b44923e965a"
+  },
+  "lec03-main-p020": {
+    "canonical_japanese_page": 20,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 20,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "df5303b07fffe8aa7f97bdfa77ca73338e156542d89bad48f41d5d87e197b8e6"
+  },
+  "lec03-main-p021": {
+    "canonical_japanese_page": 21,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 21,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "17dc4a02becc1ffa3be21955e673f608548cfca24900571b01949552eb9fce40"
+  },
+  "lec03-main-p022": {
+    "canonical_japanese_page": 22,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 22,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "c4fef8aad43e4be6baf61dfb04eadffc277054aadc0f5124f385e199aee06225"
+  },
+  "lec03-main-p023": {
+    "canonical_japanese_page": 23,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 23,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "f5a917f58f6c2147467378797bff10dcce4bfe89d5fa31a3fa6abdf8592d5c2f"
+  },
+  "lec03-main-p024": {
+    "canonical_japanese_page": 24,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 24,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Included the expanded MCP title added to the final Japanese slide."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "35de20898a903c9e8ea97f7ab71341752c83d320a075c38b1b4f442fda4de38a"
+  },
+  "lec03-main-p025": {
+    "canonical_japanese_page": 25,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 25,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Independent review: restored that default-mode approval concerns each new type of operation, not every individual operation."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "41f6673cd9ff36050509b7a26eb8bc26142543265651f64b69308fb5fe59c8b8"
+  },
+  "lec03-main-p026": {
+    "canonical_japanese_page": 26,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 26,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Translated the final source's added convenience/security trade-off."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "c730f92bfe1ea71f1e6ffa5ad640a4f8dbb64ae21e93f68ed8a070f03ead6988"
+  },
+  "lec03-main-p027": {
+    "canonical_japanese_page": 27,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 27,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "88a91a57ecb6878f4b313d2fb12c3646663d30843b25cc5426688e7156d29557"
+  },
+  "lec03-main-p028": {
+    "canonical_japanese_page": 28,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 28,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Aligned the title to the final Japanese source, which removed prompt injection from this heading."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "2400a743ab558a5c4a4ff8f23eb6f0a362e4d29d4b06aedff721ae487982c281"
+  },
+  "lec03-main-p029": {
+    "canonical_japanese_page": 29,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 29,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Restored the added background-failure detection question and corrected the inherited Part 3 cross-reference to source Part 2."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "55d86547f46abb51e28a23ac36840b60023f29ea3743bfe853e4cdbc30d90cb5"
+  },
+  "lec03-main-p030": {
+    "canonical_japanese_page": 30,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 30,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "149d6e96d23ae0948843bcb42f7cbd115ca938701124e77196e56d6593fc6bea"
+  },
+  "lec03-main-p031": {
+    "canonical_japanese_page": 31,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 31,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Translated the final source's added model-selection and cost-control guidance."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "159689db2c36e3ef155cd2f3233cb8ff5c40a7fe9a25aaa0e084f01e5dde5883"
+  },
+  "lec03-main-p032": {
+    "canonical_japanese_page": 32,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Newly translated final Japanese page 32; there is no corresponding page in the uploaded 69-slide French deck."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [],
+    "content_sha256": "293382eedca15362c60170f7cc22bd9c048bd05c6981ecac6512ab3e728fad62"
+  },
+  "lec03-main-p033": {
+    "canonical_japanese_page": 33,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 32,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "1b23f2aec24e891fe605565d805a882946252e840a44b51f2991132eb1869608"
+  },
+  "lec03-main-p034": {
+    "canonical_japanese_page": 34,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 33,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Removed a draft annotation that was deleted from the final Japanese slide."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "321c5e2ec09f77d6783d7c2d15ca12870b0de37443733b7e4311b4383223b18d"
+  },
+  "lec03-main-p035": {
+    "canonical_japanese_page": 35,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 34,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "fcad5ef9dc630c3f50520fbec46f80e9306802a2e6fb9a2568ae9067b6231fd6"
+  },
+  "lec03-main-p036": {
+    "canonical_japanese_page": 36,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 35,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Aligned the title to the final source's general decision-model heading; retained Jev in the actual example.",
+      "Reassembled the displayed JSON example from separate text boxes without changing its meaning."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "a74572968b51d9547d692bde3216161023b83f1393e9dd0045c9225deb09c354"
+  },
+  "lec03-main-p037": {
+    "canonical_japanese_page": 37,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 36,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "2f403d02bb07b33af79c304c76d210459ff34210a4062218b8fd51443be6b8e0"
+  },
+  "lec03-main-p038": {
+    "canonical_japanese_page": 38,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 37,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "ccb402c68fd539579290d660877a7c0f49d701de9062bb02c5146d3e6194c98a"
+  },
+  "lec03-main-p039": {
+    "canonical_japanese_page": 39,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 38,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Restored that the automatic-memory limit concerns the first 200 lines or 25 KB.",
+      "Repaired a joined word in extracted French text."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "69121e9b53cc56dc1b146cef14ad0939dcb76b1fa9b44f1020c32c0eb227a89f"
+  },
+  "lec03-main-p040": {
+    "canonical_japanese_page": 40,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 39,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "b088e4e539330fbe78a4cf6f69a214e954f5e21c26bf697bc8b6bf7125ad2f86"
+  },
+  "lec03-main-p041": {
+    "canonical_japanese_page": 41,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 40,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "b0bfa11b9413fbd986914db0086ebda8a662d5022327f631a307cf9d5a812cd1"
+  },
+  "lec03-main-p042": {
+    "canonical_japanese_page": 42,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 41,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "82a7a409e4bda67602ba849bdf17c9e736d9c637dbbb4b76ea24139e827f7347"
+  },
+  "lec03-main-p043": {
+    "canonical_japanese_page": 43,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 42,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "d49fa7fd852d5eb951c1acaf168d79e646c5825c7f107e9465fac51fdb0378ac"
+  },
+  "lec03-main-p044": {
+    "canonical_japanese_page": 44,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 43,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Restored the reason passed back to the worker when the goal is not achieved."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "de320f91bc601167ea3dd144a0be69ec917a2ef40bfac19ac710008c786c8104"
+  },
+  "lec03-main-p045": {
+    "canonical_japanese_page": 45,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 44,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "e7aa8c82595d236f9a233fff1f45c06562ae7643040b9425bc41c096c8b61ebd"
+  },
+  "lec03-main-p046": {
+    "canonical_japanese_page": 46,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 45,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "0d9dda7b2a86a6697d8bc74a41250d5162be82734810d19a76123e9a8e198329"
+  },
+  "lec03-main-p047": {
+    "canonical_japanese_page": 47,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 46,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "1b9c00980708bcb5cda439a172daa28561913209c2c781729ec6854c3291a73a"
+  },
+  "lec03-main-p048": {
+    "canonical_japanese_page": 48,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 47,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "77c004e5048a83a411c1ffc23697a692fea44f1efc0e18f003bf0b2effffd95e"
+  },
+  "lec03-main-p049": {
+    "canonical_japanese_page": 49,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 48,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "d94834f5fbdbc862b84fb11d164bc3094c3b310bb1315a14af36d2662c46931e"
+  },
+  "lec03-main-p050": {
+    "canonical_japanese_page": 50,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 49,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Translated the three risk examples added to the final Japanese slide."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "7fa72df53519bc6893397902cff060c9b4b276115b837218063d74aa80c9010f"
+  },
+  "lec03-main-p051": {
+    "canonical_japanese_page": 51,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 50,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "3b355ffccd64a729d384580ae0b5b687512657805814c2816da9d92635e583ad"
+  },
+  "lec03-main-p052": {
+    "canonical_japanese_page": 52,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 51,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "687ee211357dc091629f3a119adb64b9c11579352187abcedbc50fa9c2773868"
+  },
+  "lec03-main-p053": {
+    "canonical_japanese_page": 53,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 52,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Removed the draft's trailing key-reading label deleted from the final source; the actual default-readable paths remain in the diagram text."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "497f37c58ae9c4818206115130e5e45efd857551d3897304dc24b68f2ff3afda"
+  },
+  "lec03-main-p054": {
+    "canonical_japanese_page": 54,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 53,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "b0ca55beecc3bd17e7a7a9026be80b6cbddc05b8403907bc9e7291d072f0d342"
+  },
+  "lec03-main-p055": {
+    "canonical_japanese_page": 55,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 54,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "e465372024713c76916031a389ca1d976f096cf68090af66d2dc58b3666863dc"
+  },
+  "lec03-main-p056": {
+    "canonical_japanese_page": 56,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 55,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "5052f9a3540c1cd9a818b30260c9b7a302e241e67b5b47934bbc8845114ac284"
+  },
+  "lec03-main-p057": {
+    "canonical_japanese_page": 57,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 56,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "736ad90d5d6378bf18b22d7a0c484014359e7151d6c34a0260e372279f7dbaaf"
+  },
+  "lec03-main-p058": {
+    "canonical_japanese_page": 58,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Newly translated final Japanese page 58; no matching page exists in the uploaded French deck. The question about modifiable guardrails remains a question."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [],
+    "content_sha256": "e211cd1c965bd257d5838de6f761d451ce302f2112a63fc7e0098aa3231c72ab"
+  },
+  "lec03-main-p059": {
+    "canonical_japanese_page": 59,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 57,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Restored tool calling in the recap heading.",
+      "Restored harness in the recap heading.",
+      "Translated the final source's new recap conclusion about harness improvement and external evaluation/stop mechanisms."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "5e92bf23fbfff0bc6e852ff6e4088beeda113176f114dbd853993010b06b2416"
+  },
+  "lec03-main-p060": {
+    "canonical_japanese_page": 60,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 58,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "22eb879e26eb9800195a2bb17ee2ee45586a467471fb1e538ca5faabe0641273"
+  },
+  "lec03-main-p061": {
+    "canonical_japanese_page": 61,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 59,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Restored the source's scope (in addition to loop components) and directional qualification.",
+      "Restored migration from ADK 1.x and the precise relationship to Quri's response agent, omitted in the abbreviated slide translation."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "3165f7fc5c7886a3853dbd279f461fcac2aae6d23c0be4c6b89e5498a39e9785"
+  },
+  "lec03-main-p062": {
+    "canonical_japanese_page": 62,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 60,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Restored the explicit schema qualification and possibility, avoiding an absolute claim about every refusal or truncation.",
+      "Restored the subset-of-models and forced-tool-selection qualification from the Japanese source."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "9e7dc2520861754a58e294cf5ea35988438933d4129a0927cb2933c1b99c5d9b"
+  },
+  "lec03-main-p063": {
+    "canonical_japanese_page": 63,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 61,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Restored attribution of the 30–50-tool accuracy statement to the documentation.",
+      "Restored the experiment-specific cost caveat and the omitted requirement to validate permissions in the harness."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "e2a49b9f33bab6f0d8e8c4d75e2b54378d12a0708a549e3fe14925954dd1b5f1"
+  },
+  "lec03-main-p064": {
+    "canonical_japanese_page": 64,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 62,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Restored the 95%-per-step assumption in the appendix's comparison.",
+      "Clarified the task-length versus continuous-runtime distinction and restored the exact evaluation date."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "54ee358a384c9cce8c07673cb4332282fe9fac99be151afe5f24d225112c0f66"
+  },
+  "lec03-main-p065": {
+    "canonical_japanese_page": 65,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 63,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Restored the reference to the three memory scopes and explicitly identified model weights."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "f55ed1c651ae3410003a2da4d2efab47aa3ef367e9655c7bf4ec560a99e7beca"
+  },
+  "lec03-main-p066": {
+    "canonical_japanese_page": 66,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 64,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Replaced an overgeneralized convergence claim with the source's qualified standardization statement.",
+      "Independent review: removed an unsupported all-tools universality claim from the inherited translation."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "0d5c6626f5f88001f67115fb7031ccad85dc26bba032af76754d4269f066e4d9"
+  },
+  "lec03-main-p067": {
+    "canonical_japanese_page": 67,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 65,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Restored the link to irreversible-operation approval and preserved the conditional recommendation.",
+      "Restored attribution to Anthropic of the deterministic-boundary explanation."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "d1080183947211de89e26ddfa386ab524a611158d7fde38978fe8d49ed34194a"
+  },
+  "lec03-main-p068": {
+    "canonical_japanese_page": 68,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 66,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Corrected before-changing-the-model guidance, which the slide rendered as at-each-model, and restored the reported nature of component removal.",
+      "Restored the precise environment-specific limitation and evaluation-set requirement."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "0e6d3c67e26aee7b8e81332988344240348d139d43fc085fdcc021e595de4eba"
+  },
+  "lec03-main-p069": {
+    "canonical_japanese_page": 69,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 67,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Corrected the unsupported inference that the 80% figure itself was added on September 18; the source only dates an addendum on the page.",
+      "Restored the developer-reviewed evaluation caveat, omitted in the translated slide.",
+      "Independent review: preserved the source's inclusive 90%-or-higher estimate."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "f29b4dc4cfcbcdd27ade62fa505a65319969dd19fb97bbed3a2482edd8b0db43"
+  },
+  "lec03-main-p070": {
+    "canonical_japanese_page": 70,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 68,
+    "status": "corrected_or_completed_from_japanese",
+    "corrections": [
+      "Corrected a strict greater-than-100 reduction to the source's at-least-100 reduction, retaining reported status.",
+      "Restored the specific limited-connection failure mechanism.",
+      "Disambiguated which disclosure omitted the model identity and which incident preceded the tool suspension.",
+      "Independent review: preserved the inclusive within-15-minutes detection bound."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "bc6b7f75660e2eff538828537ecbfe5d5f8c93be215b501950883055e8c73cd0"
+  },
+  "lec03-main-p071": {
+    "canonical_japanese_page": 71,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-main",
+    "canonical_japanese_file": "day3/AIE2026_第3回_AIエージェント_1102.pptx",
+    "canonical_japanese_file_sha256": "fe4dde9bf46ab9059ece76b4378fe5a153383593de516518154d9e11d5d5f14a",
+    "uploaded_french_file": "day3/Lecture 3 - AI Agents/Lecture/pptx/Cours 3 - Agents d_IA_fr.pptx",
+    "uploaded_french_file_sha256": "4a8799aca8f7f3c50235ad465e77e5b9d4f96945f94177bdb1e1ea1ef940fa3b",
+    "uploaded_french_slide": 69,
+    "status": "reused_existing_french",
+    "corrections": [],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page du corpus désigne la version japonaise finale. La page de la diapositive française fournie est indiquée séparément ; les ajouts traduits depuis le japonais n'ont pas de page dans le PDF français fourni.",
+    "removed_repeated_copyright": [
+      "© MATSUO-IWASAWA LABORATORY, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "9099c0bfd6fba81cf7906589238a51549a4ea3ab7a20e162fce526e5065f0512"
+  }
+}

@@ -1,0 +1,550 @@
+{
+  "lec03-exercise-p001": {
+    "canonical_japanese_page": 1,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "caa7efa1988d0a7b028721db0b6db79ed19690d8740c7d22e1a385ae549b2169",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [],
+    "content_sha256": "ee6eec14d02f30a2e97d89e1b7e5aa3c7d44708beec4d9b58ed4c57c65489646"
+  },
+  "lec03-exercise-p002": {
+    "canonical_japanese_page": 2,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "1bbf57c7c7f6e2831051358bf4f328bc3617bc213a10022944618e8ed28d2564",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "129141793bcbdda98b5ed31e1e02858fccd23d78d93fbdb87215e7aa6a8d9ba9"
+  },
+  "lec03-exercise-p003": {
+    "canonical_japanese_page": 3,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "bc2440f28ca7485a43e6c744f5136d7a8cbf4dc8d27ad5b719020850395b9ce7",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "f383cb1cb1af580a2129f852b53d3dc3c9dc8092d28445e37f2e8d50b709512a"
+  },
+  "lec03-exercise-p004": {
+    "canonical_japanese_page": 4,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "f168179f64049d3f0cdba0bbf2c925c694dc8d9fb71ae4f8fab3fe5716c633b8",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "b7716932ea9271e3c852bd80d9ca1547c6209f6f31218ec737935d7989d54795"
+  },
+  "lec03-exercise-p005": {
+    "canonical_japanese_page": 5,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "76e1f51caba28aed4061f137f62d6ba2e9bc2cca5d94c249698a68a4f9c82370",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "60b93f4decbb3c9564e1e3c809b2b564dfd25790d58823fde0c910583e9221ca"
+  },
+  "lec03-exercise-p006": {
+    "canonical_japanese_page": 6,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "3d1da4dd87c342b1c727f1a3a98d58d93dd7cb4f948d0f5da71034a58b83bdab",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "7ca300aaff59979c83ab07abe69aa77cbdaa8d4ef324a61403effc79b6a5441d"
+  },
+  "lec03-exercise-p007": {
+    "canonical_japanese_page": 7,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "dbf49fa1dc929eb5c48d4f90b140c7b4e974283632f024c3db86bb74024c39d8",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "aa2969b501573ffd2244801027cb5cf23b60566b50381c4447831ec6c45f794d"
+  },
+  "lec03-exercise-p008": {
+    "canonical_japanese_page": 8,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "dd7e360d349b2132da1e4bb39c995574282ee2f24a59013058641de31b2f73de",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "25f3c293f1623e41b2f780e0a111da3e9f2912667699479bf3cb033fdcaa4215"
+  },
+  "lec03-exercise-p009": {
+    "canonical_japanese_page": 9,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "48c70448986fb496f21ea9ae9bea5df7040e0f66c64166ee41bfff35a88c28e1",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "504609ecb4d02c587b7136937b1e97db17d5b69eed6b0e62142d3414af5181a9"
+  },
+  "lec03-exercise-p010": {
+    "canonical_japanese_page": 10,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "5462d16868a30512f91978bf922388a1cdb579677965d801b079b51f5afee8a2",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "1010e0dd6ce1e7fa3cacca0d7021ce80129ec0b9fc50ac56eb5cfc8e4c711935"
+  },
+  "lec03-exercise-p011": {
+    "canonical_japanese_page": 11,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "f9f7ee4a31b7a91fc06d42c6b2355bfbf115e048b509250f87fd1e6be4507ed0",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "bef1d67c6a5318c873a96b6cc13fdfbdfb636237c2f486011a3469b39c113d3b"
+  },
+  "lec03-exercise-p012": {
+    "canonical_japanese_page": 12,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "9cbf94a85fec5b05e1c4b7df4ed573057944cf242ab327278b8cf6b8c8e5cac0",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "19a155d1becc631bc5cf74def2a3e663df5c67b9c64a003b84ff98ca1cf66ea8"
+  },
+  "lec03-exercise-p013": {
+    "canonical_japanese_page": 13,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "d2d08845eb56f40e94e93e7d0f39a123892aaab6152382b5c1e3fb77fccdda53",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied.",
+      "Localized the operational course-repository fetch URL to lecture-ai-engineering-2026-fr.git; retained lec03-start and the continuation backslash."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "c44e3bbc47dc0c4c3727092f9ec9b348424870658bbe69a033bc7596b69145ef"
+  },
+  "lec03-exercise-p014": {
+    "canonical_japanese_page": 14,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "ce5b4b39f8669b5d8993b544880dce55169020d4ceb6da4c810b33f5c9e7de69",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied.",
+      "Used the existing French repository's equivalent three-homework-levels question."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "ae85e4ecb92b9a73c5ca83718cc961f09a6ac6707ae98c5a09cecd3536c489fc"
+  },
+  "lec03-exercise-p015": {
+    "canonical_japanese_page": 15,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "795aefca951bb8b6696aaac9744bed4e8842ac7af2368cc9e7f0ca4ceeafeb01",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "512dcc87255274cf6c45c9164f6e86cf32d8e7d57b43fc9eeacd29af5aec35d5"
+  },
+  "lec03-exercise-p016": {
+    "canonical_japanese_page": 16,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "41fb5435961996a24bed08a4326252f503e0cafa212163c5f6e15f7e0f0dccfe",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied.",
+      "Localized the Japanese lecture suffix to Lecture NN, as used by the French repository; reused equivalent reviewed instructions/docstring wording. Visible incomplete code snippets remain explicitly marked as excerpts."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "157abd449e471d0e378d52a4bcc54edfe6388312bcbcab4f8c1b388030ac4906"
+  },
+  "lec03-exercise-p017": {
+    "canonical_japanese_page": 17,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "5023836aaf0a328733fd540f23f2807d50e324b1b5965fa58c118aa14b3e9281",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "faa127410f08a7086f98a3d1e392553bba65ad419553aa01d51ebf6efc833d5b"
+  },
+  "lec03-exercise-p018": {
+    "canonical_japanese_page": 18,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "19c4841d1687baa8284ed5cdb732248c2736de5cef8ee51907ed726b734a7d64",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "b413650783bf5759f2fed8f10555a9b579679474abe19ae8c16da70bb19c057f"
+  },
+  "lec03-exercise-p019": {
+    "canonical_japanese_page": 19,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "2143b23983a8d95b2af2974532c0314c28b214f0e6021492252e23f116f968e0",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied.",
+      "Translated the human-readable git commit message to the existing French exercise convention; commands and branch are unchanged."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "b0f331c2e5a3022e26637b482a0e892c72d072d2618ce4332b8786e90cb7b6d6"
+  },
+  "lec03-exercise-p020": {
+    "canonical_japanese_page": 20,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "63ec1fd1f3cb911f033ca2990bb9d8aa7e89da3a8bfd31d26e9da44adde0285f",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "75f40df72e17c28e4116252c305777e80611c874e4a8c218e3cb1b37f6d61229"
+  },
+  "lec03-exercise-p021": {
+    "canonical_japanese_page": 21,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "68e3056afa9af64e3a2ca09c6712bb26402ff133ccfddb03b266a88d3bc8092b",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "6313aacb8bb82b32f99b9609d34c557107bc271fed0ceab09545d31d9fceef26"
+  },
+  "lec03-exercise-p022": {
+    "canonical_japanese_page": 22,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "5db37c7e12c940afa5af71005539f96595bee4c98c4164bcfdc8923a83558106",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "6ecdcbf870229f16513bc0c683d7ce69ce0cdff8b5aabf39737f95cae73682e1"
+  },
+  "lec03-exercise-p023": {
+    "canonical_japanese_page": 23,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "386ac08f0691d256847c0f63526dddaa2594e6ddb09fbe7206c016ddd837bead",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "74f7f5d09e24adc6cf30fa0ff33a7a34a53006e926348ec7e8f6248c86ba5642"
+  },
+  "lec03-exercise-p024": {
+    "canonical_japanese_page": 24,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "e8b669ba95b36d82e2db73c73907f772eb8068705feda3a0a9c608a41aa63657",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "eeac204c5612af8284c3f3b8465f5140d01d0769b1d5a8693c79f133464eeb9a"
+  },
+  "lec03-exercise-p025": {
+    "canonical_japanese_page": 25,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "73e16c7962ec56a606b056947cd8807d7ca23ce0d4257972095cb65cf9562583",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "e378fca34ad78ca53e75c2b82b35772a214a28f7dac2f0c0b8ce9eda64e62126"
+  },
+  "lec03-exercise-p026": {
+    "canonical_japanese_page": 26,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec03-exercise",
+    "canonical_source_content_sha256": "561873bde6a3f86a7738d726227e8fd8838d9d3fafe7b40068e4a9fcdaa2c97c",
+    "canonical_japanese_file": "day3/第3回 演習・宿題：学習支援エージェントを作る.pptx",
+    "canonical_japanese_file_sha256": "9e87178e5bc36339e3d397aae22931bb7e76576e75c6e638444d3f670b6f32fe",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "67e215bbf5097dc690ad6f6462e9829e4d830b7d33b46e813a17078a08e6cea0"
+  }
+}

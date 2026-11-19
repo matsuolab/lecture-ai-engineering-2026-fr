@@ -1,0 +1,167 @@
+{
+  "id": "lec03-exercise",
+  "title": "Créer un agent d’aide à l’apprentissage",
+  "content": [
+    {
+      "section": "Ensemble",
+      "content": [
+        {
+          "id": "lec03-exercise-p001",
+          "title": "Créer un agent d’aide à l’apprentissage",
+          "page": 1,
+          "content": "Créer un agent d’aide à l’apprentissage\nCours pratique d’ingénierie de l’IA 2026\nLecture 03 — Exercices et devoir\n2026/11/02 — Exercices : Yoshiaki Sato\nDonner au modèle un outil de recherche dans le glossaire, lire quel outil a été appelé et avec quels arguments, puis ajouter un outil.\nToute prise de vue ou divulgation à des tiers sans autorisation est interdite.\n©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO\n\nTranscription complémentaire du texte des images :\nLogo : laboratoire Matsuo-Iwasawa / MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO."
+        },
+        {
+          "id": "lec03-exercise-p002",
+          "title": "Correction du devoir de Lecture 02",
+          "page": 2,
+          "content": "Correction du devoir de Lecture 02\nFaire le point sur ce que l’entraînement LoRA a changé ou non, puis faire le lien avec les exercices d’aujourd’hui (environ les 5 premières minutes).\n\nBases\nModifier un seul des paramètres lora_r, lr ou num_train_epochs de CONFIG, relancer l’entraînement, puis comparer les deux taux, la loss finale et le temps d’entraînement avec ceux de la configuration initiale.\n\nMise en œuvre\nRemplacer la FAQ et les questions par votre propre sujet (environ 5 entrées), entraîner le modèle et comparer avant/après. Décrire aussi comment vous avez construit les questions « sans éléments à l’appui ».\n\nApprofondissement\nCréer des données de questions-réponses à partir du glossaire du cours, entraîner le modèle, préparer vos propres questions d’évaluation et comparer avant/après. Comparer également avec un mécanisme de recherche.\n\nDès maintenant : pendant la correction, cliquer sur Sync fork dans votre propre fork, puis démarrer Codespaces (le démarrage prend quelques minutes ; préparation de l’étape 1).\nL’objectif est de comprendre « ce qui a changé » et « pourquoi ». Il ne s’agit pas de deviner les bons chiffres.\nDans votre propre fork sur GitHub : Sync fork → Update branch.\nSi Sync fork propose « Discard commits », ne cliquez pas dessus.\nCe bouton supprime vos commits. Utilisez la méthode « Si main ne fonctionne plus ou si le travail de la séance précédente n’est pas terminé » de l’étape 1."
+        },
+        {
+          "id": "lec03-exercise-p003",
+          "title": "Retour sur l’exercice : résultats de l’enseignant sur un T4",
+          "page": 3,
+          "content": "Retour sur l’exercice : résultats de l’enseignant sur un T4\nLa comparaison utilise les mêmes 21 questions et les mêmes paramètres de génération. Seule la présence ou l’absence de l’adapter change.\n\n| Mesure | Résultat |\n|---|---|\n| Taux de respect du format (format_rate) | 0.095 → 1.0 |\n| Taux de réponses correctes sur le contenu (content_rate) | 0 → 0.905 ; 19 / 21 questions |\n| Régressions : réponse correcte avant l’entraînement, incorrecte après | Aucune |\n| Échecs qui subsistent après l’entraînement | 2 questions ; dans les deux cas, une affirmation non étayée |\n\nInterprétation : le modèle respecte désormais presque toujours le format. Les erreurs de contenu viennent d’une mauvaise appréciation de la présence d’éléments à l’appui dans la FAQ.\nSi vos résultats diffèrent : même avec une seed fixe, l’entraînement sur GPU n’est pas parfaitement reproductible. Des chiffres ou des questions encore en échec différents ne sont pas anormaux.\nSource : résultats obtenus par l’enseignant en exécutant le notebook notebooks/lora_format_tuning.ipynb sur un T4 dans Colab."
+        },
+        {
+          "id": "lec03-exercise-p004",
+          "title": "Retour sur l’exercice : classer les échecs restants et en comprendre les causes",
+          "page": 4,
+          "content": "Retour sur l’exercice : classer les échecs restants et en comprendre les causes\nClasser les échecs restants après l’entraînement en trois catégories et expliquer pourquoi ils subsistent.\n\nAffirmation sans éléments à l’appui\n• Pour une question absente de la FAQ, appliquer le texte d’une autre entrée.\n• Affirmer la réponse avec needs_review: false.\n\nRefus de répondre malgré des éléments à l’appui\n• Répondre « Ce n’est pas indiqué » à une question couverte par la FAQ.\n• Mettre needs_review: true.\n\nFormat incorrect\n• Clés manquantes ou texte ajouté en trop.\n• needs_review devient la chaîne de caractères \"false\".\n\nLes 2 questions encore en échec dans l’exécution de l’enseignant : toutes deux donnent lieu à une affirmation non étayée.\n« Quand les notes seront-elles publiées ? » → affirmation fondée sur l’entrée de FAQ relative à la date limite.\n« Faut-il réserver à l’avance pour les permanences ? » → affirmation fondée sur l’entrée de FAQ relative aux permanences.\nLes données d’entraînement contiennent 14 exemples, dont 4 sans éléments à l’appui. Apprendre le format ne suffit pas à apprendre facilement à distinguer la présence ou l’absence d’éléments à l’appui."
+        },
+        {
+          "id": "lec03-exercise-p005",
+          "title": "Correction du niveau Bases : modifier un paramètre et comparer",
+          "page": 5,
+          "content": "Correction du niveau Bases : modifier un paramètre et comparer\nUne baisse de la loss et une hausse du taux de réponses correctes à l’évaluation sont deux choses distinctes. Comparer à conditions égales.\n\n| Paramètre modifié | Signification | Points à observer |\n|---|---|---|\n| lora_r | Rang des matrices de l’adapter, donc capacité de représentation | trainable% et temps d’entraînement. Augmenter r ne fait pas nécessairement monter le taux de réponses correctes. |\n| lr | Amplitude de la modification des poids à chaque étape | Trop grand : loss instable. Trop petit : le modèle n’apprend pas le format. |\n| num_train_epochs | Nombre de parcours des données d’entraînement | Même si la loss continue de baisser, le taux de réponses correctes peut plafonner ou diminuer : surapprentissage. |\n\nComparaison : ne modifier qu’un paramètre. Mettre côte à côte les deux taux, la loss finale et le temps d’entraînement, puis vérifier les conditions dans config de result.json.\nAvant de relancer l’entraînement : Exécution → Redémarrer la session, puis exécuter le notebook depuis le début, car l’adapter issu de l’entraînement précédent est encore présent."
+        },
+        {
+          "id": "lec03-exercise-p006",
+          "title": "Correction du niveau Mise en œuvre : comment créer les questions sans éléments à l’appui",
+          "page": 6,
+          "content": "Correction du niveau Mise en œuvre : comment créer les questions sans éléments à l’appui\nDes questions sans rapport avec la FAQ ne suffisent pas à tester le choix entre demander une vérification et affirmer une réponse.\n\nExemples trop faciles\n• Un sujet sans rapport avec la FAQ.\n• Exemple : « Que recommandez-vous à la cantine ? »\n• Il est facile pour n’importe quel modèle de voir que ce n’est pas indiqué.\n\nExemples qui testent le discernement\n• Un sujet proche de la FAQ, mais une information qui n’y figure pas.\n• Exemple : « Quand les notes seront-elles publiées ? » alors que la FAQ contient une entrée sur la date limite.\n\nRépartition des données\n• Ne pas utiliser les mêmes phrases pour l’entraînement et l’évaluation.\n• Répartir les reformulations entre train / valid / test par familles de modèles de formulation.\n\nLes 2 questions encore en échec dans l’exécution de l’enseignant demandaient toutes deux une information « proche du sujet, mais non écrite ».\nInclure de telles questions permet de tester si le modèle affirme une réponse non étayée."
+        },
+        {
+          "id": "lec03-exercise-p007",
+          "title": "Correction du niveau Approfondissement : entraîner le modèle ou lui faire rechercher",
+          "page": 7,
+          "content": "Correction du niveau Approfondissement : entraîner le modèle ou lui faire rechercher\nL’apprentissage du glossaire et la recherche dans le glossaire ont chacun leurs points forts et leurs limites.\n\n| Aspect | Entraînement, Lecture 02 | Recherche, Lecture 03 |\n|---|---|---|\n| Ajouter ou modifier un terme | Réentraîner | Modifier seulement les données |\n| Différences de formulation | Dépend des reformulations présentes dans les données d’entraînement | Dépend de la méthode de recherche |\n| Présenter les éléments à l’appui | Difficile | Les résultats de recherche peuvent être montrés |\n| Format et ton de la réponse | Faciles à apprendre | À préciser dans le prompt |\n\nLes deux sont souvent combinés. Aujourd’hui, la recherche devient un outil de l’agent."
+        },
+        {
+          "id": "lec03-exercise-p008",
+          "title": "Difficultés fréquentes et précautions",
+          "page": 8,
+          "content": "Difficultés fréquentes et précautions\nRevoir les difficultés fréquentes des exercices et du devoir de Lecture 02.\n\n| Nº | Point | Action |\n|---|---|---|\n| 1 | Réentraînement | Après avoir changé un paramètre : Exécution → Redémarrer la session, puis exécuter le notebook depuis le début. |\n| 2 | executed_training_myself | Si vous n’avez pas pu entraîner vous-même le modèle, mettre False et décrire dans answer.md jusqu’où vous avez pu aller. |\n| 3 | Destination de la PR | Vérifier que base repository n’est pas le dépôt du cours. Cibler main de votre propre fork. |\n| 4 | Environnement d’exécution | Une fois terminé, choisir « Déconnecter et supprimer l’environnement d’exécution » pour ne pas continuer à consommer le quota gratuit de GPU. |"
+        },
+        {
+          "id": "lec03-exercise-p009",
+          "title": "Le lien avec les exercices d’aujourd’hui",
+          "page": 9,
+          "content": "Le lien avec les exercices d’aujourd’hui\nEn Lecture 02, on a entraîné le modèle. Aujourd’hui, on lui donne des outils.\n\nLecture 02\nUn petit modèle a été entraîné avec LoRA.\nIl apprend le format, mais son discernement face à ce qu’il ne connaît pas n’est pas garanti.\n→\nAujourd’hui, Lecture 03\nDonner au modèle un outil qui recherche dans le glossaire.\nIl consulte avant de répondre. Vérifier quels outils ont été appelés."
+        },
+        {
+          "id": "lec03-exercise-p010",
+          "title": "Objectifs de cette séance",
+          "page": 10,
+          "content": "Objectifs de cette séance\nVérifier le fonctionnement d’un agent dans votre propre code et dans les résultats d’exécution.\n\n1. Vérifier dans votre propre code qu’un agent se compose d’un « modèle + boucle + outils ».\n2. Lire dans les résultats d’exécution quels outils ont été appelés et avec quels arguments.\n3. Ajouter un outil et faire en sorte que le modèle l’utilise.\n\nOutils utilisés pendant les exercices : GitHub Codespaces dans votre propre fork ; API Gemini avec le secret Codespaces GEMINI_API_KEY enregistré en Lecture 01."
+        },
+        {
+          "id": "lec03-exercise-p011",
+          "title": "Agent = modèle + boucle + outils",
+          "page": 11,
+          "content": "Agent = modèle + boucle + outils\nLe LLM choisit un outil et demande son appel ; le programme l’exécute. Le LLM observe le résultat et décide de la suite.\n\nLecture 01 — app.ask : question → LLM → réponse. Un seul appel au LLM.\nLecture 03 — app.agent : question → LLM → exécution de l’outil par le programme → LLM → réponse.\nRépéter « LLM → outil → LLM » jusqu’à disposer des informations nécessaires : c’est la boucle de l’agent.\n\n1. Modèle : à partir du nom de l’outil, de sa description (docstring) et des types des arguments, décider s’il faut l’appeler.\n2. Outils : c’est le programme qui exécute l’outil et renvoie son résultat au modèle.\n3. Boucle : le LLM est appelé plusieurs fois pour une seule question.\n\nOutils de app/agent.py\n• search_glossary : recherche dans le glossaire.\n• get_lecture_summary : points essentiels d’une séance.\n• make_quiz : outil ajouté aujourd’hui.\n\nUne seule question entraîne plusieurs appels au LLM. La limite de débit est atteinte plus vite qu’en Lecture 01."
+        },
+        {
+          "id": "lec03-exercise-p012",
+          "title": "Déroulement des 30 minutes d’exercices, en commençant par la correction du devoir de Lecture 02",
+          "page": 12,
+          "content": "Déroulement des 30 minutes d’exercices, en commençant par la correction du devoir de Lecture 02\nEnviron 5 minutes pour corriger le devoir de Lecture 02, puis environ 25 minutes pour les étapes 1 à 6.\n\n| Étape | Travail | Outils et durée indicative |\n|---|---|---|\n| — | Correction du devoir de Lecture 02 | Environ les 5 premières minutes |\n| 1 | Récupérer les mises à jour du dépôt du cours et créer la branche lec03 | Sync fork, git pull ; environ 2 minutes |\n| 2 | Poser à l’agent la même question qu’en Lecture 01 | app.agent ; environ 4 minutes |\n| 3 | Lire les appels d’outils avec --trace | app.agent --trace ; environ 5 minutes |\n| 4 | Écrire et enregistrer l’outil make_quiz | app/tools.py, app/agent.py ; environ 7 minutes |\n| 5 | Vérifier que make_quiz est appelé | --list-tools, --trace, pytest ; environ 4 minutes |\n| 6 | Remplir answer.md, créer une PR et arrêter Codespaces | Environ 3 minutes |"
+        },
+        {
+          "id": "lec03-exercise-p013",
+          "title": "Étape 1 — Récupérer les mises à jour du dépôt du cours et créer la branche lec03",
+          "page": 13,
+          "content": "Étape 1 — Récupérer les mises à jour du dépôt du cours et créer la branche lec03\nMettre votre fork à jour avec le dépôt du cours avant de créer la branche de travail lec03.\n\n1. Dans votre propre fork sur GitHub : Sync fork → Update branch.\n2. Dans le terminal de Codespaces :\n\nProcédure habituelle\n```bash\ngit switch main\ngit pull --no-rebase\ngit switch -c lec03\n```\n\nSi main ne fonctionne plus ou si le travail de la séance précédente n’est pas terminé\n```bash\ngit fetch https://github.com/matsuolab/\\\nlecture-ai-engineering-2026-fr.git tag lec03-start\ngit switch -c lec03 lec03-start\n```\nPartir du code de départ du dépôt du cours, marqué par le tag lec03-start. Le caractère \\ à la fin de la première ligne signifie « continuer à la ligne suivante » ; vous pouvez coller le texte tel quel.\n\nSi Sync fork propose « Discard commits », ne cliquez pas dessus.\nCe bouton supprime vos commits. Utilisez la méthode « Si main ne fonctionne plus ou si le travail de la séance précédente n’est pas terminé ».\nSi git pull affiche CONFLICT, revenir en arrière avec git merge --abort, puis utiliser cette même méthode. Vos modifications ne sont pas supprimées."
+        },
+        {
+          "id": "lec03-exercise-p014",
+          "title": "Étape 2 — Poser à l’agent la même question qu’en Lecture 01",
+          "page": 14,
+          "content": "Étape 2 — Poser à l’agent la même question qu’en Lecture 01\nPoser la même question qu’à app.ask en Lecture 01 à un agent qui peut consulter le glossaire, puis comparer les réponses.\n\nCommande\n```bash\nuv run python -m app.agent \"Quels sont les 3 niveaux de devoirs du cours AIE2026 ?\"\n```\n\nLecture 01 — app.ask, le LLM seul\n• Ne connaît pas le cours.\n• Répond qu’il ne sait pas, ou donne une réponse générale plausible.\n\nLecture 03 — app.agent\n• Consulte le glossaire avant de répondre.\n• Bases, Mise en œuvre, Approfondissement : un seul niveau suffit pour terminer le devoir.\n\nPoints à vérifier\n• La réponse correspond-elle à la définition dans data/glossary.json ?\n• Les séances concernées sont-elles indiquées à la fin ?\n\nL’information correcte se trouve dans homework-levels de data/glossary.json. Comparer avec la réponse de Lecture 01."
+        },
+        {
+          "id": "lec03-exercise-p015",
+          "title": "Étape 3 — Lire les appels d’outils avec --trace",
+          "page": 15,
+          "content": "Étape 3 — Lire les appels d’outils avec --trace\nLire quels outils ont été appelés, avec quels arguments, et combien de fois le LLM a été appelé pour une seule question.\n\nCommande\n```bash\nuv run python -m app.agent --trace \"Quelle est la différence entre LoRA et QLoRA ?\"\n```\n\nExemple d’affichage : la manière d’appeler les outils et le nombre d’appels varient selon l’exécution.\n```text\n(corps de la réponse)\n--- trace ---\n[tool call]   search_glossary({'query': 'LoRA'})\n[tool call]   search_glossary({'query': 'QLoRA'})\n[tool return] search_glossary -> [{\"term\": \"LoRA\", …\n[usage] RunUsage(… requests=2, tool_calls=2)\n```\n\n[tool call]\nLe modèle a demandé d’utiliser cet outil avec ces arguments.\n\n[tool return]\nLe programme a exécuté l’outil et a renvoyé son résultat au modèle.\n\nrequests\nNombre d’appels au LLM pour une seule question.\n\nPourquoi deux recherches séparées ? Les instructions imposent de rechercher avant de répondre et de consulter un seul terme à la fois. Nous les verrons sur la diapositive suivante.\nPlus requests augmente, plus le temps de réponse, le coût et les limites de débit sont affectés."
+        },
+        {
+          "id": "lec03-exercise-p016",
+          "title": "Complément à l’étape 3 — INSTRUCTIONS et docstrings déterminent le comportement",
+          "page": 16,
+          "content": "Complément à l’étape 3 — INSTRUCTIONS et docstrings déterminent le comportement\nLes instructions au modèle se trouvent à deux endroits. Les comportements observés avec --trace sont déterminés par les phrases qui y figurent.\n\napp/agent.py, vers la ligne 31 : instructions générales de l’agent — extrait\n```python\nINSTRUCTIONS = \"\"\"\\\nVous êtes l’agent d’aide à l’apprentissage du cours AI Engineering (AIE2026).\n- Avant de répondre sur un terme ou une information propre au cours, consultez toujours le glossaire avec search_glossary.\n- Pour une question sur le contenu d’une séance, utilisez get_lecture_summary.\n- Si une information est absente du glossaire, indiquez-le au lieu d’affirmer une supposition.\n- Terminez la réponse en indiquant les séances concernées (Lecture NN).\n- Guidez l’apprenant avec des pistes de réflexion sans donner directement la réponse au devoir.\n```\n\napp/tools.py : description de l’outil, ou docstring — extrait\n```python\ndef search_glossary(query: str) -> str:\n    \"\"\"Rechercher un terme dans le glossaire du cours et renvoyer sa définition et la séance associée.\n    … Utiliser cet outil avant de répondre. Mettre un seul terme à rechercher dans query (exemple : \"LoRA\").\n```\n\n« Consultez toujours le glossaire avec search_glossary »\n→ Aux étapes 2 et 3, search_glossary a été appelé avant la réponse.\n\n« Terminez la réponse en indiquant les séances concernées (Lecture NN) »\n→ La réponse de l’étape 2 se termine par une mention Lecture NN.\n\nDocstring : « Mettre un seul terme à rechercher dans query »\n→ À l’étape 3, LoRA et QLoRA ont fait l’objet de recherches séparées.\n\nPour le devoir de niveau Bases, modifier ces phrases, poser la même question et comparer avec --trace."
+        },
+        {
+          "id": "lec03-exercise-p017",
+          "title": "Étape 4 — Écrire et enregistrer l’outil make_quiz",
+          "page": 17,
+          "content": "Étape 4 — Écrire et enregistrer l’outil make_quiz\nPermettre à l’agent de créer une question à partir du glossaire lorsqu’on lui demande une question de révision.\n\n1. Ajouter la fonction make_quiz(lecture: int) -> str dans app/tools.py.\n2. Écrire dans la docstring quand et pourquoi utiliser l’outil : le modèle la lit.\n3. Récupérer dans le glossaire, avec load_glossary(), les termes dont lecture correspond à la séance demandée, puis en choisir un.\n4. Renvoyer une question de type « Que signifie ce terme ? » et sa réponse, la definition du terme.\n5. Enregistrer l’outil à l’emplacement TODO de app/agent.py avec agent.tool_plain.\n\nExemple de valeur renvoyée par make_quiz(2)\n```json\n{\"question\": \"Que signifie PEFT ?\",\n \"answer\": \"Plutôt que tous les paramètres du modèle, …\"}\n```\n\nDébut du code : la docstring devient la description de l’outil.\n```python\ndef make_quiz(lecture: int) -> str:\n    \"\"\"Choisir un terme de la séance indiquée et renvoyer\n    une question de révision et sa réponse.\n\n    Utiliser cet outil lorsqu’une question de révision est demandée,\n    par exemple : « Pose-moi une question de révision sur Lecture 02 ».\n    \"\"\"\n    # 1. Récupérer dans load_glossary() les termes dont lecture correspond\n    # 2. En choisir un (random.choice)\n    # 3. Renvoyer la question et la réponse sous forme de chaîne (json.dumps, par exemple)\n```\n\nVous pouvez utiliser Copilot. Lire et comprendre le code proposé avant de l’adopter."
+        },
+        {
+          "id": "lec03-exercise-p018",
+          "title": "Étape 5 — Vérifier que make_quiz est appelé",
+          "page": 18,
+          "content": "Étape 5 — Vérifier que make_quiz est appelé\nVérifier d’abord que le modèle voit l’outil, puis qu’il l’appelle réellement, et enfin que les tests passent.\n\n1. Exécuter :\n```bash\nuv run python -m app.agent --list-tools\n```\nmake_quiz et sa docstring doivent apparaître.\n\n2. Exécuter :\n```bash\nuv run python -m app.agent --trace \"Pose-moi une question de révision sur Lecture 02\"\n```\nL’appel attendu est de la forme :\n```text\n[tool call] make_quiz({'lecture': 2})\n```\n\n3. Exécuter :\n```bash\nuv run pytest -q\n```\nTous les tests doivent être passed, y compris pour l’outil ajouté.\n\nCe que vérifie pytest à l’étape 3 : sans clé API, il appelle tous les outils, y compris votre make_quiz, avec des arguments fictifs comme lecture=0, pour vérifier qu’ils ne provoquent pas d’erreur. Si une séance inexistante provoque une erreur, ajouter le traitement du cas où aucun terme n’est trouvé.\n\nSi make_quiz n’est pas appelé\n• Absent de la liste de l’étape 1 → il n’est pas enregistré dans app/agent.py.\n• Présent, mais jamais appelé → décrire un cas d’utilisation précis dans la docstring. Ajouter à INSTRUCTIONS : « Utilisez make_quiz lorsqu’une question de révision est demandée »."
+        },
+        {
+          "id": "lec03-exercise-p019",
+          "title": "Étape 6 — Remplir answer.md, créer une PR et arrêter Codespaces",
+          "page": 19,
+          "content": "Étape 6 — Remplir answer.md, créer une PR et arrêter Codespaces\nRemplir lectures/03/answer.md et créer une PR de la branche de travail lec03 vers main de votre propre fork.\n\nÀ écrire dans la section « Exercices » de answer.md\n• La différence entre la réponse de Lecture 01, obtenue avec le LLM seul, et celle de l’agent.\n• Les appels d’outils observés avec --trace : nom de l’outil et arguments.\n• Le nombre d’appels au LLM pour une seule question : requests.\n• L’outil ajouté et la description écrite dans sa docstring.\n\nRendre le travail\n```bash\n# Après avoir rempli lectures/03/answer.md\ngit add -A\ngit commit -m \"Lecture 03 exercise\"\ngit push -u origin lec03\n```\nPR : lec03 → main de votre propre fork. Vérifier base repository.\nSi vous n’avez pas terminé l’étape 4 : vous pouvez rendre vos résultats jusqu’à l’étape 3. Pousser la suite sur la même branche met à jour la PR.\nArrêter Codespaces : « Codespaces » en bas à gauche → Stop Current Codespace. Le laisser en fonctionnement consomme le quota gratuit."
+        },
+        {
+          "id": "lec03-exercise-p020",
+          "title": "En cas de problème",
+          "page": 20,
+          "content": "En cas de problème\nL’agent appelle le LLM plusieurs fois pour une seule question : la limite de débit est donc atteinte plus vite qu’en Lecture 01.\n\n| Message ou situation | Action |\n|---|---|\n| Limite de débit atteinte, 429 | Attendre environ 1 minute, puis réessayer. |\n| Modèle surchargé, 503 | Patienter un peu, puis réessayer. Si le problème persiste, préfixer la commande par AIE_MODEL=gemini-3.1-flash-lite. |\n| Variable d’environnement GEMINI_API_KEY introuvable | Vérifier que votre fork figure dans Repository access du secret, puis arrêter et rouvrir Codespaces. |\n| make_quiz n’est pas appelé | Vérifier sa présence dans --list-tools. S’il est absent, il manque son enregistrement ; s’il est présent, revoir la docstring et INSTRUCTIONS. |\n| lec03-start introuvable | Vérifier que vous avez exécuté git fetch … tag lec03-start à l’étape 1. |\n| a branch named 'lec03' already exists | lec03 existe déjà. Utiliser git switch lec03 pour y passer. |\n| git pull affiche CONFLICT | Revenir en arrière avec git merge --abort, sans perdre les modifications, puis utiliser la méthode de l’étape 1 qui part de lec03-start. |\n| pytest échoue | Lire la dernière ligne de l’erreur. Les oublis d’import et les fautes dans les noms de fonctions sont fréquents. |"
+        },
+        {
+          "id": "lec03-exercise-p021",
+          "title": "Devoir : un seul niveau suffit",
+          "page": 21,
+          "content": "Devoir : un seul niveau suffit\nChoisir un des trois niveaux : Bases, Mise en œuvre ou Approfondissement. Il suffit de travailler sur un niveau pour terminer le devoir.\n\n| Niveau | Travail |\n|---|---|\n| Bases | Modifier les INSTRUCTIONS de app/agent.py ou les docstrings des outils de app/tools.py vus pendant les exercices. Poser la même question avec --trace, comparer et noter les changements dans les appels d’outils et dans les réponses. |\n| Mise en œuvre | Créer l’outil save_learning_log pour enregistrer des notes d’apprentissage dans le dossier learning_log/. L’enregistrement étant une opération difficile à annuler, demander une confirmation à l’utilisateur avant de l’effectuer avec requires_approval=True de Pydantic AI. |\n| Approfondissement | Choisir une option. (a) Conserver les mêmes instructions et outils que l’agent des exercices, réécrire seulement son assemblage avec ADK de Google, l’exécuter avec adk run, puis comparer la façon d’écrire le code et les réponses. (b) Exécuter l’agent de programmation Pi dans Codespaces, puis comparer son prompt système public aux INSTRUCTIONS de votre propre agent. |\n\nLa marche à suivre est détaillée sur les 3 diapositives suivantes. Rendre le travail dans la section « Devoir » de lectures/03/answer.md."
+        },
+        {
+          "id": "lec03-exercise-p022",
+          "title": "Comment aborder le devoir : Bases et Mise en œuvre",
+          "page": 22,
+          "content": "Comment aborder le devoir : Bases et Mise en œuvre\nNoter les modifications et leurs résultats en les vérifiant dans la sortie de --trace.\n\nBases : modifier INSTRUCTIONS ou les docstrings et comparer\n• Modifier un seul emplacement à la fois, poser la même question avec --trace et comparer.\n• Les emplacements sont INSTRUCTIONS dans app/agent.py, vers la ligne 31, et les docstrings des outils dans app/tools.py.\n• Exemple : si vous supprimez de INSTRUCTIONS la ligne imposant de toujours consulter le glossaire avec search_glossary, l’agent répond-il sans rechercher ?\n• Exemple : si vous remplacez dans la docstring « Mettre un seul terme » par « Mettre les termes ensemble », comment change le nombre de recherches ?\n• Noter les changements dans les outils appelés, le nombre d’appels, les arguments et les réponses.\n\nMise en œuvre : demander confirmation avant d’enregistrer\n• Créer save_learning_log dans app/tools.py et l’enregistrer dans app/agent.py avec requires_approval=True.\n• Lorsque cet outil est appelé, l’exécution s’arrête en attente d’approbation et renvoie DeferredToolRequests comme résultat.\n• Ajouter donc DeferredToolRequests à output_type de l’agent, comme dans le code ci-dessous.\n• Dans la CLI, demander à l’utilisateur s’il autorise l’enregistrement, puis transmettre sa réponse pour poursuivre l’exécution.\n\nComment écrire output_type\n```python\nfrom pydantic_ai import Agent, DeferredToolRequests\nagent = Agent(instructions=INSTRUCTIONS,\n              output_type=[str, DeferredToolRequests])\n```\n\nRéférence : documentation officielle de Pydantic AI, « Deferred Tools », section « Human-in-the-Loop Tool Approval » : pydantic.dev/docs/ai/tools-toolsets/deferred-tools/"
+        },
+        {
+          "id": "lec03-exercise-p023",
+          "title": "Comment aborder le devoir : Approfondissement (a), reconstruire avec ADK",
+          "page": 23,
+          "content": "Comment aborder le devoir : Approfondissement (a), reconstruire avec ADK\nUtiliser les mêmes instructions et outils que l’agent des exercices, et réécrire seulement son assemblage avec ADK.\n\n| Périmètre | Contenu |\n|---|---|\n| Réutiliser tel quel | INSTRUCTIONS de app/agent.py ; search_glossary et get_lecture_summary de app/tools.py ; également make_quiz si vous l’avez créé pendant les exercices. |\n| Écrire de nouveaux fichiers | Créer agent.py, avec le code ci-dessous, et __init__.py dans adk_agent/glossary_agent/. Le contenu de __init__.py est la seule ligne from . import agent. |\n| Ne pas recréer | Les options de commande comme --trace, les tests et les outils soumis à approbation. Ne pas modifier les fichiers de app/. |\n| Comparer | La façon d’écrire le code : passage des instructions et des outils ; les réponses aux mêmes questions que pendant les exercices. |\n\nadk_agent/glossary_agent/agent.py\n```python\nfrom google.adk.agents import Agent\nfrom app import tools\nfrom app.agent import INSTRUCTIONS\n\nroot_agent = Agent(\n    model=\"gemini-3.5-flash-lite\",\n    name=\"glossary_agent\",\n    instruction=INSTRUCTIONS,\n    tools=[...],  # Outils utilisés pendant les exercices\n)\n```\n\nExécuter depuis la racine du dépôt\n```bash\nPYTHONPATH=. uv run --with google-adk \\\n  adk run adk_agent/glossary_agent\n```\nSaisir une question et appuyer sur Entrée. Pour terminer, saisir exit. Le premier téléchargement d’ADK prend environ 1 minute.\nADK a connu d’importants changements avec la version 2.0. Certains articles de présentation en ligne peuvent encore contenir des informations anciennes qui ne tiennent pas compte de ces changements. S’appuyer sur la documentation officielle, adk.dev, devrait réduire les erreurs d’implémentation."
+        },
+        {
+          "id": "lec03-exercise-p024",
+          "title": "Comment aborder le devoir : Approfondissement (b), exécuter Pi dans Codespaces",
+          "page": 24,
+          "content": "Comment aborder le devoir : Approfondissement (b), exécuter Pi dans Codespaces\nPi modifie les fichiers et exécute des commandes sans demander confirmation. Essayez-le dans Codespaces.\n\n1. Installer\n```bash\nnpm install -g --ignore-scripts \\\n  @earendil-works/pi-coding-agent\n```\n\n2. Démarrer\n```bash\npi\n```\n\n3. Choisir le modèle\nDans Pi, saisir /model et sélectionner un modèle Gemini. La clé API est directement reprise du secret Codespaces GEMINI_API_KEY.\n\n4. Comparer\nComparer le prompt système de Pi, dans packages/coding-agent/src/core/system-prompt.ts du dépôt github.com/earendil-works/pi, à vos propres INSTRUCTIONS. Noter ce qui y figure et ce qui n’y figure pas.\n\nDocumentation officielle de Pi : github.com/earendil-works/pi/tree/main/packages/coding-agent/docs"
+        },
+        {
+          "id": "lec03-exercise-p025",
+          "title": "Rendre le devoir",
+          "page": 25,
+          "content": "Rendre le devoir\nUtiliser la section « Devoir » du même fichier lectures/03/answer.md que pour les exercices.\n\nÀ écrire dans la section « Devoir » de answer.md\n• Le niveau choisi : Bases, Mise en œuvre ou Approfondissement.\n• Ce que vous avez fait.\n• Les résultats : sortie de --trace ou comparaison.\n• Vos observations et vos questions.\n\nDate limite : en principe, 1 semaine après la séance.\nValidation : un seul niveau suffit.\nOutils d’IA : vous pouvez les utiliser. Décrire ce que vous avez vérifié vous-même."
+        },
+        {
+          "id": "lec03-exercise-p026",
+          "title": "Bilan : acquis d’aujourd’hui et prochaine séance",
+          "page": 26,
+          "content": "Bilan : acquis d’aujourd’hui et prochaine séance\nVous avez vérifié le fonctionnement d’un agent dans votre propre code et dans les résultats d’exécution.\n\n1. Un agent se compose d’un « modèle + boucle + outils ». Le modèle choisit les outils en lisant leur description.\n2. Avec --trace, vous avez pu lire quels outils ont été appelés, avec quels arguments et combien de fois.\n3. Vous avez ajouté un outil et l’avez fait utiliser par le modèle.\n\nDevoir : un niveau parmi Bases, Mise en œuvre et Approfondissement. La date limite est en principe 1 semaine après la séance.\nLecture 04 : le contenu et les détails de préparation seront indiqués dans les documents de Lecture 04.\nArrêter Codespaces après utilisation."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,492 @@
+{
+  "lec04-exercise-p001": {
+    "canonical_japanese_page": 1,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "5e95c69c2cd1fe4b2ae1bfea8996237051fb0b0f05f4daaa66955e03a56b1f81",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [],
+    "content_sha256": "b35686c1b903652469e083fd2c89232d0e3a5a60583358ab5d73b24300c147a8"
+  },
+  "lec04-exercise-p002": {
+    "canonical_japanese_page": 2,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "382c36f2972c0c8e041cf178f0c7f7850c2c4c1fa3a8a36ab640088555078666",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "5e9ca6855ef0ccf7099142180d3fd3ec890e3c08b2d6371eb11f583e4fefd43c"
+  },
+  "lec04-exercise-p003": {
+    "canonical_japanese_page": 3,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "4ecd6cdc04de3960f5a1bc621d9dd5b3784e3da5c671fe8164298f4c064fcd30",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "675058826b05c2afb9baf22cd39f809612fc25f114675764cd5ed7813e585a6f"
+  },
+  "lec04-exercise-p004": {
+    "canonical_japanese_page": 4,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "3068557fe0e9b2bf4c6dced3284dddc5701917d41846dccd88882f0c9476d80d",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied.",
+      "Localized the Japanese lecture suffix to Lecture NN, matching the French repository."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "3376f128a2f5a567e968cf418fe0ffe84e69b48545eeefadb12459cc67c3d224"
+  },
+  "lec04-exercise-p005": {
+    "canonical_japanese_page": 5,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "dc43d91ca13280657d7b97dcd1db69a6d8ecedf5f9067210ec43a40479576469",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied.",
+      "Localized the Japanese lecture suffix to Lecture NN, matching the French repository; retained the source's N/M measured-value placeholders."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "0fd78f94bb991f3b5ee7dfc9324c3caf83b5d9c98cf79467898812f838b146bd"
+  },
+  "lec04-exercise-p006": {
+    "canonical_japanese_page": 6,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "e0eb13f6434a342fd045e7fd9962c0acbeb7f80b127e6254bdc84f97256ed54e",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "17f05e89aade36b5cdd5bae5e3a5de279fbb5c383aa88bc101eb374f16d16a6a"
+  },
+  "lec04-exercise-p007": {
+    "canonical_japanese_page": 7,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "3c28c2eeb4526cda7093339a4261ed91efb85df230fe6898c0b9d3dc0b39b20a",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "b6c1d866f67f4da08ca1fe7bac6b890a76556dd54dde8d6a095102e0451e7f6a"
+  },
+  "lec04-exercise-p008": {
+    "canonical_japanese_page": 8,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "5e8dd273c9a15220d73a34db5f52766bcda8157859f9acbc5128a7cb36bdc495",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied.",
+      "Localized the Japanese lecture suffix to Lecture NN, matching the French repository."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "a4cdd45a62071b26daf5481cf68e9f84939f822f05baf521cc13b64613d93805"
+  },
+  "lec04-exercise-p009": {
+    "canonical_japanese_page": 9,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "f488f7a00204a6bf00f7c9d590659856b1d3cf46ef3cf1853a0e84dd58145f9a",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "b59943347a78c231ce3d072a3c3a419b73a3c73c3178d398cef314a6fe26b53b"
+  },
+  "lec04-exercise-p010": {
+    "canonical_japanese_page": 10,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "9459738547f31935df1be53291d79c58cf1015e4357d97ce6a176acd5e9ddf6a",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "d9fbf0be41069092b2611882b279c3643f66bc0267ac06b04fdef2ad5dd9aa11"
+  },
+  "lec04-exercise-p011": {
+    "canonical_japanese_page": 11,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "5405024a5568bae436d4b00f2834ce65080d526debecccb083d14091f66ee82c",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied.",
+      "Localized the Japanese lecture suffix to Lecture NN, matching the French repository's code-based check."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "13c17b9058a6d8873cb6b23f42e22a5ef870637e39e12f5f9966cc2e695a1017"
+  },
+  "lec04-exercise-p012": {
+    "canonical_japanese_page": 12,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "1913b460f5b3b7d5f095cc07a5ee859aeeef5f06374ced64d126714cae78812d",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied.",
+      "Used the existing French evaluation dataset's equivalent spelling-variant example, Lohra, for the Japanese phonetic spelling; localized lecture mentions to Lecture NN."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "587f6ae8c3b13190b8e943bbb71aabc265d7342ce51bde75cf7c1645163ec972"
+  },
+  "lec04-exercise-p013": {
+    "canonical_japanese_page": 13,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "251986b44c2a1c37ebf647a8a7659c97322a4239e86f7903e4180950d0c06c55",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied.",
+      "Localized the operational course-repository fetch URL to lecture-ai-engineering-2026-fr.git; retained lec04-start. Rejoined source slide's visually wrapped git fetch command."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "2dc88c70efbf266bfb6564742d15b794029ba93b288ac66f82492348d8adadb0"
+  },
+  "lec04-exercise-p014": {
+    "canonical_japanese_page": 14,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "f9704389fff727352fec121ddbdf0811918d913468d3668f84c011531077f6cf",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied.",
+      "Translated the source screenshot's explicit text, including pass/fail numbers; aligned interface labels with the French exercise workflow."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "d124672cca08c1838552134a8491f9ed5f941df0099553cb3f03bafc947082e1"
+  },
+  "lec04-exercise-p015": {
+    "canonical_japanese_page": 15,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "a1442010d492fcd36ebdacff0ed3808d5f0630782af1919cd46da2835caa049a",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "3721b905be990306a408215b7a92896cc08adbe2b904f623676deb141f8743c4"
+  },
+  "lec04-exercise-p016": {
+    "canonical_japanese_page": 16,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "cdec3c609a5629fe04571109a954f6c885cb4919fafd89065c6086265b7003a3",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied.",
+      "Kept each added general-explanation policy on one physical line so its général ... (pass)/(fail) wording matches the French repository's --model test policy detector. Expanded the Japanese source's abbreviated alternative fail policy into the same full equivalent French sentence without changing its meaning."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "d816a1cf07889cdb9a11ca571a1ed0167922bf837e4076d2afbd692ae88f4c23"
+  },
+  "lec04-exercise-p017": {
+    "canonical_japanese_page": 17,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "3cb593ee53d7f3d64cc398bb0c9a7f383ac622e296bb5533c98718e99f30ea30",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied.",
+      "Translated the human-readable git commit message; commands and branch are unchanged."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "3ce39ed49df07b6e56ca74aa9a463536b9e58a03d9e547d0df4d2339aed2a10c"
+  },
+  "lec04-exercise-p018": {
+    "canonical_japanese_page": 18,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "9a3e8b82b8e3ac4f701ad5994448ee39acc1a7af85712b49cc306b0345be6c64",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "f1bf25680cce9b20d51f9ffa2c2e9e856038d38dd5a3418f7628bfec6f2150a6"
+  },
+  "lec04-exercise-p019": {
+    "canonical_japanese_page": 19,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "36e23ee4a4bde88ed582072a65f1e62d8a69bc52f4c91f80b6ceca5b05939d7e",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "d291c10efae693f6a8e72b67136db1be57521b7c4e77c7a5c3a7950ba73bc711"
+  },
+  "lec04-exercise-p020": {
+    "canonical_japanese_page": 20,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "f8d4c97e7232e01ff02c01bef544b707d18103b0078a0d8dd853a97800199458",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "da3776e0db468bd521d07ae47aa4e233cfa12b8454abb8f16208e51769fcbbf2"
+  },
+  "lec04-exercise-p021": {
+    "canonical_japanese_page": 21,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "7d46c471fb01ef7f0b0bb3942d8440467f97d1ab58e30e3a6be3e9869d01b259",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "b1922acc4db7b208f8fb2b39d72ee73f597961c6d88c9ff04e66d3a63a3d2d9e"
+  },
+  "lec04-exercise-p022": {
+    "canonical_japanese_page": 22,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "c3f7e7739695c527db69619bad681eab6c5171037ce237d027ae92c472da92fc",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "b0c0f04c01917dd4d160c9d213455cb7e83f899ebbdd220215fe50548d45f459"
+  },
+  "lec04-exercise-p023": {
+    "canonical_japanese_page": 23,
+    "canonical_source_sha": "1ce722c2816b70ef62891a6378b2478af555e3fd",
+    "canonical_source_document": "data/rag_data/lectures.json#lec04-exercise",
+    "canonical_source_content_sha256": "f41a5e3da70cfdc3543bcb4df2ea98fcf99d6214d9dccaf839a4fa943e01e941",
+    "canonical_japanese_file": "day4/第4回 演習・宿題：評価セットを作り、LLM に採点させる.pptx",
+    "canonical_japanese_file_sha256": "d9a906c631803e2d817144c4a2b460ff5450628cb21b5242b50b76e2f382bc94",
+    "uploaded_french_file": null,
+    "uploaded_french_file_sha256": null,
+    "uploaded_french_slide": null,
+    "status": "new_translation_from_japanese",
+    "corrections": [
+      "Full translation of the canonical Japanese page, including any explicit figure/image transcription; no corresponding French exercise slide was supplied."
+    ],
+    "canonical_page_is_french_pdf_page": false,
+    "citation_note": "Le numéro de page désigne la source japonaise canonique. Cette traduction française est nouvelle ; aucun diaporama ou PDF d’exercices français correspondant n’a été fourni.",
+    "removed_repeated_copyright": [
+      "©MATSUO-IWASAWA LAB, THE UNIVERSITY OF TOKYO"
+    ],
+    "content_sha256": "7d38cb9811487ba81723794462ac84dee1d5ab209a8a3cff3ce3c03827efb1dd"
+  }
+}
