@@ -1,16 +1,15 @@
-"""Lecture 06 : exposer le glossaire et les résumés des séances avec un serveur MCP.
+"""Serveur MCP du glossaire et des résumés du cours 06.
 
-Utilisation :
-    uv run python -m app.agent --mcp --list-tools   # Lister les outils exposés (sans clé API)
-    uv run python -m app.mcp_server --http         # Démarrer en Streamable HTTP (http://127.0.0.1:8000/mcp)
+    uv run python -m app.mcp_agent --list-tools
+    uv run python -m app.mcp_server --http
 
-Sans argument, écouter sur stdio (entrées/sorties standard). Un client MCP (--mcp de app.agent ou
-Copilot Chat) démarre normalement ce serveur comme sous-processus. Lancé à la main, il semble bloqué,
-car il attend des données en entrée.
+La première commande liste les outils sans clé API. La seconde démarre un
+serveur Streamable HTTP sur http://127.0.0.1:8000/mcp.
 
-Dans Lecture 03, les fonctions de tools.py étaient enregistrées directement dans agent.py. Avec un serveur MCP,
-les mêmes fonctions deviennent accessibles de la même manière depuis d’autres clients que Pydantic AI,
-comme Copilot Chat.
+Par défaut, le serveur attend les données sur stdio. Les clients MCP comme
+app.mcp_agent le lancent en sous-processus. Lancé à la main, il reste en attente.
+Le même protocole donne à l’agent et aux autres clients MCP accès aux fonctions
+enregistrées au cours 03.
 """
 
 import argparse
@@ -28,8 +27,7 @@ server = MCPServer(
 # Exposer les mêmes fonctions que dans Lecture 03 comme outils MCP. Docstrings et annotations de types forment les descriptions
 server.tool()(tools.search_glossary)
 
-# TODO(Lecture 06 exercice) : exposer aussi tools.get_lecture_summary (même syntaxe que la ligne ci-dessus)
-# Si vous avez créé make_quiz dans Lecture 03, vous pouvez aussi l’exposer
+# TODO(Devoir de base) : exposer aussi get_lecture_summary
 
 
 def main() -> None:

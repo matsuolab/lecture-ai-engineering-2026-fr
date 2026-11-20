@@ -512,7 +512,7 @@
       "aliases": ["préfixe des noms d’outils", "prefix", "collision de noms"],
       "lecture": 6,
       "category": "MCP",
-      "definition": "Ajout d’un préfixe comme « nom_du_serveur_nom_de_l’outil » pour distinguer les outils de même nom sur plusieurs serveurs MCP. app/agent.py ajoute automatiquement le nom du serveur défini dans la configuration, par exemple glossary_search_glossary, comme load_mcp_toolsets de Pydantic AI. Plus d’outils signifie aussi plus de descriptions, avec un impact sur la précision du choix d’outil et le nombre de tokens.",
+      "definition": "Ajout d’un préfixe comme « nom_du_serveur_nom_de_l’outil » pour distinguer les outils de même nom sur plusieurs serveurs MCP. app/mcp_agent.py ajoute automatiquement le nom du serveur défini dans la configuration, par exemple glossary_search_glossary, comme load_mcp_toolsets de Pydantic AI. Plus d’outils signifie aussi plus de descriptions, avec un impact sur la précision du choix d’outil et le nombre de tokens.",
       "related": ["mcp-config", "tool-description", "rate-limit"]
     },
     {

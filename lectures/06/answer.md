@@ -1,15 +1,20 @@
-# Lecture 06 : réponses
+# Réponses du cours 06
 
-## Exercice
+## Exercices
 
-- Noms des outils affichés avec `--list-tools` et différences avec Lecture 03 (sans `--mcp`) :
-- Appels d’outils visibles avec `--mcp --trace` (noms et arguments) et nombre de `requests` :
-- Outil exposé sur le serveur MCP et sa description :
-- Appels d’outils après l’ajout du serveur fetch (noms et arguments) :
+<!-- Copiez les lignes [tool call] telles qu’elles s’affichent. Laissez les étapes inachevées vides. -->
+
+- Nom de l’outil à STEP 1 —
+- STEP 2 [tool call] —
+- STEP 3 [tool call] —
+- STEP 4 [tool call] —
+- Constats et questions —
 
 ## Devoir
 
-- Niveau choisi : bases / mise en œuvre / approfondissement
-- Travail réalisé :
-- Résultats :
-- Observations et questions :
+<!-- Réalisez un seul niveau parmi Bases, Mise en œuvre et Approfondissement. -->
+
+- Niveau choisi (Bases / Mise en œuvre / Approfondissement) —
+- Travail effectué —
+- Résultats —
+- Constats et questions —
